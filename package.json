@@ -1,0 +1,26 @@
+{
+  "name": "sneaker-stash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass-home": "nodemon -e scss -x \"npm run build-sass-home\"",
+    "build-sass-home": "node-sass --include-path scss scss/home.scss css/home.css",
+    "watch-sass-cart": "nodemon -e scss -x \"npm run build-sass-cart\"",
+    "build-sass-cart": "node-sass --include-path scss scss/cart.scss css/cart.css",
+    "watch-sass-adidas": "nodemon -e scss -x \"npm run build-sass-adidas\"",
+    "build-sass-adidas": "node-sass --include-path scss scss/adidas.scss css/adidas.css",
+    "watch-sass-nike": "nodemon -e scss -x \"npm run build-sass-nike\"",
+    "build-sass-nike": "node-sass --include-path scss scss/nike.scss css/nike.css",
+    "watch-sass-jordan": "nodemon -e scss -x \"npm run build-sass-jordan\"",
+    "build-sass-jordan": "node-sass --include-path scss scss/jordan.scss css/jordan.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}

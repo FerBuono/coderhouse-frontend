@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/adidas.css">
+    <link rel="shortcut icon" href="images/logos/logo.png" type="image/x-icon">
+    <script type="text/javascript" src="js/libraries/jquery-3.6.0.min.js"></script>
+    <title>Adidas - Sneaker Stash</title>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <img src="images/logos/logo.png" alt="sneaker-stash">
+        <div class="loader__divisor-bar"></div>
+        <img class='loader__brand' src="images/logos/adidas-logo.png" alt="adidas">
+    </div>
+
+    <header class="header" id="header">
+        <div class="header__container">
+            <!-- SELECCIONAR MARCA -->
+            <section class="logos">
+                <a href="index.html" class="logos__home">
+                    <img src="images/logos/logo-simple.png" alt="">
+                </a>
+                <span class="logos__divisor"></span>
+                <div class="brands">
+                    <div class="brands__actual">
+                        <img src="images/logos/adidas-logo.png" alt="">
+                    </div>
+                    <ul class="brands__list" id="brands">
+                        <li class="brands__list__logos">
+                            <a href="nike.html">
+                                <img src="images/logos/nike-logo.png" alt="">
+                            </a>
+                        </li>
+                        <li class="brands__list__logos">
+                            <a href="jordan.html">
+                                <img src="images/logos/jordan-logo.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <ul class="compras">
+                <li class="compras__container" id="img-carrito">
+                    <img src="images/icons/cart.png" alt="">
+                    <div class="contador" id="contador">
+                        <span>0</span>
+                    </div>
+                    <section class="carrito" id="carrito">
+                        <table class="lista-carrito" id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Brand</th>
+                                    <th>Image</th>
+                                    <th>Product</th>
+                                    <th>Size</th>
+                                    <th>Price</th>
+                                    <th>Amount</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <div class="carrito__btn">
+                            <a href="#" id="vaciar-carrito" class="carrito__btn__vaciar">Clear cart</a>
+                            <a href="cart.html" id="comprar" class="carrito__btn__comprar">Buy now!</a>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <div class="main__banner">
+            <img class="main__banner__bg" src="images/backgrounds/adidas.jpg" alt="">
+        </div>
+        
+        <div class="main__divisor-bar divisor-bar"></div>
+
+        <h2 class="main__shoes-title">Shoes</h2>
+        
+        <div class="main__shoes-container" id="shoes-list" ></div>
+    </main>
+    <footer class="footer">
+
+        <div class="footer__divisor-bar"></div>
+
+    </footer>
+
+
+</body>
+
+<script src="js/loader.js"></script>
+<script src="js/products/products.js"></script>
+<script src="js/products/cards.js"></script>
+<script src="js/products/shoes.js"></script>
+<script src="js/products/cart.js"></script>
+</html>
