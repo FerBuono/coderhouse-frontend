@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="auto, autoshop, auto shop, sportcar, Aston Martin, Bugatti, Ferrari, Koenigsegg, Lamborghini, McLaren, Pagani, Porsche">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="shortcut icon" href="images/lafamilia.svg" type="image/x-icon">
+    <title>Mclaren - Productos | La Familia.</title>
+    <meta name="description" content="Conocé los modelos de la marca McLaren que se encuentran a la venta, brindados exclusivamente por nuestro socio oficial. Podés encontrar superdeportivos modernos como también clásicos.">
+</head>
+<body>
+    <!-- Scroll Bar -->
+    <div id="progress-bar" style="background-color: #e45400;"></div>
+    <div id="scroll-path"></div>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header__container">
+            <!-- Menú desplegable -->
+            <input type="checkbox" id="check">
+            <div class="header__container__barras-menu">
+                <label for="check"></label>
+                <div></div>
+            </div>
+            <div class="menu-desplegable" id="menu-desplegable">
+                <ul class="menu-desplegable__lista">
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item1"><a id="menu-link1" href="#historia">Historia</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item2"><a id="menu-link2" href="#modelos">Modelos</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item3">
+                        <a id="menu-link3" href="index.html#productos">Productos</a>
+                        <label for="check-sub">
+                                <img src="images/iconos/next-button.png">
+                        </label>
+                    </li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item4"><a id="menu-link4" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Submenú desplegable -->
+            <input type="checkbox" id="check-sub">
+            <div class="submenu-desplegable" id="">
+                <div class="submenu-desplegable__next-button">
+                    <label for="check-sub"><img src="images/iconos/close.png" alt=""></label>
+                </div>
+                <ul class="submenu-desplegable__lista">
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item1"><a href="aston-martin.html">Aston Martin</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item2"><a href="bugatti.html">Bugatti</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item3"><a href="ferrari.html">Ferrari</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item4"><a href="koenigsegg.html">Koenigsegg</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item5"><a href="lamborghini.html">Lamborghini</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item6"><a href="mclaren.html">McLaren</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item7"><a href="pagani.html">Pagani</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item8"><a href="porsche.html">Porsche</a></li>
+
+                </ul>
+            </div>
+            <!-- Menú de navegación -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--izq">
+                    <li class="navegacion__lista__item"><a href="#historia">Historia</a></li>
+                    <li class="navegacion__lista__item"><a href="#modelos">Modelos</a></li>
+                </ul>
+            </div>
+            <!-- Logo -->
+            <div class="header__container__logo-inicio">
+                <a href="index.html"></a>
+                <img id="index" src="images/logo2.png" alt="">
+            </div>
+            <!-- ---- -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--der">
+                    <li class="navegacion__lista__item navegacion__lista__item--productos" id="item-productos">
+                        <a href="index.html#productos">Productos</a>
+                        <img id='boton-productos' src="images/iconos/next-button.png" alt="">
+                        <ul class="productos-lista" id="lista-productos">
+                            <li class="productos-lista__item" id='producto1'><a href="aston-martin.html">Aston Martin</a></li>
+                            <li class="productos-lista__item" id='producto2'><a href="bugatti.html">Bugatti</a></li>
+                            <li class="productos-lista__item" id='producto3'><a href="ferrari.html">Ferrari</a></li>
+                            <li class="productos-lista__item" id='producto4'><a href="koenigsegg.html">Koenigsegg</a></li>
+                            <li class="productos-lista__item" id='producto5'><a href="lamborghini.html">Lamborghini</a></li>
+                            <li class="productos-lista__item" id='producto6'><a href="mclaren.html">McLaren</a></li>
+                            <li class="productos-lista__item" id='producto7'><a href="pagani.html">Pagani</a></li>
+                            <li class="productos-lista__item" id='producto8'><a href="porsche.html">Porsche</a></li>
+                        </ul>
+                    </li>
+                    <li class="navegacion__lista__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main id="main">
+        <!-- Video + Wave -->
+        <div class="video-container">
+            <div class="video-container__logo">
+                <img src="images/viñetas/mclaren-logo.png" alt="">
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #e46400;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="video-container__video"> 
+                <video src="videos/mclaren.mp4" autoplay muted loop preload="auto"></video>
+            </div>
+            <h1>McLaren</h1>
+        </div>
+        <div class="main-container" id='historia'>
+            <div class="main-container__logo">
+                <img src="images/viñetas/Nuevacarpeta/mclaren.png" alt="">
+            </div>
+            <section class="historia">
+                <h1 class="historia__title">Historia</h1>
+                <div class="historia__container">
+                    <h3 class="historia__container__mclaren"><b>1960-1970</b></h3><br>
+                    <h3 class="historia__container__mclaren"><b>El inicio</b></h3>
+                    <p>Bruce McLaren nace en Nueva Zelanda en el año 1937. Veintiseis años más tarde funda Bruce McLaren Motor Racing, con el objetivo de desarrollar vehículos de competición. Recién desembarcado en el Reino Unido, su mentor, Jack Brabham le introduce en Cooper Cars, un pequeña fabricante londinense de vehículos compactos y ligeros para competición. En 1958 se une a la Fórmula 1 y permanece con el pequeño constructor durante siete años. Inmediatamente después empieza a ganar grandes premios en competición. No solo en Fórmula 1 sino en otras categorías, como Touring Cars, conduciendo para fabricantes como Jaguar, Aston Martín o Ford, donde consiguió el podio en las 24 Horas de Le Mans en 1966.</p><br>
+                    <div class="flecha" id="flecha-abajo" onclick="flechaAbajo()">
+                        <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                    </div>
+                    
+                    <div class="mostrar" style="display: none;" id="mostrar">
+                        <h3 class="historia__container__mclaren"><b>1970-1980</b></h3><br>
+                        <h3 class="historia__container__mclaren"><b>McLaren empieza como constructor</b></h3>
+                        <p>En 1964 se presenta el primer vehículo de competición bajo la denominación McLaren. El M1A se convierte en un rival duro de batir en competiciones locales e internacionales. Tiempo mas tarde, McLaren y su equipo, presentan el M1B, una versión aún mas rápida y competitiva. A partir de 1967, empieza el poderío de McLaren en competición, consiguiendo 37 victorias sobre 43 grandes premios hasta el año 1971. En 1965 Bruce decide dejar Cooper Cars y construye su propio vehículo de Fórmula 1 con miras en la primera temporada de la nueva fórmula de 3 litros. Después de haber construido un chasis 'mula' para la prueba en 1965, el primer coche de McLaren, el M2B, hizo su debut en el Gran Premio de Mónaco.  En 1970, Bruce McLaren junto al diseñador jefe Gordon Coppuck, empiezan a desarrollar el M6GT. La idea era producir 250 vehículos anuales pero solo se construyeron dos unidades. El prototipo original se convirtió en el vehículo personal de Bruce y así se mantuvo hasta su muerte mientras realiza pruebas en Goodwood. La trágica muerte de Bruce arroja al equipo en el caos. Bajo la dirección de Teddy Mayer y con el apoyo de Denny Hulme, McLaren se mantuvo en la cúspide del éxito. Así mismo, el brasileño Emerson Fittipaldi ganó varias carreras y tomó la corona en el McLaren M23. Ese mismo modelo, en su cuarta temporada, alzó en el mundial a James Hunt en el Campeonato de Pilotos de 1976, después de una apasionante temporada y la batalla con Niki Lauda y su Ferrari.</p><br>
+
+                        <h3 class="historia__container__mclaren"><b>1980-1990</b></h3><br>
+                        <h3 class="historia__container__mclaren"><b>El mayor superdeportivo del mundo</b></h3>
+                        <p>El McLaren F1 comienza en una sala de espera en el aeropuerto de Milán en 1988. Ron Dennis, presidente del grupo, junto a Mansour Ojjeh y Gordon Murray  discuten como aprovechar la destreza técnica de la empresa con el fin de desarrollar el futuro de la compañia. A pesar de dominar casi totalmente en el Mundial de Fórmula 1, la idea de Dennis de un negocio sostenible no se basa en las carreras. Entre una serie de sugerencias se planteó la idea de construir el mejor coche deportivo del mundo. En 1989 se establece la nueva McLaren Cars y, en marzo de 1990, se celebra una reunión de diseño de más de diez horas resultando en el compromiso de construir el superdeportivo más rápido y con el mejor manejo del mundo. No sólo eso, sino que también se tiene en mente la mayor relación peso-potencia de cualquier automóvil de producción, menor peso, así como, ser práctico y útil en el día a día. El primer modelo se dio a conocer en Mónaco, antes del Gran Premio, en 1992. Esto causa un gran interés. Con 1140 kilos, más ligero que un monoplaza, su motor V12 de seis litros produce más potencia que cualquier rival de otros fabricantes. Entre sus especificaciones encontramos una aceleración de 0-100 en 3,2 segundos y 0-200 en 28 segundos. Como curiosidad, el McLaren F1 es tan implacable que puede acelerar, de una manera progresiva y limpia, desde los 30 a los 225 kilómetros hora en sexta marcha. Sin duda, McLaren logra su objetivo de producir el mayor superdeportivo del mundo.</p><br>
+
+                        <h3 class="historia__container__mclaren"><b>1990-2000</b></h3><br>
+                        <h3 class="historia__container__mclaren"><b>Rompiendo récords</b></h3>
+                        <p>En 1999, el piloto Andy Wallace a bordo de un McLaren F1 LM, alcanza el 0-200-0 en 11,5 segundos, un récord absoluto para un vehículo de carretera. Antes de esto, en marzo de 1998, consigue el récord Guinness de velocidad con un coche de producción obteniendo 386 KM/H de velocidad punta. Tres versiones del McLaren F1 son presentados al público antes del cese de producción en 1998. Primero, una versión actualizada del F1 GTR en 1996. A continuación, un F1 GT, pensado para ser homologado en la serie GT de la FIA, en 1997. Así como dos F1 GT, construidos para los clientes más selectos. Finalmente, del F1 de competición conocido como el F1 GTR, se fabrican otras diez unidades.
+                        Se construyeron un total de 107 McLaren F1, asegurando su rareza. Como curiosidad, uno de ellos alcanzó en una subasta de 2009, más de dos millones y medio de libras esterlinas.</p><br>
+
+                        <h3 class="historia__container__mclaren"><b>2000-2010</b></h3><br>
+                        <h3 class="historia__container__mclaren"><b>La alianza con Mercedes-Benz</b></h3>
+                        <p>A finales de 1998, el último de los 107 modelos del F1, sale de Woking, pero McLaren empieza a trabajar en su nuevo proyecto. El socio de McLaren y proveedor de motores en la Fórmula 1, Mercedes-Benz, quiere construir un superdeportivo para su distribución en todo el mundo. La experiencia de McLaren en el diseño del F1, junto a la ingeniería de Mercedes hacen realidad su ambición. Aunque Mercedes dicta la arquitectura y el suministro del motor, la ingeniería y la producción queda a cargo de McLaren. El plan no era hacer una réplica de lo que McLaren había logrado con el F1. El plan era desarrollar un Gran Turismo de alto rendimiento, con una excelente conducción y un rendimiento excepcional con altos índices en seguridad, comfort y lujo. El SLR se presenta en 2003. El chasis se compone de carbono, lo cual otorga una gran rigidez torsional garantizando la seguridad. El motor es un bloque AMG V8 sobrealimentado de 5,4 litros que produce 626 CV y nada menos que 780 NM de par desde sólo tres mil vueltas. Con estas cifras, las ruedas traseras impulsan al SLR de 0 a 100 kilómetros hora en 3,8 segundos, alcanzando los 333 de velocidad máxima.  Una vez se lanza al mercado, vienen dos versiones más del SLR. Antes de lanzar al mercado el SLR Roadster, se presenta una edición limitada (150 unidades) del coupé, llamada 722. El número 722 es el número con el que Sir Stirling Moss gana la histórica Mille Miglia arrancando a las 7:22 de la mañana. Este cuenta con una suspensión mejorada y más rígida, una reducción de la altura de la carrocería en diez milímetros, frenos carbono-cerámicos de mayor tamaño, y una versión mejorada del motor V8, que ahora entrega 650CV. La historia del SLR termina con una edición especial, el SLR Stirling Moss. Esta es la última encarnación del proyecto SLR, que termina la producción en diciembre de 2009. Sólo 75 de estos modelos se ponen a la venta para los propietarios de SLR existentes. La edición Stirling Moss se remonta a una época pasada y es 200 kilos más ligero que el SLR Roadster. Esto es suficiente para dar un tiempo de 0-100 en 3,5 segundos y una velocidad máxima de 349 kilómetros hora.</p><br>
+
+                        <h3 class="historia__container__mclaren"><b>2010-2014</b></h3><br>
+                        <h3 class="historia__container__mclaren"><b>El siguiente paso</b></h3>
+                        <p>El MP4/12C se presenta en Septiembre de 2009 y arranca la producción en 2011. Con rivales como el Ferrari 458 Italia o el Lamborghini Gallardo, este nuevo McLaren equipa un bloque V8 Twin-Turbo de 3,8 litros. Cuenta con toda la experiencia de McLaren en diseño, como el empleo de fibra de carbono en el chasis, así como la herencia obtenida de la Fórmula 1.</p><br>
+
+                        <div class="flecha" id="flecha-arriba" onclick="flechaArriba()">
+                            <a href="#historia"></a>
+                            <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Modelos -->
+            <section id="modelos" class="modelos">
+                <h1 class="modelos__title modelos__title--mclaren">MODELOS</h1>
+                <div class="autos">
+                    <div class="autos__tipo">
+                        <h1>MODERNOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja1">
+                        <input type="checkbox" id="check-producto1">
+                        <div class="boton-next boton-next--mclaren ">
+                            <label for="check-producto1"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/mclaren-logo.png" alt="">
+                            <img src="images/modelos/mclaren/mclaren-p1-nombre.png" alt="" style="height: 5%;">
+                            <div class="auto-divisor"></div>
+                            <p>El coche de concepto debutó en el Salón de París de 2012​ y es el tan esperado sucesor del McLaren F1. Utiliza energía híbrida eléctrica y tecnología de la Fórmula 1. El estilo del P1 está influenciado por el McLaren MP4-12C, pero con paneles de la carrocería agregados para hacer que el coche parezca agresivo. No tiene la misma configuración de tres asientos como su predecesor el McLaren F1 y el diseño de los faros recuerda al logotipo del fabricante británico.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #e46400">></span> Motor: V8 Biturbo de 3,8 litros y un motor eléctrico</li>
+                                <li><span style="color: #e46400">></span> Potencia: 903 HP (916 CV)</li>
+                                <li><span style="color: #e46400">></span> Par motor: 900 N·m</li>
+                                <li><span style="color: #e46400">></span> Transmisión: Doble embrague de 7 marchas</li>
+                                <li><span style="color: #e46400">></span> Velocidad máxima: 350 km/h (217 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--mclaren"><p>COMPRAR</p></a>
+                                <a class="button button--mclaren" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/mclaren/p1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja2">
+                        <input type="checkbox" id="check-producto2">
+                        <div class="boton-next boton-next--mclaren ">
+                            <label for="check-producto2"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/mclaren/senna.jpg" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/mclaren-logo.png" alt="">
+                            <img src="images/modelos/mclaren/mclaren-senna-nombre.png" alt="" style="height: 5%; margin: 10px 0; filter: contrast(1.2);">
+                            <div class="auto-divisor"></div>
+                            <p>El McLaren Senna es el coche más radical jamás construido por McLaren, se trata del sucesor del McLaren P1 y de sus versiones P1 GTR y P1 LM. Con este modelo el fabricante británico pretende ofrecer una alternativa en el mercado al Aston Martin Vulcan, diseñando para ello un coche enfocado a su uso en circuito, con un programa de competición propio de McLaren y limitando su producción a tan sólo 500 unidades. </p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #e46400">></span> Motor:	V8 a 90º Biturbo de 4 litros</li>
+                                <li><span style="color: #e46400">></span> Potencia: 814 HP (825 CV)</li>
+                                <li><span style="color: #e46400">></span> Par motor: 800 N·m</li>
+                                <li><span style="color: #e46400">></span> Transmisión: Semi-autmática de 7 velocidades</li>
+                                <li><span style="color: #e46400">></span> Velocidad máxima: 335 km/h (208 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--mclaren"><p>COMPRAR</p></a>
+                                <a class="button button--mclaren" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja3">
+                        <input type="checkbox" id="check-producto3">
+                        <div class="boton-next boton-next--mclaren ">
+                            <label for="check-producto3"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/mclaren-logo.png" alt="">
+                            <img src="images/modelos/mclaren/mclaren-720s-spider-nombre.png" alt="" style=" margin: 10px 0">
+                            <div class="auto-divisor"></div>
+                            <p>El McLaren 720S es un deportivo completamente nuevo, con una nueva plataforma e importantes mejoras aerodinámicas y tecnológicas con respecto a sus predecesores. Se trata de la gama más deportiva de McLaren Automotive, con permiso de un McLaren P1 que se produjo en series limitadas y de un nuevo superdeportivo, aún más potente y exclusivo, que ha sido anunciado como el sucesor del McLaren F1.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #e46400">></span> Motor:V8 a 90º biturbo de 4 litros</li>
+                                <li><span style="color: #e46400">></span> Potencia: 755 HP (765 CV)</li>
+                                <li><span style="color: #e46400">></span> Par motor: 780 N·m</li>
+                                <li><span style="color: #e46400">></span> Transmisión: Doble embrague de 7 marchas</li>
+                                <li><span style="color: #e46400">></span> Velocidad máxima: 345 km/h (214 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--mclaren"><p>COMPRAR</p></a>
+                                <a class="button button--mclaren" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/mclaren/720s-spider.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja4">
+                        <input type="checkbox" id="check-producto4">
+                        <div class="boton-next boton-next--mclaren ">
+                            <label for="check-producto4"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/mclaren/artura.jpg" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/mclaren-logo.png" alt="">
+                            <img src="images/modelos/mclaren/mclaren-artura-nombre.png" alt="" style="height: 5%; margin: 10px 0">
+                            <div class="auto-divisor"></div>
+                            <p>El McLaren Artura 2021 es un superdeportivo híbrido enchufable de la firma de Woking. Presentado en febrero de 2021, entrega una potencia combinada de 680 caballos de potencia que se originan de un motor V6 biturbo de 3.0 litros y 585 caballos y de uno eléctrico de 95 caballos situado en la caja de cambios. Es el primero de una nueva familia de superdeportivos híbridos enchufables, que toma el relevo de las ya extintas Sport Series.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #e46400">></span> Motor: V6 a 120° de 3 litros y un motor eléctrico</li>
+                                <li><span style="color: #e46400">></span> Potencia: 680 HP (690 CV)</li>
+                                <li><span style="color: #e46400">></span> Par motor: 720 N·m</li>
+                                <li><span style="color: #e46400">></span> Transmisión: Semi-automática de 8 marcha</li>
+                                <li><span style="color: #e46400">></span> Velocidad máxima: 330 km/h (205 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--mclaren"><p>COMPRAR</p></a>
+                                <a class="button button--mclaren" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="autos  autos--clasicos">
+                    <div class="autos--clasicos__tipo">
+                        <h1>CLÁSICOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja5">
+                        <input type="checkbox" id="check-producto5">
+                        <div class="boton-next boton-next--mclaren ">
+                            <label for="check-producto5"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/mclaren-kiwi.png" alt="">
+                            <h2>McLaren F1</h2>
+                            <div class="auto-divisor"></div>
+                            <p>El McLaren F1 es un automóvil superdeportivo coupé de 2 puertas diédricas triplaza desarrollado y producido junto al equipo McLaren de Fórmula 1. Fue diseñado por Gordon Murray y Peter Stevens. Las versiones de competición participaron en las 24 Horas de Le Mans, siendo el primer coche en ganar la prueba en su debut; en el Campeonato Japonés de Gran Turismos; y el Campeonato FIA GT.</p>
+                            <h3>Especificaciones.</h3>
+                            <ul>
+                                <li><span style="color: #e46400">></span> Motor:	V12 a 60° de 6,1 litros naturalmente aspirados</li>
+                                <li><span style="color: #e46400">></span> Potencia: 671 HP (680 CV)</li>
+                                <li><span style="color: #e46400">></span> Par motor: 705 N·m</li>
+                                <li><span style="color: #e46400">></span> Transmisión: Manual de 6 velocidades/li>
+                                <li><span style="color: #e46400">></span> Velocidad máxima: 391 km/h (243 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--mclaren"><p>COMPRAR</p></a>
+                                <a class="button button--mclaren" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/mclaren/f1.jpg" alt="" style="object-position: right;">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja6">
+                        <input type="checkbox" id="check-producto6">
+                        <div class="boton-next boton-next--mclaren ">
+                            <label for="check-producto6"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/mclaren/m6gt.jpg" alt="">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/mclaren-kiwi.png" alt="">
+                            <h2>McLaren M6GT</h2>
+                            <div class="auto-divisor"></div>
+                            <p>Toda historia tiene un comienzo, y la del fabricante británico McLaren comenzó con el McLaren M6GT. Es el modelo pionero de los coches de calle (aunque gran parte de los mortales crean que fue el McLaren F1) que hoy nos impresionan de la compañía de Woking. Un coche que es poco conocido pero que ha supuesto el punto de partida. Por lo tanto, el M6GT podría ser considerado como un mito.</p>
+                            <h3>Especificaciones.</h3>
+                            <ul>
+                                <li><span style="color: #e46400">></span> Motor:	V8 de 5,7 litros</li>
+                                <li><span style="color: #e46400">></span> Potencia: 380 HP (375 CV)</li>
+                                <li><span style="color: #e46400">></span> Par motor: 502 N·m</li>
+                                <li><span style="color: #e46400">></span> Transmisión: Manual de 5 velocidades/li>
+                                <li><span style="color: #e46400">></span> Velocidad máxima: 266 km/h (165 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--mclaren"><p>COMPRAR</p></a>
+                                <a class="button button--mclaren" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #e46400;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            </section>
+        </div>
+    </main>
+   <!-- Footer -->
+   <footer id="footer" class="footer">
+    <div class="footer__logo-footer">
+        <a href="index.html"></a>
+        <img src="images/logo1.png" alt="">
+    </div>
+    <div class="linea-divisoria-footer" id="contacto"></div>
+    <div class="footer-container">
+        <div class="footer-container__info">
+            <h2>Información Adicional</h2>
+            <ul>
+                <img src="images/iconos/ubicacion.png" alt="">
+                <li>724 East Kensington Road</li>
+                <li>Los Angeles, California</li>
+                <li>CA 90026</li>
+                <li>EE.UU.</li>
+            </ul>
+            <div>
+                <img src="images/iconos/telefono.png" alt="">
+                <p>+1 213 345 6745</p>
+            </div>
+            <div>
+                <img src="images/iconos/correo-electronico.png" alt="">
+                <p>contacto@lafamilia.com</p>
+            </div>
+
+        </div>
+        <div class="footer-container__social">
+            <h2>Social</h2>
+            <ul>
+                <img src="images/iconos/twitter.png" alt="">
+                <li>Siguenos en Twitter</li>
+                <img src="images/iconos/facebook.png" alt="">
+                <li>Encuentranos en Facebook</li>
+                <img src="images/iconos/youtube.png" alt="">
+                <li>Ve nuestros últimos videos</li>
+                <img src="images/iconos/instagram.png" alt="">
+                <li>Ve nuestra galería de fotos</li>
+                <img src="images/iconos/spotify.png" alt="">
+                <li>Sigue nuestras listas en Spotify</li>
+
+            </ul>
+        </div>
+        <div class="contacto">
+            <h2>Contáctenos</h2>
+            <div>
+                <form>
+                    <fieldset class="contacto__formulario contacto__formulario--personal">
+                        <div class="contacto__formulario__box">
+                            <input type="text" name="nombre" id="box-nombre" required><br>
+                            <label for="name">Nombre</label>
+                        </div>
+                        <div class="contacto__formulario__box">
+                            <input type="text" name="apellido" id="box-apellido" required><br>
+                            <label for="apellido">Apellido</label>
+                        </div>
+                        <div class="contacto__formulario__box">
+                            <input type="tel" name="telefono" id="box-tel" required><br>
+                            <label for="telefono">Teléfono</label>
+                        </div>
+                        <div class="contacto__formulario__box">
+                            <input type="email" name="email" id="box-email" required><br>
+                            <label for="email">Email</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="contacto__formulario contacto__formulario--asunto">
+                        <div class="contacto__formulario__select">
+                            <label for="producto">Producto por el que quiere consultar: </label>
+                            <select name="producto" id="producto" required>
+                                <optgroup label="ASTON MARTIN">
+                                    <option value="db11">DB11</option>
+                                    <option value="vulcan">Vulcan</option>
+                                    <option value="dbx">DBX</option>
+                                    <option value="dbs">DBS</option>
+                                    <option value="vantage">V8 Vantage '77</option>
+                                    <option value="vantage">DB4 GT Zagato</option>
+                                </optgroup>
+                                <optgroup label="BUGATTI">
+                                    <option value="divo">Divo</option>
+                                    <option value="chiron">Chiron</option>
+                                    <option value="centodieci">Centodieci</option>
+                                    <option value="la-voiture-noire">La Voiture Noire</option>
+                                    <option value="type57">Type 57 SC Atlantic</option>
+                                    <option value="eb110">EB110</option>
+                                </optgroup>
+                                <optgroup label="FERRARI">
+                                    <option value="488-pista">488 Pista</option>
+                                    <option value="sf90-stradale">SF90 Stradale</option>
+                                    <option value="f8-tributo">F8 Tributo</option>
+                                    <option value="laferrari">LaFerrari</option>
+                                    <option value="250-gto">250 GTO</option>
+                                    <option value="f40">F40</option>
+                                </optgroup>
+                                <optgroup label="KOENIGSEGG">
+                                    <option value="regera">Regera</option>
+                                    <option value="jesko">Jesko</option>
+                                    <option value="agera-r">Agera R</option>
+                                    <option value="one">One:1</option>
+                                </optgroup>
+                                <optgroup label="LAMBORGHINI">
+                                    <option value="aventador-svj">Aventador SVJ</option>
+                                    <option value="sesto-elemento">Sesto Elemento</option>
+                                    <option value="huracan-evo">Huracan EVO</option>
+                                    <option value="veneno">Veneno</option>
+                                    <option value="countach">Countach LP 400</option>
+                                    <option value="miura">Miura P400 S</option>
+                                </optgroup>
+                                <optgroup label="MCLAREN">
+                                    <option value="p1-gtr">P1 GTR</option>
+                                    <option value="senna">Senna</option>
+                                    <option value="720s-spider">702s Spider</option>
+                                    <option value="artura">Artura</option>
+                                    <option value="f1">F1</option>
+                                    <option value="m6gt">M6GT</option>
+                                </optgroup>
+                                <optgroup label="PAGANI">
+                                    <option value="zonda-r">Zonda R</option>
+                                    <option value="zonda-f">Zonda F</option>
+                                    <option value="huayra">Huayra</option>
+                                    <option value="huayra-roadster">Huayra Roadster</option>
+                                </optgroup>
+                                <optgroup label="PORSCHE">
+                                    <option value="911-turbo-s">911 Turbo S</option>
+                                    <option value="718-spyder">718 Spyder</option>
+                                    <option value="gt3-rs">GT3 RS</option>
+                                    <option value="carrera-4-gts">Carrera 4 GTS</option>
+                                    <option value="911-80's">911 80's</option>
+                                    <option value="550-spyder">550 Spyder</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="contacto__formulario__box">
+                            <textarea name="comentario" id="comentario" cols="30" rows="3" required></textarea>
+                            <label for="comentario">Mensaje</label>
+                        </div>
+                    </fieldset>
+                    <div class="contacto__boton">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="pie pie--mclaren">
+        <div class="pie__socios">
+            <h2>Socios Oficiales</h2>
+            <div class="pie__socios__logo">
+                <div class="box-socios box-socios--aston">
+                    <img src="images/viñetas/Nuevacarpeta/aston-martin.png" alt="" class="box-socios__aston">
+                    <a href="https://www.astonmartin.com/" target="_blank"></a>
+                </div>
+                <div class="box-socios">
+                    <img src="images/viñetas/Nuevacarpeta/bugatti.png" alt="">
+                    <a href="https://www.bugatti.com/" target="_blank"></a>
+                </div>
+                <div class="box-socios">
+                    <img src="images/viñetas/Nuevacarpeta/ferrari.png" alt="">
+                    <a href="https://www.ferrari.com" target="_blank"></a>
+                </div>
+                <div class="box-socios">
+                    <img src="images/viñetas/Nuevacarpeta/koenigsegg.png" alt="">
+                    <a href="https://www.koenigsegg.com/" target="_blank"></a>
+                </div>
+                <div class="box-socios">
+                    <img src="images/viñetas/Nuevacarpeta/lamborghini.png" alt="">
+                    <a href="https://www.lamborghini.com" target="_blank"></a>
+                </div>
+                <div class="box-socios">
+                    <img src="images/viñetas/Nuevacarpeta/mclaren.png" alt="">
+                    <a href="https://www.mclaren.com/" target="_blank"></a>
+                </div>
+                <div class="box-socios">
+                    <img src="images/viñetas/Nuevacarpeta/pagani.png" alt="">
+                    <a href="https://www.pagani.com/" target="_blank"></a>
+                </div>
+                <div class="box-socios">
+                    <img src="images/viñetas/Nuevacarpeta/porsche.png" alt="">
+                    <a href="https://www.porsche.com/" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="linea-divisoria-footer"></div>
+        <p>© 1997-2021 - <span>La Familia.</span> Group - Todos los derechos reservados</p>
+    </div>
+</footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+</body>
+</html>

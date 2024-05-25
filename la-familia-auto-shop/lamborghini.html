@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="auto, autoshop, auto shop, sportcar, Aston Martin, Bugatti, Ferrari, Koenigsegg, Lamborghini, McLaren, Pagani, Porsche">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="shortcut icon" href="images/lafamilia.svg" type="image/x-icon">
+    <title>Lamborghini - Productos | La Familia.</title>
+    <meta name="description" content="Conocé los modelos de la marca Lamborghini que se encuentran a la venta, brindados exclusivamente por nuestro socio oficial. Podés encontrar superdeportivos modernos como también clásicos.">
+</head>
+<body>
+    <!-- Scroll Bar -->
+    <div id="progress-bar" style="background-color: #fedc00;"></div>
+    <div id="scroll-path"></div>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header__container">
+            <!-- Menú desplegable -->
+            <input type="checkbox" id="check">
+            <div class="header__container__barras-menu">
+                <label for="check"></label>
+                <div></div>
+            </div>
+            <div class="menu-desplegable" id="menu-desplegable">
+                <ul class="menu-desplegable__lista">
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item1"><a id="menu-link1" href="#historia">Historia</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item2"><a id="menu-link2" href="#modelos">Modelos</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item3">
+                        <a id="menu-link3" href="index.html#productos">Productos</a>
+                        <label for="check-sub">
+                                <img src="images/iconos/next-button.png">
+                        </label>
+                    </li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item4"><a id="menu-link4" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Submenú desplegable -->
+            <input type="checkbox" id="check-sub">
+            <div class="submenu-desplegable" id="">
+                <div class="submenu-desplegable__next-button">
+                    <label for="check-sub"><img src="images/iconos/close.png" alt=""></label>
+                </div>
+                <ul class="submenu-desplegable__lista">
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item1"><a href="aston-martin.html">Aston Martin</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item2"><a href="bugatti.html">Bugatti</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item3"><a href="ferrari.html">Ferrari</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item4"><a href="koenigsegg.html">Koenigsegg</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item5"><a href="lamborghini.html">Lamborghini</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item6"><a href="mclaren.html">McLaren</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item7"><a href="pagani.html">Pagani</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item8"><a href="porsche.html">Porsche</a></li>
+
+                </ul>
+            </div>
+            <!-- Menú de navegación -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--izq">
+                    <li class="navegacion__lista__item"><a href="#historia">Historia</a></li>
+                    <li class="navegacion__lista__item"><a href="#modelos">Modelos</a></li>
+                </ul>
+            </div>
+            <!-- Logo -->
+            <div class="header__container__logo-inicio">
+                <a href="index.html"></a>
+                <img id="index" src="images/logo2.png" alt="">
+            </div>
+            <!-- ---- -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--der">
+                    <li class="navegacion__lista__item navegacion__lista__item--productos" id="item-productos">
+                        <a href="index.html#productos">Productos</a>
+                        <img id='boton-productos' src="images/iconos/next-button.png" alt="">
+                        <ul class="productos-lista" id="lista-productos">
+                            <li class="productos-lista__item" id='producto1'><a href="aston-martin.html">Aston Martin</a></li>
+                            <li class="productos-lista__item" id='producto2'><a href="bugatti.html">Bugatti</a></li>
+                            <li class="productos-lista__item" id='producto3'><a href="ferrari.html">Ferrari</a></li>
+                            <li class="productos-lista__item" id='producto4'><a href="koenigsegg.html">Koenigsegg</a></li>
+                            <li class="productos-lista__item" id='producto5'><a href="lamborghini.html">Lamborghini</a></li>
+                            <li class="productos-lista__item" id='producto6'><a href="mclaren.html">McLaren</a></li>
+                            <li class="productos-lista__item" id='producto7'><a href="pagani.html">Pagani</a></li>
+                            <li class="productos-lista__item" id='producto8'><a href="porsche.html">Porsche</a></li>
+                        </ul>
+                    </li>
+                    <li class="navegacion__lista__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main id="main">
+        <!-- Video + Wave -->
+        <div class="video-container">
+            <div class="video-container__logo video-container__logo--lamborghini">
+                <img src="images/viñetas/lamborghini-classic.png" alt="">
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fedc00;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="video-container__video"> 
+                <video src="videos/lamborghini.mp4" autoplay muted loop preload="auto"></video>
+            </div>
+            <h1>Lamborghini</h1>
+        </div>
+        <!-- Historia -->
+        <div class="main-container" id='historia'>
+            <div class="main-container__logo">
+                <img src="images/viñetas/Nuevacarpeta/lamborghini.png" alt="">
+            </div>
+            <section class="historia">
+                <h1 class="historia__title">Historia</h1>
+                <div class="historia__container">
+                    <h3 class="historia__container__lamborghini"><b>1963-1970</b></h3><br>
+                    <h3 class="historia__container__lamborghini"><b>Nace el mito</b></h3>
+                    <p>En 1963, y cansado de padecer sucesivos problemas con sus Ferrari –aunque dicen que también por puro ego y amor propio en su particular rivalidad con el ‘comendatore’-, Ferrucio Lamborghini, tercer fabricante italiano de maquinaria agrícola, decide fundar en Sant'Agata Bolognese (Bolonia, Italia) su propia compañía de automóviles deportivos: Automobili Ferruccio Lamborghini SpA, derivada de Lamborghini Trattori SpA.
+                    El primer modelo que ve la luz es el 350 GTV, diseñado por Franco Scaglione y construido por Giorgio Neri y Luciano Bonancini. Para su producción en serie es modificado por Carrocería Touring y dotado del motor V12 de 360 CV (de 240 a 280 km/h según variantes) y de una caja de cinco marchas. Su presentación tiene lugar en el Salón de Turín. Más tarde le siguen el 350 GT y el 400 GT. Este último es un emblemático 2+2 equipado con una mecánica V12 de 320 CV. Su diseño es obra de Carrozeria Touring, monta un cambio de cinco marchas con sincro tipo Porsche, alcanza los 270 km/h y acelera de 0 a 100 km/h en 6,8 segundos. En total se fabrican 220 unidades.
+                    La presentación de los prototipos 3500 GTZ, desarrollado por Zagato, y 350 GTS tiene lugar en 1965. Dos años más tarde nace el Miura, el primer modelo reconocido mayoritariamente por el público como súper deportivo. Su mecánica V12 central transversal rinde 370 CV, y tiene como punto de mira al por entonces codiciado Ford GT40. Ese año también se desvela el ensayo Marzal. En 1968 se produce el lanzamiento del Islero, producido hasta 1970, como relevo del 400 GT. Debuta en el Salón de Ginebra con el nombre del toro que mató a Manolete en 1947. Monta mecánica 4.0 V12 de 325 CV (la versión S -225 unidades- llega a los 350 CV) y cambio manual de cinco marchas. Su velocidad máxima es de 248 km/h. También aparece el Espada, basado en el concept Marzal: se fabrican 1.217 unidades con motor V12 de 325 CV, algunas con cambio automático de tres marchas; y el prototipo Miura P400 Roadster.
+                    </p><br>
+                    <div class="flecha" id="flecha-abajo" onclick="flechaAbajo()">
+                        <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                    </div>
+                    
+                    <div class="mostrar" style="display: none;" id="mostrar">
+                        <h3 class="historia__container__lamborghini"><b>1971-1980</b></h3><br>
+                        <h3 class="historia__container__lamborghini"><b>Y llega el Countach</b></h3>
+                        <p>Corre el año 1970 cuando se lanza el Jarama, un modelo diseñado por Marcelo Gandini. En total se fabrican 327 unidades. La versión original GT con motor V12 rinde 350 CV, mientras que la variante GTS llega a los 365 CV y presenta ligeros cambios en el chasis y la carrocería. En estas fechas también tiene lugar la presentación de los prototipos Miura, Jota y Urraco.
+                        En 1971 aparece el prototipo Countach LP500. Un año más tarde, Georges-Henri Rosetti y Rene Lemier adquieren la compañía hasta 1977, cuando se declara en bancarrota en el juzgado de Bolonia. También se produce el lanzamiento del Urraco P250, coupé 2+2 fabricado hasta 1979. Diseñado por Marcelo Gandini, cuenta con un propulsor V8 de 220 CV -180 CV en la variante P111 para Estados Unidos- y alcanza una producción total de 791 unidades. De él derivan más tarde los Urraco P250, P300 y P200.
+                        El relevo llega de la mano del legendario Countach LP400 en 1973: ancho, bajo, rapidísimo, con puertas de apertura en tijera… En un futuro, le seguirán las versiones LP400S (1978), LP500S (1983), Quattrovalvole (1985) y 25 Aniversario (1988). Todavía ese año se comercializan el Espada Serie III, Jarama S y Urraco P250. Entre 1976 y 1979 aparece el Silhouette, basado en el Urraco: dispone de un motor central 3.0 V8 de 260 CV y es el primer Lamborghini con carrocería tipo targa. Únicamente se construyeron 52 vehículos, de los que 31 sobreviven en la actualidad.</p><br>
+
+                        <h3 class="historia__container__lamborghini"><b>1981-1990</b></h3><br>
+                        <h3 class="historia__container__lamborghini"><b>Una década muy activa</b></h3>
+                        <p>Entre 1982 y 1988 surge el Jalpa: diseñado por Bertone, mantiene el techo tipo targa del Silhouette; incluso contó con un proyecto descapotable o Spyder con zaga inspirada en el ensayo Athon de 1980.
+                        En 1986 nace el proyecto de un todoterreno destinado al ejército: es el LM002. Cuenta con un motor V12 y recibe el sobrenombre de "Rambo-Lambo": su carrocería se monta en Irizar (País Vasco), y el chasis y el motor en Italia.
+                        Chrysler Group compra la firma italiana en 1987 (la venderá en 1994). Entre otras, una de las decisiones que se adopta es la entrada de Lamborghini en la Fórmula 1 con un V12 diseñado conforme a regulación FIA 1989, bajo la dirección de Daniele Audetto y la supervisión técnica de Mauro Forghieri. Es en el año 1988 cuando la marca anuncia que suministrará este motor al Team Larrousse-Camels: los inicios son duros, aunque en el Gran Premio de España Philippe Alliot consigue un punto y, un año más tarde, la escuadra Lotus se decanta por sus propulsores.</p><br>
+
+                        <h3 class="historia__container__lamborghini"><b>1991-2000</b></h3><br>
+                        <h3 class="historia__container__lamborghini"><b>Nuevo cambio de propietario</b></h3>
+                        <p>El Diablo surge como relevo del Countach en 1990. Se produce hasta 2001 y, aunque el diseño original es de Marcelo Gandini, la división Chrysler Styling Center es la encargada de ultimarlo: su motor 5.7 V12 de 48 válvulas y 492 CV le permite alcanzar 325 km/h.
+                        Mientras, Lamborghini suministra motores a los equipos Larrouse y Minardi en 1992, aunque el nuevo cuadro directivo de Chrysler cancela el programa al año siguiente, tras un intento frustrado de equipar los bólidos de McLaren.
+                        Tras el Diablo, llegan el Diablo VT y el Diablo VT Roadster con tracción total, chasis y estética diferenciados; el SE 30 (1994), conmemorativo de los 30 años de la marca; el SV (1996) o Spinto Veloce; el GT y GTR (1999); y, finalmente, el VT 6.0 SE (2001).
+                        La titularidad de la marca había pasado a manos de la compañía Megatech en 1994. Cuatro años más tarde, y al borde de la quiebra, Lamborghini es adquirida por el Grupo Volkswagen, donde opera bajo tutela de Audi AG.</p><br>
+
+                        <h3 class="historia__container__lamborghini"><b>2001-Actualidad</b></h3><br>
+                        <h3 class="historia__container__lamborghini"><b>El renacer</b></h3>
+                        <p>En 2002 llega el sustituto del Diablo, el Murciélago. El nuevo modelo, diseñado por Luc Donckerwolke, equipa una mecánica V12 de 580 CV, tracción total, carrocería de fibra de carbono, cambio de seis marchas (la primera de la marca) y control de tracción. La evolución de este súper deportivo y de su variante roadster es el LP640, presentado por primera vez en el Salón de Ginebra de 2006: su precio aproximado es de 240.000 euros, y además cuenta con una alternativa decorada por Versace.
+                        En 2003 se produce el lanzamiento del Gallardo con bastidor de aluminio y carrocerías coupé y descapotable Spyder. De él derivan los SE (Special Edition) de 2005 y el Nera. La llegada del Superleggera tiene lugar en el año 2007: se trata de una versión aligerada y optimizada del Gallardo con 530 CV.
+                        El Salón de Fráncfort es el lugar elegido para el estreno del Reventón: la extrapolación del Murciélago LP640 con diseño inspirado en el cazabombardero estadounidense F-22 tiene un precio de un millón de euros (sólo se han fabricado 22 unidades). En 2008 aterriza el Gallardo LP560-4, una evolución del Gallardo de 560 CV.
+                        En 2011, la marca italiana presenta en el Salón del Automóvil de Ginebra el Lamborghini Aventador como sustituto del Murcielago. El superdeportivo toma su nombre de un destacado toro de lidia, que participó en la Feria del Pilar celebrada en 1993 en la que ganó el "Trofeo al toro más bravo de la Feria". Se sitúa como el tope de gama, montando un V12 de aspiración atmosférica de 6.5 litros, su velocidad máxima es de 350 km/h y alcanza los 100 km/h en 2,9 segundos.        
+                        En 2013 y para celebrar su 50 aniversario Lamborghini presento el Veneno, que cuenta con 750 CV de potencia y un diseño espectacular. Solo se han construido tres, con un precio que supera los 3 millones de euros.</p><br>
+
+                        <div class="flecha" id="flecha-arriba" onclick="flechaArriba()">
+                            <a href="#historia"></a>
+                            <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Modelos -->
+            <section id="modelos" class="modelos">
+                <h1 class="modelos__title modelos__title--lamborghini">MODELOS</h1>
+                <div class="autos">
+                    <div class="autos__tipo">
+                        <h1>MODERNOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja1">
+                        <input type="checkbox" id="check-producto1">
+                        <div class="boton-next boton-next--lamborghini">
+                            <label for="check-producto1"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/lamborghini-nombre-plateado.png" alt="">
+                            <img src="images/modelos/lamborghini/lamborghini-aventador-svj-nombre.png" alt="">
+                            <div class="auto-divisor"></div>
+                            <p>Lamborghini sabe perfectamente cómo afrontar los desafíos y por eso ha creado el Aventador SVJ. Para fusionar una tecnología de vanguardia con un diseño excepcional, sin transigir en nada. En un futuro gobernado por la tecnología se están perdiendo las emociones reales, pero en el futuro que estamos diseñando están siempre en primer plano, porque siempre es el ser humano quien conduce. </p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #fedc00">></span> Motor: V12 a 60° atmosférico de 6,5 litros</li>
+                                <li><span style="color: #fedc00">></span> Potencia: 759 HP (770 CV)</li>
+                                <li><span style="color: #fedc00">></span> Par motor: 720 N·m</li>
+                                <li><span style="color: #fedc00">></span> Transmisión: Doble embrague de 7 marchas</li>
+                                <li><span style="color: #fedc00">></span> Velocidad máxima: 350 km/h (217 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--lamborghini"><p>COMPRAR</p></a>
+                                <a class="button button--lamborghini" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/lamborghini/aventador-svj.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja2">
+                        <input type="checkbox" id="check-producto2">
+                        <div class="boton-next boton-next--lamborghini">
+                            <label for="check-producto2"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/lamborghini/sesto-elemento.jpg" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/lamborghini-nombre-plateado.png" alt="">
+                            <img src="images/modelos/lamborghini/lamborghini-sesto-elemento-nombre.jpg" alt="" style="height: 10%; margin: 10px 0; filter: contrast(1.2);">
+                            <div class="auto-divisor"></div>
+                            <p>Sesto Elemento es una obra maestra de ingeniería ligera y demuestra la gran experiencia de Lamborghini en todos los ámbitos de la tecnología de la fibra de carbono. Con una estructura extremadamente ligera, gracias al empleo de la tecnología avanzada de la fibra de carbono, el Lamborghini Sesto Elemento pesa en vacío solo 999 kilogramos, incluidos el motor V10 y el sistema de tracción integral permanente.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #fedc00">></span> Motor:	V10 atmosférico de 5.2 L</li>
+                                <li><span style="color: #fedc00">></span> Potencia: 562 HP (570 CV)</li>
+                                <li><span style="color: #fedc00">></span> Par motor: 540 N·m</li>
+                                <li><span style="color: #fedc00">></span> Transmisión: Semi-autmática de 6 velocidades</li>
+                                <li><span style="color: #fedc00">></span> Velocidad máxima: 320 km/h (199 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--lamborghini"><p>COMPRAR</p></a>
+                                <a class="button button--lamborghini" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja3">
+                        <input type="checkbox" id="check-producto3">
+                        <div class="boton-next boton-next--lamborghini">
+                            <label for="check-producto3"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/lamborghini-nombre-plateado.png" alt="">
+                            <img src="images/modelos/lamborghini/lamborghini-huracan-evo-nombre.png" alt="" style="height: 6%; margin: 10px 0">
+                            <div class="auto-divisor"></div>
+                            <p>Huracán EVO es la evolución del V10 de mayor éxito de la Casa Lamborghini. Se trata del resultado de un proceso de perfeccionamiento y consolidación de características ya existentes y, al mismo tiempo, de desarrollo de nuevas soluciones en términos de prestaciones y diseño. Pero lo que lo distingue es su capacidad de anticipar los movimientos y escuchar los deseos de quien lo conduce.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #fedc00">></span> Motor: V10 de 5.2 litros</li>
+                                <li><span style="color: #fedc00">></span> Potencia: 648 HP (639 CV)</li>
+                                <li><span style="color: #fedc00">></span> Par motor: 600 N·m</li>
+                                <li><span style="color: #fedc00">></span> Transmisión: Semi-automática de 7 marchas</li>
+                                <li><span style="color: #fedc00">></span> Velocidad máxima: 325 km/h (202 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--lamborghini"><p>COMPRAR</p></a>
+                                <a class="button button--lamborghini" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/lamborghini/huracan-evo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja4">
+                        <input type="checkbox" id="check-producto4">
+                        <div class="boton-next boton-next--lamborghini">
+                            <label for="check-producto4"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/lamborghini/veneno.jpg" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/lamborghini-nombre-plateado.png" alt="">
+                            <img src="images/modelos/lamborghini/lamborghini-veneno-nombre.png" alt="" style="height: 2.5%; margin: 10px 0">
+                            <div class="auto-divisor"></div>
+                            <p>El Lamborghini Veneno lleva la eficiencia aerodinámica de un prototipo de carreras a las carreteras de todos los días. Este superdeportivo se caracteriza por una aerodinámica óptima, para garantizar la estabilidad en las curvas rápidas y un comportamiento similar al de un prototipo de carreras. Todo esto en un coche diseñado para la carretera. El coche ideal para los amantes de la conducción deportiva.</h3>
+                            <ul>
+                                <li><span style="color: #fedc00">></span> Motor:	V12 a 60° atmosférico de 6,5 litros</li>
+                                <li><span style="color: #fedc00">></span> Potencia: 740 HP (750 CV)</li>
+                                <li><span style="color: #fedc00">></span> Par motor: 690 N·m</li>
+                                <li><span style="color: #fedc00">></span> Transmisión: Semi-automática de 7 marcha</li>
+                                <li><span style="color: #fedc00">></span> Velocidad máxima: 355 km/h (221 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--lamborghini"><p>COMPRAR</p></a>
+                                <a class="button button--lamborghini" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="autos  autos--clasicos">
+                    <div class="autos--clasicos__tipo">
+                        <h1>CLÁSICOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja5">
+                        <input type="checkbox" id="check-producto5">
+                        <div class="boton-next boton-next--lamborghini">
+                            <label for="check-producto5"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/lamborghini-classic.png" alt="" style="height:12%;">
+                            <h2>Lamborghini Countach LP 400</h2>
+                            <div class="auto-divisor"></div>
+                            <p>La primera generación del Countach se llamó LP 400. Su motor de 5.2 litros V12 estaba montado longitudinalmente y proporcionaba hasta 455 CV. Una velocidad máxima que rondaba los 315 km/h y una aceleración de 0 a 100 en 5,4 segundos demostraban que el LP 400 no solo era una visión trepidante, también ofrecía las prestaciones de alto nivel previstas.</p>
+                            <h3>Especificaciones.</h3>
+                            <ul>
+                                <li><span style="color: #c6ad09">></span> Motor:	V12 a 60° de 5.2 litros</li>
+                                <li><span style="color: #c6ad09">></span> Potencia: 449 HP (455 CV)</li>
+                                <li><span style="color: #c6ad09">></span> Par motor: 500 N·m</li>
+                                <li><span style="color: #c6ad09">></span> Transmisión: Manual de 5 velocidades/li>
+                                <li><span style="color: #c6ad09">></span> Velocidad máxima: 315 km/h (196 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--lamborghini-clasico"><p>COMPRAR</p></a>
+                                <a class="button button--lamborghini-clasico" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/lamborghini/countach.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja6">
+                        <input type="checkbox" id="check-producto6">
+                        <div class="boton-next boton-next--lamborghini">
+                            <label for="check-producto6"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/lamborghini/miura.jpg" alt="">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/lamborghini-classic.png" alt="">
+                            <h2>Lamborghini Miura P400 S</h2>
+                            <div class="auto-divisor"></div>
+                            <p>El Lamborghini Miura un emblemático coche que revolucionó el concepto de los deportivos debido a sus características mecánicas y lo impactante de su diseño, naciendo con él un nuevo superdeportivo, este fue creado por la compañía italiana entre los años 1966 y 1972, inspirándose en los prototipos más relevantes de la época el Ferrari 250 LM y el Ford GT40, ambos participaban en la competencia de las 24 horas de Le Mans.</p>
+                            <h3>Especificaciones.</h3>
+                            <ul>
+                                <li><span style="color: #ae9806">></span> Motor:	V12 a 60º atmosférico de 4 litros</li>
+                                <li><span style="color: #ae9806">></span> Potencia: 390 HP (385 CV)</li>
+                                <li><span style="color: #ae9806">></span> Par motor: 400 N·m</li>
+                                <li><span style="color: #ae9806">></span> Transmisión: Manual de 5 velocidades/li>
+                                <li><span style="color: #524808">></span> Velocidad máxima: 280 km/h (174 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--lamborghini-clasico"><p>COMPRAR</p></a>
+                                <a class="button button--lamborghini-clasico" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fedc00;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer__logo-footer">
+            <a href="index.html"></a>
+            <img src="images/logo1.png" alt="">
+        </div>
+        <div class="linea-divisoria-footer" id="contacto"></div>
+        <div class="footer-container">
+            <div class="footer-container__info">
+                <h2>Información Adicional</h2>
+                <ul>
+                    <img src="images/iconos/ubicacion.png" alt="">
+                    <li>724 East Kensington Road</li>
+                    <li>Los Angeles, California</li>
+                    <li>CA 90026</li>
+                    <li>EE.UU.</li>
+                </ul>
+                <div>
+                    <img src="images/iconos/telefono.png" alt="">
+                    <p>+1 213 345 6745</p>
+                </div>
+                <div>
+                    <img src="images/iconos/correo-electronico.png" alt="">
+                    <p>contacto@lafamilia.com</p>
+                </div>
+
+            </div>
+            <div class="footer-container__social">
+                <h2>Social</h2>
+                <ul>
+                    <img src="images/iconos/twitter.png" alt="">
+                    <li>Siguenos en Twitter</li>
+                    <img src="images/iconos/facebook.png" alt="">
+                    <li>Encuentranos en Facebook</li>
+                    <img src="images/iconos/youtube.png" alt="">
+                    <li>Ve nuestros últimos videos</li>
+                    <img src="images/iconos/instagram.png" alt="">
+                    <li>Ve nuestra galería de fotos</li>
+                    <img src="images/iconos/spotify.png" alt="">
+                    <li>Sigue nuestras listas en Spotify</li>
+
+                </ul>
+            </div>
+            <div class="contacto">
+                <h2>Contáctenos</h2>
+                <div>
+                    <form>
+                        <fieldset class="contacto__formulario contacto__formulario--personal">
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="nombre" id="box-nombre" required><br>
+                                <label for="name">Nombre</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="apellido" id="box-apellido" required><br>
+                                <label for="apellido">Apellido</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="tel" name="telefono" id="box-tel" required><br>
+                                <label for="telefono">Teléfono</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="email" name="email" id="box-email" required><br>
+                                <label for="email">Email</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="contacto__formulario contacto__formulario--asunto">
+                            <div class="contacto__formulario__select">
+                                <label for="producto">Producto por el que quiere consultar: </label>
+                                <select name="producto" id="producto" required>
+                                    <optgroup label="ASTON MARTIN">
+                                        <option value="db11">DB11</option>
+                                        <option value="vulcan">Vulcan</option>
+                                        <option value="dbx">DBX</option>
+                                        <option value="dbs">DBS</option>
+                                        <option value="vantage">V8 Vantage '77</option>
+                                        <option value="vantage">DB4 GT Zagato</option>
+                                    </optgroup>
+                                    <optgroup label="BUGATTI">
+                                        <option value="divo">Divo</option>
+                                        <option value="chiron">Chiron</option>
+                                        <option value="centodieci">Centodieci</option>
+                                        <option value="la-voiture-noire">La Voiture Noire</option>
+                                        <option value="type57">Type 57 SC Atlantic</option>
+                                        <option value="eb110">EB110</option>
+                                    </optgroup>
+                                    <optgroup label="FERRARI">
+                                        <option value="488-pista">488 Pista</option>
+                                        <option value="sf90-stradale">SF90 Stradale</option>
+                                        <option value="f8-tributo">F8 Tributo</option>
+                                        <option value="laferrari">LaFerrari</option>
+                                        <option value="250-gto">250 GTO</option>
+                                        <option value="f40">F40</option>
+                                    </optgroup>
+                                    <optgroup label="KOENIGSEGG">
+                                        <option value="regera">Regera</option>
+                                        <option value="jesko">Jesko</option>
+                                        <option value="agera-r">Agera R</option>
+                                        <option value="one">One:1</option>
+                                    </optgroup>
+                                    <optgroup label="LAMBORGHINI">
+                                        <option value="aventador-svj">Aventador SVJ</option>
+                                        <option value="sesto-elemento">Sesto Elemento</option>
+                                        <option value="huracan-evo">Huracan EVO</option>
+                                        <option value="veneno">Veneno</option>
+                                        <option value="countach">Countach LP 400</option>
+                                        <option value="miura">Miura P400 S</option>
+                                    </optgroup>
+                                    <optgroup label="MCLAREN">
+                                        <option value="p1-gtr">P1 GTR</option>
+                                        <option value="senna">Senna</option>
+                                        <option value="720s-spider">702s Spider</option>
+                                        <option value="artura">Artura</option>
+                                        <option value="f1">F1</option>
+                                        <option value="m6gt">M6GT</option>
+                                    </optgroup>
+                                    <optgroup label="PAGANI">
+                                        <option value="zonda-r">Zonda R</option>
+                                        <option value="zonda-f">Zonda F</option>
+                                        <option value="huayra">Huayra</option>
+                                        <option value="huayra-roadster">Huayra Roadster</option>
+                                    </optgroup>
+                                    <optgroup label="PORSCHE">
+                                        <option value="911-turbo-s">911 Turbo S</option>
+                                        <option value="718-spyder">718 Spyder</option>
+                                        <option value="gt3-rs">GT3 RS</option>
+                                        <option value="carrera-4-gts">Carrera 4 GTS</option>
+                                        <option value="911-80's">911 80's</option>
+                                        <option value="550-spyder">550 Spyder</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="contacto__formulario__box">
+                                <textarea name="comentario" id="comentario" cols="30" rows="3" required></textarea>
+                                <label for="comentario">Mensaje</label>
+                            </div>
+                        </fieldset>
+                        <div class="contacto__boton">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="pie pie--lamborghini">
+            <div class="pie__socios">
+                <h2>Socios Oficiales</h2>
+                <div class="pie__socios__logo">
+                    <div class="box-socios box-socios--aston">
+                        <img src="images/viñetas/Nuevacarpeta/aston-martin.png" alt="" class="box-socios__aston">
+                        <a href="https://www.astonmartin.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/bugatti.png" alt="">
+                        <a href="https://www.bugatti.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/ferrari.png" alt="">
+                        <a href="https://www.ferrari.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/koenigsegg.png" alt="">
+                        <a href="https://www.koenigsegg.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/lamborghini.png" alt="">
+                        <a href="https://www.lamborghini.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/mclaren.png" alt="">
+                        <a href="https://www.mclaren.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/pagani.png" alt="">
+                        <a href="https://www.pagani.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/porsche.png" alt="">
+                        <a href="https://www.porsche.com/" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="linea-divisoria-footer"></div>
+            <p>© 1997-2021 - <span>La Familia.</span> Group - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+</body>
+</html>

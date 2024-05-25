@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="auto, autoshop, auto shop, sportcar, Aston Martin, Bugatti, Ferrari, Koenigsegg, Lamborghini, McLaren, Pagani, Porsche">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="shortcut icon" href="images/lafamilia.svg" type="image/x-icon">
+    <title>Ferrari - Productos | La Familia.</title>
+    <meta name="description" content="Conocé los modelos de la marca Ferrari que se encuentran a la venta, brindados exclusivamente por nuestro socio oficial. Podés encontrar superdeportivos modernos como también clásicos.">
+</head>
+<body>
+    <!-- Scroll Bar -->
+    <div id="progress-bar" style="background-color: #cc0000;"></div>
+    <div id="scroll-path"></div>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header__container">
+            <!-- Menú desplegable -->
+            <input type="checkbox" id="check">
+            <div class="header__container__barras-menu">
+                <label for="check"></label>
+                <div></div>
+            </div>
+            <div class="menu-desplegable" id="menu-desplegable">
+                <ul class="menu-desplegable__lista">
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item1"><a id="menu-link1" href="#historia">Historia</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item2"><a id="menu-link2" href="#modelos">Modelos</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item3">
+                        <a id="menu-link3" href="index.html#productos">Productos</a>
+                        <label for="check-sub">
+                                <img src="images/iconos/next-button.png">
+                        </label>
+                    </li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item4"><a id="menu-link4" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Submenú desplegable -->
+            <input type="checkbox" id="check-sub">
+            <div class="submenu-desplegable" id="">
+                <div class="submenu-desplegable__next-button">
+                    <label for="check-sub"><img src="images/iconos/close.png" alt=""></label>
+                </div>
+                <ul class="submenu-desplegable__lista">
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item1"><a href="aston-martin.html">Aston Martin</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item2"><a href="bugatti.html">Bugatti</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item3"><a href="ferrari.html">Ferrari</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item4"><a href="koenigsegg.html">Koenigsegg</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item5"><a href="lamborghini.html">Lamborghini</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item6"><a href="mclaren.html">McLaren</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item7"><a href="pagani.html">Pagani</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item8"><a href="porsche.html">Porsche</a></li>
+
+                </ul>
+            </div>
+            <!-- Menú de navegación -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--izq">
+                    <li class="navegacion__lista__item"><a href="#historia">Historia</a></li>
+                    <li class="navegacion__lista__item"><a href="#modelos">Modelos</a></li>
+                </ul>
+            </div>
+            <!-- Logo -->
+            <div class="header__container__logo-inicio">
+                <a href="index.html"></a>
+                <img id="index" src="images/logo2.png" alt="">
+            </div>
+            <!-- ---- -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--der">
+                    <li class="navegacion__lista__item navegacion__lista__item--productos" id="item-productos">
+                        <a href="index.html#productos">Productos</a>
+                        <img id='boton-productos' src="images/iconos/next-button.png" alt="">
+                        <ul class="productos-lista" id="lista-productos">
+                            <li class="productos-lista__item" id='producto1'><a href="aston-martin.html">Aston Martin</a></li>
+                            <li class="productos-lista__item" id='producto2'><a href="bugatti.html">Bugatti</a></li>
+                            <li class="productos-lista__item" id='producto3'><a href="ferrari.html">Ferrari</a></li>
+                            <li class="productos-lista__item" id='producto4'><a href="koenigsegg.html">Koenigsegg</a></li>
+                            <li class="productos-lista__item" id='producto5'><a href="lamborghini.html">Lamborghini</a></li>
+                            <li class="productos-lista__item" id='producto6'><a href="mclaren.html">McLaren</a></li>
+                            <li class="productos-lista__item" id='producto7'><a href="pagani.html">Pagani</a></li>
+                            <li class="productos-lista__item" id='producto8'><a href="porsche.html">Porsche</a></li>
+                        </ul>
+                    </li>
+                    <li class="navegacion__lista__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main id="main">
+        <!-- Video + Wave -->
+        <div class="video-container">
+            <div class="video-container__logo">
+                <img src="images/viñetas/ferrari-cavallino.jpg" alt="">
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #cc0000;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="video-container__video"> 
+                <video src="videos/ferrari.mp4" autoplay muted loop preload="auto"></video>
+            </div>
+            <h1>Ferrari</h1>
+        </div>
+        <div class="main-container" id='historia'>
+            <div class="main-container__logo">
+                <img src="images/viñetas/Nuevacarpeta/ferrari.png" alt="">
+            </div>
+            <section class="historia">
+                <h1 class="historia__title">Historia</h1>
+                <div class="historia__container">
+                    <h3 class="historia__container__ferrari"><b>1918-1919</b></h3><br>
+                    <h3 class="historia__container__ferrari"><b>Enzo Ferrari, el piloto</b></h3>
+                    <p>A los 20 años, y tras participar en la I Guerra Mundial, Enzo Ferrari encuentra trabajo como probador en una pequeña empresa automovilística de Turín. En 1919 se convierte en piloto: debuta en la carrera Parma-Poggio al volante de un CMN 15/20 de 2.3 litros y cuatro cilindros. El 23 de noviembre de ese mismo año compite en la Targa Fiorio, pero su coche sufre pérdidas en el tanque de combustible.</p><br>
+                    <div class="flecha" id="flecha-abajo" onclick="flechaAbajo()">
+                        <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                    </div>
+                    
+                    <div class="mostrar" style="display: none;" id="mostrar">
+                        <h3 class="historia__container__ferrari"><b>1920-1929</b></h3><br>
+                        <h3 class="historia__container__ferrari"><b>El nacimiento de un mito</b></h3>
+                        <p>Tras algunas accidentadas carreras al volante de un Isotta Fraschini 100/110 IM Corsa, Ferrari conduce un Alfa Romeo Tipo 40/60 de seis litros y cuatro cilindros con el que acaba segundo en la Targa Fiorio de 1920. Esto supone el inicio de una colaboración de 20 años con la marca, pilotando sus modelos, hasta que es nombrado director de la división de Carreras Alfa Corse, puesto que mantiene hasta septiembre de 1939.
+                        Anteriormente, en 1923, Enzo conoce a la condesa Baracca; ella le permite utilizar en sus coches el emblema que su hijo –el héroe de la I Guerra Mundial Francesco Baracca– llevaba en su avión. Este símbolo es el caballo rampante.
+                        En 1927 y 1928 gana las carreras en el Circuito de Módena, en un Alfa Romeo 6C-1500 SS. Con sede en esta ciudad, Ferrari funda la escudería que lleva su apellido el 16 de noviembre de 1929; esto supone el pistoletazo de salida de una actividad deportiva frenética, que conduce a la creación de un equipo oficial con vehículos Alfa Romeo.</p><br>
+
+                        <h3 class="historia__container__ferrari"><b>1930-1939</b></h3><br>
+                        <h3 class="historia__container__ferrari"><b>El primer coche propio</b></h3>
+                        <p>En 1932, Enzo deja de ser piloto debido al nacimiento de su hijo Alfredo, más conocido como Dino, y al ingente trabajo como director de la Scuderia. En su última prueba acaba segundo en el circuito The Province con un Alfa Romeo 8C-2300 MM. La colaboración con la marca no termina: en 1937 construye el 158 ‘Alfetta’, que comienza a dominar el panorama internacional de las carreras. Sin embargo, dos años mas tarde Enzo finaliza su cooperación con Alfa Romeo bajo la promesa de no crear vehículos de competición con el nombre de Ferrari durante cuatro años. 
+                        A partir de ese momento, batir a un Alfa con uno de sus coches se convierte en una obsesión. Ferrari abre Auto Avio Costruzioni en Módena, el cuartel general de la vieja escudería. La firma del "cavallino rampante" empieza a desarrollar un modelo de ocho cilindros y 1.500 cc llamado 815.</p><br>
+
+                        <h3 class="historia__container__ferrari"><b>1940-1949</b></h3><br>
+                        <h3 class="historia__container__ferrari"><b>Victorias tras la guerra</b></h3>
+                        <p>En la planta de Módena nacen dos versiones del 815 (montado sobre un chasis Fiat). Tras participar en 1940 en la Mille Miglia -uno de los pilotos era Alberto Ascari-, sin éxito, la II Guerra Mundial acaba, de momento, con el sueño de seguir ensamblando coches de carreras. A pesar de ello, en 1943 Ferrari empieza la construcción de un germen de fábrica en Maranello, en un terreno de su propiedad, donde se traslada la compañía.
+                        Tras la contienda, las instalaciones se rehacen y la empresa pasa a llamarse Ferrari. El primer vehículo, diseñado en 1945, tiene un motor V12 y 1.500 cc; aparece en 1947. Es el 125 S, que debuta en las manos de Franco Cortese y consigue victorias en la Mille Miglia de 1948 y en las 24 Horas de Le Mans de 1949.</p><br>
+
+                        <h3 class="historia__container__ferrari"><b>1950-1959</b></h3><br>
+                        <h3 class="historia__container__ferrari"><b>Un nuevo rumbo</b></h3>
+                        <p>En 1950 se inaugura una nueva categoría de competición, la Fórmula 1, en la que Ferrari participa con el piloto argentino José-Froilán González, quien obtiene la victoria en el GP de Gran Bretaña (Silverstone). La marca se proclama Campeona del Mundo en 1952 con Ascari al volante, triunfo que repite al año siguiente. 
+                        En 1956, cuando Juan Manuel Fangio logra otro título para la firma, fallece Dino, el hijo de Enzo, que había estado diseñando un nuevo motor V6 con 1.500 cc. El propulsor se presenta diez meses después de su muerte. Desde ese día, todas las mecánicas con 6 cilindros en "V" de Ferrari se llaman Dino en su honor. En el 57, la empresa cambia de nombre: Auto Construzioni Ferrari. En el 58, Mike Hawthorn consigue otro Campeonato de Marcas.</p><br>
+
+                        <h3 class="historia__container__ferrari"><b>1960-1969</b></h3><br>
+                        <h3 class="historia__container__ferrari"><b>Nuevo nombre</b></h3>
+                        <p>Piero Ferrari, hijo de Enzo, se une a la compañía para participar en el diseño del Dino 206, un coche de carreras destinado a clientes amantes de la velocidad. En 1969, con el fin de hacer frente a los retos de una creciente demanda, Ferrari vende el 50% de las participaciones de la empresa a Fiat y pasa a conocerse como Ferrari S.p.a. Eserzicio Fabbriche Automovili e Corse. En cuanto a la F1, Paul Hill en 1961 y John Surtees en el 64 se proclaman Campeones del Mundo, y también dan a Ferrari el título de Constructores en ambas temporadas.</p><br>
+
+                        <h3 class="historia__container__ferrari"><b>1970-1979</b></h3><br>
+                        <h3 class="historia__container__ferrari"><b>Cambio en los mandos</b></h3>
+                        <p>En 1970, Enzo Ferrari es relevado de su cargo en la Gestión Deportiva por su hijo Piero. Siete años más tarde, Carrozzeria Scaglietti di Modena, la empresa que diseña el aspecto exterior de los vehículos, se incorpora a la estructura de la compañía. Mucho antes, en 1971, Enzo decide construir el Circuito de Fiorano, que se inaugura en 1972.
+                        En Fórmula 1, Niki Lauda vence en 1975 y 1977, mientras que Jody Scheckter hace lo propio en 1979.</p><br>
+
+                        <h3 class="historia__container__ferrari"><b>1980-1989</b></h3><br>
+                        <h3 class="historia__container__ferrari"><b>La muerte de Enzo</b></h3>
+                        <p>Piero Ferrari se convierte en director ejecutivo de Gestión Deportiva. En 1982, la producción de coches de carreras se traslada a esa sección. En 1987 se presenta el F40, el último vehículo creado bajo la supervisión de Enzo, que muere un año más tarde.
+                        Es entonces cuando Fiat adquiere el 90% de las acciones de la compañía, mientras el 10% restante permanece en manos de la familia Ferrari. En ese momento, Piero es designado vicepresidente. En 1989 el nombre de la empresa vuelve a cambiar, esta vez a Ferrari S.p.A.
+                        En esta década ningún piloto Ferrari (Gilles Villeneuve, Michele Alboreto. Nigel Mansell...) consigue el título, aunque la marca sí se convierte en el mejor constructor en 1982 y 1983.</p><br>
+
+                        <h3 class="historia__container__ferrari"><b>1990-1999</b></h3><br>
+                        <h3 class="historia__container__ferrari"><b>La etapa Schumacher</b></h3>
+                        <p>Ya en 1991, Luca Cordero di Montezemolo, con experiencia como jefe de equipo durante la etapa victoriosa de Niki Lauda en la F1 (a finales de los 70), comienza su papel como presidente y director general de la marca.
+                        Él es quien relanza la "Gestione Sportiva" con los brillantes resultados que son leyenda en la categoría reina de los circuitos. En 1997 se inauguran el Centro de Diseño y el túnel de viento para vehículos de Fórmula 1. Están equipados con los sistemas más modernos de adquisición de datos, analógicos y digitales, y con un sofisticado dispositivo para medir la fuerza del viento, que se genera desde un ventilador de 2.000 vatios y más de cinco metros de diámetro. 
+                        También ese año, Michael Schumacher empieza a dar triunfos a la escudería (en 1999, gana el título de Constructores).</p><br>
+
+                        <h3 class="historia__container__ferrari"><b>2000-2009</b></h3><br>
+                        <h3 class="historia__container__ferrari"><b>Intratable en competición</b></h3>
+                        <p>En 2002 hay baile de acciones, pero la familia Ferrari mantiene su 10%. Ese mismo año la escuadra domina en la Fórmula 1, con 15 victorias en 17 carreras. A lo largo de la década consigue siete títulos y se presenta el Enzo, un coche de calle con tecnología de F1. 
+                        2004 es el ejercicio en el que más Ferraris se comercializan: 4.900. Y el 360 Modena se convierte en el Ferrari más vendido de la historia, aunque es reemplazado a finales de año por el F340. 2005 supone la expansión internacional y la consolidación de una marca cuya fama sigue creciendo gracias a la competición: entre 2000 y 2004, es la reina absoluta de la F1 con Michael Schumacher al volante.
+                        Tras dos años en blanco, Kimi Raikkönen vuelve a dar el triunfo final a Ferrari. Es el equipo más antiguo y laureado de la especialidad, que bajo la dirección de Enzo ganó 209 carreras y obtuvo 25 títulos mundiales.</p><br>
+
+                        <h3 class="historia__container__ferrari"><b>2010-Actualidad</b></h3><br>
+                        <h3 class="historia__container__ferrari"><b>Presente</b></h3>
+                        <p>Aparte de la llegada de Fernando Alonso al equipo de Fórmula 1, la gama de deportivos italiana está más renovada que nunca. El 458 Italia es el modelo más pequeño de la gama pero se trata de todo un deportivo de armas tomar. Además, la aparición del Ferrari FF ha supuesto el primer Ferrari de tracción integral de la historia.</p><br>
+
+                        
+                        <div class="flecha" id="flecha-arriba" onclick="flechaArriba()">
+                            <a href="#historia"></a>
+                            <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Modelos -->
+            <section id="modelos" class="modelos">
+                <h1 class="modelos__title modelos__title--ferrari">MODELOS</h1>
+                <div class="autos">
+                    <div class="autos__tipo">
+                        <h1>MODERNOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja1">
+                        <input type="checkbox" id="check-producto1">
+                        <div class="boton-next boton-next--ferrari">
+                            <label for="check-producto1"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/ferrari-cavallino.jpg" alt="">
+                            <img src="images/modelos/ferrari/ferrari-488-pista-nombre.jpg" alt="" style="height: 5%; margin: 10px auto">
+                            <div class="auto-divisor"></div>
+                            <p>El Ferrari 488 Pista está dotado del motor V8 más potente de la historia de la marca de Maranello y es el deportivo serie especial con el nivel más elevado de transferencia tecnológica procedente del mundo de la competición. De hecho, su nombre se eligió específicamente para dejar constancia de la inigualable historia de Ferrari en este ámbito. Desde el punto de vista técnico, el 488 Pista condensa toda la experiencia acumulada por el 488 Challenge y el 488 GTE en los circuitos internacionales.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #cc0000">></span> Motor:	V8 a 90º F154CB Biturbo de 3,9 litros</li>
+                                <li><span style="color: #cc0000">></span> Potencia: 680 a 730 HP (670 a 720 CV)</li>
+                                <li><span style="color: #cc0000">></span> Par motor: 760 a 770 N·m </li>
+                                <li><span style="color: #cc0000">></span> Transmisión: De doble embrage de 7 velocidades</li>
+                                <li><span style="color: #cc0000">></span> Velocidad máxima: 340 km/h (211 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--ferrari"><p>COMPRAR</p></a>
+                                <a class="button button--ferrari" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/ferrari/488-pista.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja2">
+                        <input type="checkbox" id="check-producto2">
+                        <div class="boton-next boton-next--ferrari">
+                            <label for="check-producto2"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/ferrari/sf90-stradale.webp" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/ferrari-cavallino.jpg" alt="">
+                            <img src="images/modelos/ferrari/ferrari-sf90-stradale-logo.png" alt="" style="height: 4%; margin: 10px;">
+                            <div class="auto-divisor"></div>
+                            <p>La referencia al 90 aniversario de la creación de la Scuderia Ferrari subraya el fuerte vínculo que siempre ha existido entre circuito y carretera en todos los Ferrari. Además de toda una brillante apuesta por las tecnologías más avanzadas desarrolladas en Maranello, el SF90 Stradale  es también la demostración perfecta de cómo Ferrari traslada inmediatamente a todos sus coches el conocimiento y las habilidades que adquiere en la competición.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #cc0000">></span> Motor:	V8 a 90º Biturbo; y 3 motores eléctricos </li>
+                                <li><span style="color: #cc0000">></span> Potencia: 986 HP (1000 CV)</li>
+                                <li><span style="color: #cc0000">></span> Par motor: 800 N·m</li>
+                                <li><span style="color: #cc0000">></span> Transmisión: Semi-autmática de 8 velocidades</li>
+                                <li><span style="color: #cc0000">></span> Velocidad máxima: 340 km/h (211 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--ferrari"><p>COMPRAR</p></a>
+                                <a class="button button--ferrari" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja3">
+                        <input type="checkbox" id="check-producto3">
+                        <div class="boton-next boton-next--ferrari">
+                            <label for="check-producto3"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/ferrari-cavallino.jpg" alt="">
+                            <img src="images/modelos/ferrari/ferrari-f8-tributo-nombre.jpg" alt="" style="height: 3%; margin: 10px;">
+                            <div class="auto-divisor"></div>
+                            <p>El Ferrari F8 Tributo es la nueva berlinetta biplaza con motor central-trasero, máximo exponente de este tipo de vehículo de la casa del Cavallino Rampante.  Se trata de un coche con características únicas y, como su nombre indica, que homenajea al motor V8 Ferrari más potente de la historia.  </p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #cc0000">></span> Motor:	V8 a 90º F154CD Biturbo</li>
+                                <li><span style="color: #cc0000">></span> Potencia: 730 HP (720 CV CV)</li>
+                                <li><span style="color: #cc0000">></span> Par motor: 770 N·m</li>
+                                <li><span style="color: #cc0000">></span> Transmisión: Semi-autmática de 8 velocidadess</li>
+                                <li><span style="color: #cc0000">></span> Velocidad máxima: 340 km/h (211 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--ferrari"><p>COMPRAR</p></a>
+                                <a class="button button--ferrari" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/ferrari/f8-tributo.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja4">
+                        <input type="checkbox" id="check-producto4">
+                        <div class="boton-next boton-next--ferrari">
+                            <label for="check-producto4"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/ferrari/laferrari.webp" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/ferrari-cavallino.jpg" alt="">
+                            <img src="images/modelos/ferrari/ferrari-laferrari-nombre.jpg" alt="" style="height: 11%;">
+                            <div class="auto-divisor"></div>
+                            <p>El LaFerrari es el primer coche con tecnología híbrida en la historia de Maranello. El motor V12 de 6262cc ofrece 800 CV mientras que el motor eléctrico añade 120 KW (163 CV) para sumár más de 960 CV. Gracias al enorme salto tecnológico que aporta el sistema HY-KERS, el LaFerrari es el vehículo de mayor rendimiento y eficiencia jamás construido en la historia de Ferrari. </p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #cc0000">></span> Motor:	V12 de 6,3 litros y motor eléctrico</li>
+                                <li><span style="color: #cc0000">></span> Potencia: 950 HP (963 CV)</li>
+                                <li><span style="color: #cc0000">></span> Par motor: 900 N·m</li>
+                                <li><span style="color: #cc0000">></span> Transmisión: Semi-autmática de 7 velocidades</li>
+                                <li><span style="color: #cc0000">></span> Velocidad máxima: 350 km/h (217 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--ferrari"><p>COMPRAR</p></a>
+                                <a class="button button--ferrari" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="autos  autos--clasicos">
+                    <div class="autos--clasicos__tipo">
+                        <h1>CLÁSICOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja5">
+                        <input type="checkbox" id="check-producto5">
+                        <div class="boton-next boton-next--ferrari">
+                            <label for="check-producto5"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/ferrari-classic.png" alt="" style="height: 12%;">
+                            <h2>Ferrari 250 GTO</h2>
+                            <div class="auto-divisor"></div>
+                            <p>El 250 GTO fue la cima del desarrollo de la serie 250 GT en su formato de competición, al mismo tiempo que seguía siendo un coche utilizable en la calle. Hizo su primera aparición pública en la conferencia de prensa anual de pretemporada que se celebró en enero de 1962, donde fue el único modelo expuesto que tenía motor delantero, pues el resto de monoplazas y vehículos de competición tenían una configuración de motor central.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #cc0000">></span> Motor:	V12 a 60° atmosférico de 3 litros</li>
+                                <li><span style="color: #cc0000">></span> Potencia: 296 HP (300 CV)</li>
+                                <li><span style="color: #cc0000">></span> Par motor: 294 N·m</li>
+                                <li><span style="color: #cc0000">></span> Transmisión: Manual de 5 velocidades/li>
+                                <li><span style="color: #cc0000">></span> Velocidad máxima: 280 km/h (174 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--ferrari"><p>COMPRAR</p></a>
+                                <a class="button button--ferrari" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/ferrari/250-gto.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja6">
+                        <input type="checkbox" id="check-producto6">
+                        <div class="boton-next boton-next--ferrari">
+                            <label for="check-producto6"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/ferrari/f40.webp" alt="">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/ferrari-classic.png" alt="">
+                            <h2>Ferrari F40</h2>
+                            <div class="auto-divisor"></div>
+                            <p>El F40 se construyó para celebrar el 40º aniversario de Ferrari. Esta rapidísima berlinetta, diseñada por Pininfarina, estaba hecha principalmente de composites. Su sofisticado motor turbo de altas prestaciones, combinado con un excepcional chasis, le proporcionaban unas cualidades dinámicas cercanas a las de un coche de competición.</h3>
+                            <ul>
+                                <li><span style="color: #cc0000">></span> Motor:	V8 a 90º Biturbo de 2,9 litros</li>
+                                <li><span style="color: #cc0000">></span> Potencia: 471 HP (478 CV)</li>
+                                <li><span style="color: #cc0000">></span> Par motor: 577 N·m</li>
+                                <li><span style="color: #cc0000">></span> Transmisión: Manual de 5 velocidades/li>
+                                <li><span style="color: #cc0000">></span> Velocidad máxima: 324 km/h (201 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--ferrari"><p>COMPRAR</p></a>
+                                <a class="button button--ferrari" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #cc0000;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer__logo-footer">
+            <a href="index.html"></a>
+            <img src="images/logo1.png" alt="">
+        </div>
+        <div class="linea-divisoria-footer" id="contacto"></div>
+        <div class="footer-container">
+            <div class="footer-container__info">
+                <h2>Información Adicional</h2>
+                <ul>
+                    <img src="images/iconos/ubicacion.png" alt="">
+                    <li>724 East Kensington Road</li>
+                    <li>Los Angeles, California</li>
+                    <li>CA 90026</li>
+                    <li>EE.UU.</li>
+                </ul>
+                <div>
+                    <img src="images/iconos/telefono.png" alt="">
+                    <p>+1 213 345 6745</p>
+                </div>
+                <div>
+                    <img src="images/iconos/correo-electronico.png" alt="">
+                    <p>contacto@lafamilia.com</p>
+                </div>
+
+            </div>
+            <div class="footer-container__social">
+                <h2>Social</h2>
+                <ul>
+                    <img src="images/iconos/twitter.png" alt="">
+                    <li>Siguenos en Twitter</li>
+                    <img src="images/iconos/facebook.png" alt="">
+                    <li>Encuentranos en Facebook</li>
+                    <img src="images/iconos/youtube.png" alt="">
+                    <li>Ve nuestros últimos videos</li>
+                    <img src="images/iconos/instagram.png" alt="">
+                    <li>Ve nuestra galería de fotos</li>
+                    <img src="images/iconos/spotify.png" alt="">
+                    <li>Sigue nuestras listas en Spotify</li>
+
+                </ul>
+            </div>
+            <div class="contacto">
+                <h2>Contáctenos</h2>
+                <div>
+                    <form>
+                        <fieldset class="contacto__formulario contacto__formulario--personal">
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="nombre" id="box-nombre" required><br>
+                                <label for="name">Nombre</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="apellido" id="box-apellido" required><br>
+                                <label for="apellido">Apellido</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="tel" name="telefono" id="box-tel" required><br>
+                                <label for="telefono">Teléfono</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="email" name="email" id="box-email" required><br>
+                                <label for="email">Email</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="contacto__formulario contacto__formulario--asunto">
+                            <div class="contacto__formulario__select">
+                                <label for="producto">Producto por el que quiere consultar: </label>
+                                <select name="producto" id="producto" required>
+                                    <optgroup label="ASTON MARTIN">
+                                        <option value="db11">DB11</option>
+                                        <option value="vulcan">Vulcan</option>
+                                        <option value="dbx">DBX</option>
+                                        <option value="dbs">DBS</option>
+                                        <option value="vantage">V8 Vantage '77</option>
+                                        <option value="vantage">DB4 GT Zagato</option>
+                                    </optgroup>
+                                    <optgroup label="BUGATTI">
+                                        <option value="divo">Divo</option>
+                                        <option value="chiron">Chiron</option>
+                                        <option value="centodieci">Centodieci</option>
+                                        <option value="la-voiture-noire">La Voiture Noire</option>
+                                        <option value="type57">Type 57 SC Atlantic</option>
+                                        <option value="eb110">EB110</option>
+                                    </optgroup>
+                                    <optgroup label="FERRARI">
+                                        <option value="488-pista">488 Pista</option>
+                                        <option value="sf90-stradale">SF90 Stradale</option>
+                                        <option value="f8-tributo">F8 Tributo</option>
+                                        <option value="laferrari">LaFerrari</option>
+                                        <option value="250-gto">250 GTO</option>
+                                        <option value="f40">F40</option>
+                                    </optgroup>
+                                    <optgroup label="KOENIGSEGG">
+                                        <option value="regera">Regera</option>
+                                        <option value="jesko">Jesko</option>
+                                        <option value="agera-r">Agera R</option>
+                                        <option value="one">One:1</option>
+                                    </optgroup>
+                                    <optgroup label="LAMBORGHINI">
+                                        <option value="aventador-svj">Aventador SVJ</option>
+                                        <option value="sesto-elemento">Sesto Elemento</option>
+                                        <option value="huracan-evo">Huracan EVO</option>
+                                        <option value="veneno">Veneno</option>
+                                        <option value="countach">Countach LP 400</option>
+                                        <option value="miura">Miura P400 S</option>
+                                    </optgroup>
+                                    <optgroup label="MCLAREN">
+                                        <option value="p1-gtr">P1 GTR</option>
+                                        <option value="senna">Senna</option>
+                                        <option value="720s-spider">702s Spider</option>
+                                        <option value="artura">Artura</option>
+                                        <option value="f1">F1</option>
+                                        <option value="m6gt">M6GT</option>
+                                    </optgroup>
+                                    <optgroup label="PAGANI">
+                                        <option value="zonda-r">Zonda R</option>
+                                        <option value="zonda-f">Zonda F</option>
+                                        <option value="huayra">Huayra</option>
+                                        <option value="huayra-roadster">Huayra Roadster</option>
+                                    </optgroup>
+                                    <optgroup label="PORSCHE">
+                                        <option value="911-turbo-s">911 Turbo S</option>
+                                        <option value="718-spyder">718 Spyder</option>
+                                        <option value="gt3-rs">GT3 RS</option>
+                                        <option value="carrera-4-gts">Carrera 4 GTS</option>
+                                        <option value="911-80's">911 80's</option>
+                                        <option value="550-spyder">550 Spyder</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="contacto__formulario__box">
+                                <textarea name="comentario" id="comentario" cols="30" rows="3" required></textarea>
+                                <label for="comentario">Mensaje</label>
+                            </div>
+                        </fieldset>
+                        <div class="contacto__boton">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="pie pie--ferrari">
+            <div class="pie__socios">
+                <h2>Socios Oficiales</h2>
+                <div class="pie__socios__logo">
+                    <div class="box-socios box-socios--aston">
+                        <img src="images/viñetas/Nuevacarpeta/aston-martin.png" alt="" class="box-socios__aston">
+                        <a href="https://www.astonmartin.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/bugatti.png" alt="">
+                        <a href="https://www.bugatti.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/ferrari.png" alt="">
+                        <a href="https://www.ferrari.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/koenigsegg.png" alt="">
+                        <a href="https://www.koenigsegg.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/lamborghini.png" alt="">
+                        <a href="https://www.lamborghini.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/mclaren.png" alt="">
+                        <a href="https://www.mclaren.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/pagani.png" alt="">
+                        <a href="https://www.pagani.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/porsche.png" alt="">
+                        <a href="https://www.porsche.com/" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="linea-divisoria-footer"></div>
+            <p>© 1997-2021 - <span>La Familia.</span> Group - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+</body>
+</html>

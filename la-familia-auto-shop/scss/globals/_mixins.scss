@@ -1,0 +1,9 @@
+@mixin title {
+    font-weight: 600;
+    padding: 20px 0;
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    cursor: default;
+}

@@ -1,0 +1,331 @@
+.footer {
+    padding-top: 100px;
+    background-color: $color-uno;
+    color: $color-dos;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &__logo-footer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            position: absolute;
+            width: 150px;
+            height: 80%;
+            border-radius: 100px;
+            color: $color-dos;
+        }
+    }
+}
+
+.linea-divisoria-footer {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: 1px;
+    background-color: $color-dos;
+}
+
+.footer-container {
+    width: 90%;
+    position: relative;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+    
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        
+        h2 {
+            padding-bottom: 20px;
+            text-decoration: underline;
+            margin: 0 0 8px;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            padding: 10px 0;
+        }
+        
+        p {
+            margin: 0;
+            padding: 10px 0;
+        }
+        
+        img {
+            filter: invert(1);
+            height: 30px;
+        }
+    }
+    
+    &__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        h2{
+            padding-bottom: 20px;
+            text-decoration: underline;
+            margin: 0 0 8px;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            padding: 10px 0;
+        }
+
+        img {
+            border-radius: 100px;
+            cursor: pointer;
+            height: 30px;
+            filter: invert(1);
+            transition: filter .2s ease;
+
+            &:hover {
+                filter: invert(.5);
+            }
+        }
+    }
+}
+
+
+.contacto {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    background-color: $color-dos;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    color: $color-uno;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.842);
+    padding: 0 20px 10px 20px;
+
+    h2 {
+        padding-bottom: 20px;
+        text-decoration: none;
+        margin: 0 0 8px;
+        font-weight: 600;
+    }
+
+    &__formulario {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        border: none;
+
+        input, textarea  {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #2116165c;
+            width: 100%;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            font-size: 18px;
+            resize: none;
+        }
+
+        textarea {
+
+            &::-webkit-scrollbar {
+                width: 7px;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $color-uno;
+                border-radius: 10px;
+            }
+        }
+
+        &__box {
+            position: relative;
+            margin: 10px 0;
+
+            input, textarea {
+
+                &:focus {
+                    outline: none;
+                    color: $color-uno;
+                }
+
+                &:focus, &:valid {
+
+                    ~label{
+                        position: absolute;
+                        top: -14px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            label {
+                position: absolute;
+                left: 5px;
+                top: 10px;
+                transition: all .5s ease;
+                pointer-events: none;
+            }
+        }
+
+        &__select {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            text-align: left;
+
+            label {
+                position: relative;
+                left: 0;
+            }
+            
+            select {
+                padding: 2px;
+                position: relative;
+                border: 1px solid #2116165c;
+                background-color: transparent;
+                border-radius: 10px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    &__boton {
+        display: flex;
+        justify-content: center;
+
+        input {
+            padding: 5px 20px;
+            font-family: 'Fugaz One', sans-serif;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 10px;
+            background-color: $color-uno;
+            color: $color-dos;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.pie {
+    border-top: 2px solid $color-dos;
+    width: 100%;
+    background-color: $color-tres;
+    
+    &__socios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        h2 {
+            font-weight: 600;
+            margin: 20px 0 0 0;
+            text-decoration: underline;
+        }
+
+        &__logo {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 10px 0 30px 0;
+
+            
+        }
+    }
+
+    p {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+
+        span{
+            font-family: 'Fugaz One', sans-serif;
+        }
+    }
+    
+}
+
+
+
+.box-socios {
+    position: relative;
+    margin: 20px;
+    
+    a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    img {
+        height: 50px;
+        filter: sepia(.6);
+        transition: filter .3s ease;
+    }
+
+    &--aston img {
+        height: 40px;
+    }
+    
+    &:hover img {
+        filter: sepia(0);
+    }    
+}
+
+.box-socios__aston {
+    width: 130px;
+    height: auto;
+}
+
+@media screen and (min-width:600px){
+    
+    .footer-container {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    
+    .contacto{
+        width: 500px;
+    }
+}

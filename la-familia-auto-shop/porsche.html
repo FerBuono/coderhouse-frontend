@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="auto, autoshop, auto shop, sportcar, Aston Martin, Bugatti, Ferrari, Koenigsegg, Lamborghini, McLaren, Pagani, Porsche">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="shortcut icon" href="images/lafamilia.svg" type="image/x-icon">
+    <title>Porsche - Productos | La Familia.</title>
+    <meta name="description" content="Conocé los modelos de la marca Porsche que se encuentran a la venta, brindados exclusivamente por nuestro socio oficial. Podés encontrar superdeportivos modernos como también clásicos.">
+</head>
+<body>
+    <!-- Scroll Bar -->
+    <div id="progress-bar" style="background-color: #03ac10;"></div>
+    <div id="scroll-path"></div>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header__container">
+            <!-- Menú desplegable -->
+            <input type="checkbox" id="check">
+            <div class="header__container__barras-menu">
+                <label for="check"></label>
+                <div></div>
+            </div>
+            <div class="menu-desplegable" id="menu-desplegable">
+                <ul class="menu-desplegable__lista">
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item1"><a id="menu-link1" href="#historia">Historia</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item2"><a id="menu-link2" href="#modelos">Modelos</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item3">
+                        <a id="menu-link3" href="index.html#productos">Productos</a>
+                        <label for="check-sub">
+                                <img src="images/iconos/next-button.png">
+                        </label>
+                    </li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item4"><a id="menu-link4" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Submenú desplegable -->
+            <input type="checkbox" id="check-sub">
+            <div class="submenu-desplegable" id="">
+                <div class="submenu-desplegable__next-button">
+                    <label for="check-sub"><img src="images/iconos/close.png" alt=""></label>
+                </div>
+                <ul class="submenu-desplegable__lista">
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item1"><a href="aston-martin.html">Aston Martin</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item2"><a href="bugatti.html">Bugatti</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item3"><a href="ferrari.html">Ferrari</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item4"><a href="koenigsegg.html">Koenigsegg</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item5"><a href="lamborghini.html">Lamborghini</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item6"><a href="mclaren.html">McLaren</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item7"><a href="pagani.html">Pagani</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item8"><a href="porsche.html">Porsche</a></li>
+
+                </ul>
+            </div>
+            <!-- Menú de navegación -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--izq">
+                    <li class="navegacion__lista__item"><a href="#historia">Historia</a></li>
+                    <li class="navegacion__lista__item"><a href="#modelos">Modelos</a></li>
+                </ul>
+            </div>
+            <!-- Logo -->
+            <div class="header__container__logo-inicio">
+                <a href="index.html"></a>
+                <img id="index" src="images/logo2.png" alt="">
+            </div>
+            <!-- ---- -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--der">
+                    <li class="navegacion__lista__item navegacion__lista__item--productos" id="item-productos">
+                        <a href="index.html#productos">Productos</a>
+                        <img id='boton-productos' src="images/iconos/next-button.png" alt="">
+                        <ul class="productos-lista" id="lista-productos">
+                            <li class="productos-lista__item" id='producto1'><a href="aston-martin.html">Aston Martin</a></li>
+                            <li class="productos-lista__item" id='producto2'><a href="bugatti.html">Bugatti</a></li>
+                            <li class="productos-lista__item" id='producto3'><a href="ferrari.html">Ferrari</a></li>
+                            <li class="productos-lista__item" id='producto4'><a href="koenigsegg.html">Koenigsegg</a></li>
+                            <li class="productos-lista__item" id='producto5'><a href="lamborghini.html">Lamborghini</a></li>
+                            <li class="productos-lista__item" id='producto6'><a href="mclaren.html">McLaren</a></li>
+                            <li class="productos-lista__item" id='producto7'><a href="pagani.html">Pagani</a></li>
+                            <li class="productos-lista__item" id='producto8'><a href="porsche.html">Porsche</a></li>
+                        </ul>
+                    </li>
+                    <li class="navegacion__lista__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main id="main">
+        <!-- Video + Wave -->
+        <div class="video-container">
+            <div class="video-container__logo">
+                <img src="images/viñetas/porsche-classic.png" alt="">
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #03ac13;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="video-container__video"> 
+                <video src="videos/porsche.mp4" autoplay muted loop preload="auto"></video>
+            </div>
+            <h1>Porsche</h1>
+        </div>
+        <!-- Historia -->
+        <div class="main-container" id='historia'>
+            <div class="main-container__logo">
+                <img src="images/viñetas/Nuevacarpeta/porsche.png" alt="">
+            </div>
+            <section class="historia">
+                <h1 class="historia__title">Historia</h1>
+                <div class="historia__container">
+                    <h3 class="historia__container__porsche"><b>1948-1950</b></h3><br>
+                    <h3 class="historia__container__porsche"><b>Marcada por la Guerra</b></h3>
+                    <p>Aunque la historia del fabricante alemán comienza oficialmente con el desarrollo del modelo 356 (1948), lo cierto es que, años antes, Ferdinand Porsche ya había diseñado varios proyectos para otras marcas a través de su propia oficina de ingeniería. De hecho, suyo es el Volkswagen Beetle, vehículo del que adquirieron sus rasgos los primeros Porsche. Es en la localidad austríaca de Gmünd donde, en el verano de 1947, Ferry Porsche comienza a construir el roadster biplaza con motor trasero y chasis de aluminio basado en el proyecto Volkswagen que había iniciado su padre. En febrero del año siguiente, el 356 “Nº 1” está listo para rodar y compite en Innsbruck -obtiene el mejor resultado de su categoría-, como una puesta a punto de cara a su posterior producción. Le sigue el prototipo 356/2, también creado sobre la base de un chasis de aluminio diseñado por Erwin Komenda: en 1950 ya hay fabricadas 52 unidades en versión coupé y cabrio. Este crecimiento hace que, un año antes, la producción vuelva a Stuttgart, donde en la década de los treinta Ferdinand había puesto en marcha su oficina de ingeniería.</p><br>
+                    <div class="flecha" id="flecha-abajo" onclick="flechaAbajo()">
+                        <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                    </div>
+                    
+                    <div class="mostrar" style="display: none;" id="mostrar">
+                        <h3 class="historia__container__porsche"><b>1951-1960</b></h3><br>
+                        <h3 class="historia__container__porsche"><b>La herencia de Volkswagen</b></h3>
+                        <p>Una vez que la producción se traslada a Alemania, comienza a utilizarse acero como materia prima para la construcción del chasis del 356. La producción es modesta (unas 100 unidades al año), aunque una década más tarde aumenta hasta las 25.000 unidades. A mediados de los '50, Ferry Porsche considera necesario fabricar un nuevo modelo que esté en consonancia con los aires de modernidad que ya empiezan a respirarse en la marca. La idea es desvincularse de la herencia de Volkswagen en lo que se refiere a motores y componentes: la única herencia que debe conservar el sustituto del 356 es la colocación del propulsor y la refrigeración por aire. El objetivo último de Porsche es crear un modelo más exclusivo y potente. Mientras, las sucesivas generaciones del 356, A, B y C, aumentan por miles el número de unidades producidas y, con ellas, el éxito de una marca que todavía no se ha convertido en una fábrica de sueños.</p><br>
+
+                        <h3 class="historia__container__porsche"><b>1961-1970</b></h3><br>
+                        <h3 class="historia__container__porsche"><b>El nacimiento de un mito: llega el 911</b></h3>
+                        <p>Tras estudiar diferentes soluciones para diseñar el sustituto del 356, al final se impone la propuesta del hijo mayor de Ferry, Ferdinand Alexander. Este planteamiento hace que el padre deseche su idea de un deportivo de cuatro plazas en favor de una estética más agresiva, que aún se mantiene impertérrita hoy en la segunda generación de la serie 997. Nace así el proyecto conocido como "901": un coupé 2+2 plazas con un motor bóxer de 6 cilindros desarrollado por Ferdinand Piëch, el sobrino de Ferry Porsche. El primer prototipo puede verse en el Salón de Fráncfort en 1963, aunque la presentación del modelo de producción no tiene lugar hasta octubre de 1964. La razón por la que cambia su denominación de "901" a "911" se debe a que Peugeot reclama su derecho sobre las tres cifras con el cero en medio para sus modelos. Al 911 coupé, que comparte sus inicios con la última serie del 356, le siguen a mitad de década variantes de nuevo cuño como el Targa, a medio camino entre el coupé y el cabrio.</p><br>
+
+                        <h3 class="historia__container__porsche"><b>1971-1980</b></h3><br>
+                        <h3 class="historia__container__porsche"><b>La era de la potencia</b></h3>
+                        <p>Poco a poco, Porsche incrementa su capacidad de investigación. Este hecho motiva que amplíe sus instalaciones y traslade ciertas operaciones al que actualmente es el Centro de Desarrollo de Weissach. La marca de Stuttgart comienza a desarrollar variantes cada vez más potentes. Entre 1972 y 1973 produce el 911 Carrera RS 2.7, una versión que puede ser homologada fácilmente para la competición. Un año más tarde nacen los 911 Turbo, 912, 924 y 928; los dos últimos destacan por tener un concepto diferente al del 911, ya que están propulsados, respectivamente, por un motor 4 cilindros en línea y un V8 (ambos colocados en posición delantera). Por otro lado, el 928 logra además convertirse en el primer modelo deportivo elegido “Coche del Año en Europa” (1978).</p><br>
+
+                        <h3 class="historia__container__porsche"><b>1981-1990</b></h3><br>
+                        <h3 class="historia__container__porsche"><b>Resurge como el Ave Fénix</b></h3>
+                        <p>A comienzos de los '80 se piensa que la era del 911 ha finalizado, sobre todo a raíz de la llegada del 928. Sin embargo, el emblemático modelo resurge con más fuerza que nunca. A mediados de la década se presenta el poderoso 959, que, gracias a su motor bóxer de 450 CV, sobrepasa los 300 km/h; hace su debut en el París-Dakar de 1985. En total, se fabrican 292 unidades del “Über-Porsche” (Súper Porsche). Coincidiendo con el 25º Aniversario del lanzamiento del 911, en 1988 se presenta el primer modelo equipado con tracción total, el Carrera 4. Dos años más tarde se ofrece en las versiones Coupé, Targa y Cabrio. Además, en estas mismas fechas nace la tercera generación del 911 Turbo, correspondiente a la Serie 964.</p><br>
+
+                        <h3 class="historia__container__porsche"><b>1991-2000</b></h3><br>
+                        <h3 class="historia__container__porsche"><b>Nuevos aires</b></h3>
+                        <p>El decenio no augura unos resultados demasiado halagüeños. Sin embargo, la presentación del Porsche 911 993 en el Salón de Fráncfort (1993) inicia una etapa muy exitosa para el fabricante alemán. Con este modelo, del que posteriormente surgen otras variantes -además del Carrera RS (300 CV) y del GT2 (430 CV), entre otros-, vuelven a utilizarse materiales más ligeros y resistentes para la construcción del chasis, como el aluminio. Asimismo, surgen nuevas soluciones, como el cambio automático Tiptronic S, que ha perdurado prácticamente hasta nuestros días. En esta década nace además el Boxster, un modelo que se construye en conjunto con el 911 996 para aprovechar la mayor cantidad de recursos (véase los faros con forma de lágrima). Ya en 1997, se presenta definitivamente el 911 996; es considerado todo un avance en la ingeniería de la automoción aplicada a los coches deportivos: propulsor bóxer de 6 cilindros, cuatro válvulas y, por vez primera, refrigeración por agua. Durante estos años inicia su gestión el actual presidente, Wendelin Wiedeking.</p><br>
+
+                        <h3 class="historia__container__porsche"><b>2001-Actualidad</b></h3><br>
+                        <h3 class="historia__container__porsche"><b>David se come a Goliat</b></h3>
+                        <p>La llegada del Cayenne en 2002, el primer “SUV deportivo” de Porsche, trae consigo la inauguración de una nueva planta en Leipzig y, una vez más, las críticas de los defensores de la pureza de la marca alemana. Sin embargo, las cifras revelan lo contrario: el todocamino, construido en cooperación con Volkswagen, se convierte en un superventas y sube los beneficios de la marca como la espuma. La segunda generación, presentada a finales de 2006, incorpora por primera vez el sistema PDCC (Porsche Dynamic Chassis Control). Otras novedades de la primera década del Siglo XXI son el Cayman, un modelo a medio camino entre el Boxster y el 911; el más reciente Panamera, el primer Gran Turismo de cuatro puertas del fabricante germano; el primer modelo diésel, el Cayenne, fruto de las sinergias de grupo; y el Macan hermano pequeño del Cayenne. Además, Porsche cuenta ya con variantes híbridas del Cayenne y el Panamera.  Actualmente, Porsche ostenta más del 50% del accionariado del Grupo Volkswagen, lo que la convierte en una de las empresas más fuertes a nivel mundial. Además, está previsto que la firma continúe su escalada hasta alcanzar el 75% del accionariado.</p><br>
+
+                        <div class="flecha" id="flecha-arriba" onclick="flechaArriba()">
+                            <a href="#historia"></a>
+                            <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="modelos" class="modelos">
+                <h1 class="modelos__title modelos__title--porsche">MODELOS</h1>
+                <div class="autos">
+                    <div class="autos__tipo">
+                        <h1>MODERNOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja1">
+                        <input type="checkbox" id="check-producto1">
+                        <div class="boton-next boton-next--porsche">
+                            <label for="check-producto1"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/porsche.png" alt="">
+                            <img src="images/modelos/porsche/porsche-911-carrera-s-nombre.jpg" alt="" style="height: 5%; margin: 10px 0;">
+                            <div class="auto-divisor"></div>
+                            <p>un superdeportivo de 650 CV de potencia, con un tren de rodaje de altísimas prestaciones, un diseño aún más agresivo que el de los 911 que conocemos hasta la fecha - lo más "gordo" que conocíamos era un 911 Carrera 4S de 450 CV - y un estatus de verdadero icono. Todos los Porsche 911 llevan motores turboalimentados hasta la fecha, pero solo uno merece llevar la palabra "Turbo S" con mayúsculas en su parte trasera.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #03ac13">></span> Motor: Boxer 6 Turbo de 3,7 litros</li>
+                                <li><span style="color: #03ac13">></span> Potencia: 641 HP (650 CV)</li>
+                                <li><span style="color: #03ac13">></span> Par motor: 800 N·m</li>
+                                <li><span style="color: #03ac13">></span> Transmisión: Automática de 8 marchas</li>
+                                <li><span style="color: #03ac13">></span> Velocidad máxima: 330 km/h (205 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--porsche"><p>COMPRAR</p></a>
+                                <a class="button button--porsche" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/porsche/911-turbo-s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja2">
+                        <input type="checkbox" id="check-producto2">
+                        <div class="boton-next boton-next--porsche">
+                            <label for="check-producto2"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/porsche/718-spyder.jpg" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/porsche.png" alt="">
+                            <img src="images/modelos/porsche/porsche-718-spyder-nombre.jpg" alt="" style="height: 5%; margin: 10px 0; filter: contrast(1.2);">
+                            <div class="auto-divisor"></div>
+                            <p>El Porsche 718 Spyder es uno de esos coches realmente deseables, y que todo petrolhead debería experimentar alguna vez en su vida. No solo por exponernos más a los elementos y a la conducción pura que un simple Porsche 718 Boxster, si no por la melodía y aura mítica de su motor 4.0 bóxer atmosférico - no en balde, es el hermano mellizo del Porsche 718 Cayman GT4.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #03ac13">></span> Motor:	Boxer 6 de 4 litros</li>
+                                <li><span style="color: #03ac13">></span> Potencia: 414 HP (420 CV)</li>
+                                <li><span style="color: #03ac13">></span> Par motor: 420 N·m</li>
+                                <li><span style="color: #03ac13">></span> Transmisión: Manual de 6 velocidades</li>
+                                <li><span style="color: #03ac13">></span> Velocidad máxima: 301 km/h (187 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--porsche"><p>COMPRAR</p></a>
+                                <a class="button button--porsche" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja3">
+                        <input type="checkbox" id="check-producto3">
+                        <div class="boton-next boton-next--porsche">
+                            <label for="check-producto3"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/porsche.png" alt="">
+                            <img src="images/modelos/porsche/porsche-gt3-rs-nombre.png" alt="" style="height: 3%; margin: 10px 0">
+                            <div class="auto-divisor"></div>
+                            <p>Porsche le saca punta una vez más a la actual generación del Porsche 911 y nos presenta a un nuevo Porsche 911 GT3 RS, un modelo que junto al Porsche 911 GT2 RS representa el culmen prestacional del Porsche 911. El nuevo Porsche 911 GT3 RS pone sobre la mesa 20 caballos más que el modelo anterior para un total de 520 caballos, marcando así las distancias con un también renovado Porsche 911 GT3 que se había alzado ya hasta los 500 caballos.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #03ac13">></span> Motor: Boxer 6 de 4 litros</li>
+                                <li><span style="color: #03ac13">></span> Potencia: 513 HP (520 CV)</li>
+                                <li><span style="color: #03ac13">></span> Par motor: 470 N·m</li>
+                                <li><span style="color: #03ac13">></span> Transmisión: Automática de 7 marchas</li>
+                                <li><span style="color: #03ac13">></span> Velocidad máxima: 312 km/h (194 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--porsche"><p>COMPRAR</p></a>
+                                <a class="button button--porsche" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/porsche/gt3-rs.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja4">
+                        <input type="checkbox" id="check-producto4">
+                        <div class="boton-next boton-next--porsche">
+                            <label for="check-producto4"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/porsche/carrera4-gts.jpg" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/porsche.png" alt="">
+                            <img src="images/modelos/porsche/porsche-carrera4-gts-nombre.png" alt="" style="height: 3%; margin: 10px 0">
+                            <div class="auto-divisor"></div>
+                            <p>El Porsche 911 Carrera 4 GTS en sus variantes Coupé y Cabriolet llega avalado por el motor de seis cilindros de 3.8 litros de los Carrera S con un nuevo sistema de admisión que permite extraer 408 CV a 7.300 rpm. El 4 de su nomenclatura hace referencia, obviamente, al sistema de tracción integral inteligentePorsche Traction Management.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #03ac13">></span> Motor: Boxer 6 de 3.8 litros</li>
+                                <li><span style="color: #03ac13">></span> Potencia: 402 HP (408 CV)</li>
+                                <li><span style="color: #03ac13">></span> Par motor: 550 N·m</li>
+                                <li><span style="color: #03ac13">></span> Transmisión: Automática de 7 marcha</li>
+                                <li><span style="color: #03ac13">></span> Velocidad máxima: 310 km/h (193 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--porsche"><p>COMPRAR</p></a>
+                                <a class="button button--porsche" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="autos  autos--clasicos">
+                    <div class="autos--clasicos__tipo">
+                        <h1>CLÁSICOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja5">
+                        <input type="checkbox" id="check-producto5">
+                        <div class="boton-next boton-next--porsche">
+                            <label for="check-producto5"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/porsche-classic.png" alt="">
+                            <h2>Porsche 911 80's</h2>
+                            <div class="auto-divisor"></div>
+                            <p>El modelo original del Porsche 911 (a veces también llamado Classic 911), es el primer modelo de la larga saga del Porsche 911, uno de los emblemas más prestigiosos desarrollados por el fabricante alemán Porsche.Se desarrolló como un reemplazo mucho más potente, más grande y más cómodo para el Porsche 356. El nuevo automóvil hizo su debut público en el Internationale Automobil-Ausstellung de 1963,4​ mejor conocido como el Salón del Automóvil de Fráncfort.</p>
+                            <h3>Especificaciones.</h3>
+                            <ul>
+                                <li><span style="color: #03ac13">></span> Motor: Bóxer de 6 cilindros de 3.3 litros</li>
+                                <li><span style="color: #03ac13">></span> Potencia: 325 HP (330 CV)</li>
+                                <li><span style="color: #03ac13">></span> Par motor: 431 N·m</li>
+                                <li><span style="color: #03ac13">></span> Transmisión: Manual de 5 velocidades/li>
+                                <li><span style="color: #03ac13">></span> Velocidad máxima: 275 km/h (171 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--porsche"><p>COMPRAR</p></a>
+                                <a class="button button--porsche" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/porsche/911-80's.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja6">
+                        <input type="checkbox" id="check-producto6">
+                        <div class="boton-next boton-next--porsche">
+                            <label for="check-producto6"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/porsche/550-spyder.jpg" alt="" style="object-position: -60px;">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/porsche-classic.png" alt="">
+                            <h2>Porsche 550 Spyder</h2>
+                            <div class="auto-divisor"></div>
+                            <p>El Porsche 550 era un pequeño deportivo biplaza de tracción trasera y de extrema ligereza. No disponía de ningún tipo de techo, de ahí la denominación "Spyder". Por su buena aerodinámica, con una potencia de 110 CV a las 6200 rpm y 121 N·m de par motor máximo a las 5000 rpm, le permitían alcanzar los 220 km/h. </p>
+                            <h3>Especificaciones.</h3>
+                            <ul>
+                                <li><span style="color: #03ac13">></span> Motor:	Bóxer de 4 cilindros atmosférico</li>
+                                <li><span style="color: #03ac13">></span> Potencia: 108 HP (110 CV)</li>
+                                <li><span style="color: #03ac13">></span> Par motor: 121 N·m</li>
+                                <li><span style="color: #03ac13">></span> Transmisión: Manual de 4 velocidades/li>
+                                <li><span style="color: #03ac13">></span> Velocidad máxima: 220 km/h (137 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--porsche"><p>COMPRAR</p></a>
+                                <a class="button button--porsche" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #03ac13;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer__logo-footer">
+            <a href="index.html"></a>
+            <img src="images/logo1.png" alt="">
+        </div>
+        <div class="linea-divisoria-footer" id="contacto"></div>
+        <div class="footer-container">
+            <div class="footer-container__info">
+                <h2>Información Adicional</h2>
+                <ul>
+                    <img src="images/iconos/ubicacion.png" alt="">
+                    <li>724 East Kensington Road</li>
+                    <li>Los Angeles, California</li>
+                    <li>CA 90026</li>
+                    <li>EE.UU.</li>
+                </ul>
+                <div>
+                    <img src="images/iconos/telefono.png" alt="">
+                    <p>+1 213 345 6745</p>
+                </div>
+                <div>
+                    <img src="images/iconos/correo-electronico.png" alt="">
+                    <p>contacto@lafamilia.com</p>
+                </div>
+
+            </div>
+            <div class="footer-container__social">
+                <h2>Social</h2>
+                <ul>
+                    <img src="images/iconos/twitter.png" alt="">
+                    <li>Siguenos en Twitter</li>
+                    <img src="images/iconos/facebook.png" alt="">
+                    <li>Encuentranos en Facebook</li>
+                    <img src="images/iconos/youtube.png" alt="">
+                    <li>Ve nuestros últimos videos</li>
+                    <img src="images/iconos/instagram.png" alt="">
+                    <li>Ve nuestra galería de fotos</li>
+                    <img src="images/iconos/spotify.png" alt="">
+                    <li>Sigue nuestras listas en Spotify</li>
+
+                </ul>
+            </div>
+            <div class="contacto">
+                <h2>Contáctenos</h2>
+                <div>
+                    <form>
+                        <fieldset class="contacto__formulario contacto__formulario--personal">
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="nombre" id="box-nombre" required><br>
+                                <label for="name">Nombre</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="apellido" id="box-apellido" required><br>
+                                <label for="apellido">Apellido</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="tel" name="telefono" id="box-tel" required><br>
+                                <label for="telefono">Teléfono</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="email" name="email" id="box-email" required><br>
+                                <label for="email">Email</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="contacto__formulario contacto__formulario--asunto">
+                            <div class="contacto__formulario__select">
+                                <label for="producto">Producto por el que quiere consultar: </label>
+                                <select name="producto" id="producto" required>
+                                    <optgroup label="ASTON MARTIN">
+                                        <option value="db11">DB11</option>
+                                        <option value="vulcan">Vulcan</option>
+                                        <option value="dbx">DBX</option>
+                                        <option value="dbs">DBS</option>
+                                        <option value="vantage">V8 Vantage '77</option>
+                                        <option value="vantage">DB4 GT Zagato</option>
+                                    </optgroup>
+                                    <optgroup label="BUGATTI">
+                                        <option value="divo">Divo</option>
+                                        <option value="chiron">Chiron</option>
+                                        <option value="centodieci">Centodieci</option>
+                                        <option value="la-voiture-noire">La Voiture Noire</option>
+                                        <option value="type57">Type 57 SC Atlantic</option>
+                                        <option value="eb110">EB110</option>
+                                    </optgroup>
+                                    <optgroup label="FERRARI">
+                                        <option value="488-pista">488 Pista</option>
+                                        <option value="sf90-stradale">SF90 Stradale</option>
+                                        <option value="f8-tributo">F8 Tributo</option>
+                                        <option value="laferrari">LaFerrari</option>
+                                        <option value="250-gto">250 GTO</option>
+                                        <option value="f40">F40</option>
+                                    </optgroup>
+                                    <optgroup label="KOENIGSEGG">
+                                        <option value="regera">Regera</option>
+                                        <option value="jesko">Jesko</option>
+                                        <option value="agera-r">Agera R</option>
+                                        <option value="one">One:1</option>
+                                    </optgroup>
+                                    <optgroup label="LAMBORGHINI">
+                                        <option value="aventador-svj">Aventador SVJ</option>
+                                        <option value="sesto-elemento">Sesto Elemento</option>
+                                        <option value="huracan-evo">Huracan EVO</option>
+                                        <option value="veneno">Veneno</option>
+                                        <option value="countach">Countach LP 400</option>
+                                        <option value="miura">Miura P400 S</option>
+                                    </optgroup>
+                                    <optgroup label="MCLAREN">
+                                        <option value="p1-gtr">P1 GTR</option>
+                                        <option value="senna">Senna</option>
+                                        <option value="720s-spider">702s Spider</option>
+                                        <option value="artura">Artura</option>
+                                        <option value="f1">F1</option>
+                                        <option value="m6gt">M6GT</option>
+                                    </optgroup>
+                                    <optgroup label="PAGANI">
+                                        <option value="zonda-r">Zonda R</option>
+                                        <option value="zonda-f">Zonda F</option>
+                                        <option value="huayra">Huayra</option>
+                                        <option value="huayra-roadster">Huayra Roadster</option>
+                                    </optgroup>
+                                    <optgroup label="PORSCHE">
+                                        <option value="911-turbo-s">911 Turbo S</option>
+                                        <option value="718-spyder">718 Spyder</option>
+                                        <option value="gt3-rs">GT3 RS</option>
+                                        <option value="carrera-4-gts">Carrera 4 GTS</option>
+                                        <option value="911-80's">911 80's</option>
+                                        <option value="550-spyder">550 Spyder</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="contacto__formulario__box">
+                                <textarea name="comentario" id="comentario" cols="30" rows="3" required></textarea>
+                                <label for="comentario">Mensaje</label>
+                            </div>
+                        </fieldset>
+                        <div class="contacto__boton">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="pie pie--porsche">
+            <div class="pie__socios">
+                <h2>Socios Oficiales</h2>
+                <div class="pie__socios__logo">
+                    <div class="box-socios box-socios--aston">
+                        <img src="images/viñetas/Nuevacarpeta/aston-martin.png" alt="" class="box-socios__aston">
+                        <a href="https://www.astonmartin.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/bugatti.png" alt="">
+                        <a href="https://www.bugatti.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/ferrari.png" alt="">
+                        <a href="https://www.ferrari.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/koenigsegg.png" alt="">
+                        <a href="https://www.koenigsegg.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/lamborghini.png" alt="">
+                        <a href="https://www.lamborghini.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/mclaren.png" alt="">
+                        <a href="https://www.mclaren.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/pagani.png" alt="">
+                        <a href="https://www.pagani.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/porsche.png" alt="">
+                        <a href="https://www.porsche.com/" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="linea-divisoria-footer"></div>
+            <p>© 1997-2021 - <span>La Familia.</span> Group - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+</body>
+</html>
