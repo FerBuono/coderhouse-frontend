@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="auto, autoshop, auto shop, sportcar, Aston Martin, Bugatti, Ferrari, Koenigsegg, Lamborghini, McLaren, Pagani, Porsche">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="shortcut icon" href="images/lafamilia.svg" type="image/x-icon">
+    <title>Aston Martin - Productos | La Familia.</title>
+    <meta name="description" content="Conocé los modelos de la marca Aston Martin que se encuentran a la venta, brindados exclusivamente por nuestro socio oficial. Podés encontrar superdeportivos modernos como también clásicos.">
+</head>
+<body>
+    <!-- Scroll Bar -->
+    <div id="progress-bar" style="background-color: #99ff33;"></div>
+    <div id="scroll-path"></div>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header__container">
+            <!-- Menú desplegable -->
+            <input type="checkbox" id="check">
+            <div class="header__container__barras-menu">
+                <label for="check"></label>
+                <div></div>
+            </div>
+            <div class="menu-desplegable" id="menu-desplegable">
+                <ul class="menu-desplegable__lista">
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item1"><a id="menu-link1" href="#historia">Historia</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item2"><a id="menu-link2" href="#modelos">Modelos</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item3">
+                        <a id="menu-link3" href="index.html#productos">Productos</a>
+                        <label for="check-sub">
+                                <img src="images/iconos/next-button.png">
+                        </label>
+                    </li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item4"><a id="menu-link4" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Submenú desplegable -->
+            <input type="checkbox" id="check-sub">
+            <div class="submenu-desplegable" id="">
+                <div class="submenu-desplegable__next-button">
+                    <label for="check-sub"><img src="images/iconos/close.png" alt=""></label>
+                </div>
+                <ul class="submenu-desplegable__lista">
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item1"><a href="aston-martin.html">Aston Martin</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item2"><a href="bugatti.html">Bugatti</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item3"><a href="ferrari.html">Ferrari</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item4"><a href="koenigsegg.html">Koenigsegg</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item5"><a href="lamborghini.html">Lamborghini</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item6"><a href="mclaren.html">McLaren</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item7"><a href="pagani.html">Pagani</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item8"><a href="porsche.html">Porsche</a></li>
+
+                </ul>
+            </div>
+            <!-- Menú de navegación -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--izq">
+                    <li class="navegacion__lista__item"><a href="#historia">Historia</a></li>
+                    <li class="navegacion__lista__item"><a href="#modelos">Modelos</a></li>
+                </ul>
+            </div>
+            <!-- Logo -->
+            <div class="header__container__logo-inicio">
+                <a href="index.html"></a>
+                <img id="index" src="images/logo2.png" alt="">
+            </div>
+            <!-- ---- -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--der">
+                    <li class="navegacion__lista__item navegacion__lista__item--productos" id="item-productos">
+                        <a href="index.html#productos">Productos</a>
+                        <img id='boton-productos' src="images/iconos/next-button.png" alt="">
+                        <ul class="productos-lista" id="lista-productos">
+                            <li class="productos-lista__item" id='producto1'><a href="aston-martin.html">Aston Martin</a></li>
+                            <li class="productos-lista__item" id='producto2'><a href="bugatti.html">Bugatti</a></li>
+                            <li class="productos-lista__item" id='producto3'><a href="ferrari.html">Ferrari</a></li>
+                            <li class="productos-lista__item" id='producto4'><a href="koenigsegg.html">Koenigsegg</a></li>
+                            <li class="productos-lista__item" id='producto5'><a href="lamborghini.html">Lamborghini</a></li>
+                            <li class="productos-lista__item" id='producto6'><a href="mclaren.html">McLaren</a></li>
+                            <li class="productos-lista__item" id='producto7'><a href="pagani.html">Pagani</a></li>
+                            <li class="productos-lista__item" id='producto8'><a href="porsche.html">Porsche</a></li>
+                        </ul>
+                    </li>
+                    <li class="navegacion__lista__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main id="main">
+        <!-- Video + Wave -->
+        <div class="video-container">
+            <div class="video-container__logo video-container__logo--aston">
+                <img src="images/viñetas/Nuevacarpeta/aston-martin-t.png" alt="">
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #174502;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="video-container__video"> 
+                <video src="videos/aston-martin.mp4" autoplay muted loop></video>
+            </div>
+            <h1>Aston Martin</h1>
+        </div>
+        <!-- Historia -->
+        <div class="main-container" id='historia'>
+            <div class="main-container__logo">
+                <img src="images/viñetas/astonmartin.png" alt="" style="height: 80%;">
+            </div>
+            <section class="historia">
+                <h1 class="historia__title">Historia</h1>
+                <div class="historia__container">
+                    <h3 class="historia__container__aston"><b>1913-1920</b></h3><br>
+                    <h3 class="historia__container__aston"><b>Nace el icono</b></h3>
+                    <p>Fundada en 1913 por Robert Bamford y Lionel Martin como “Bamford & Martin Limited”, la compañía se ha convertido en una marca icónica en lujo y elegancia. 1914 vio el nacimiento de la denominación Aston Martin gracias al éxito de Lionel Martin en el Aston Hill C​limb en Buckinghamshire (Reino Unido). Un año más tarde, el primer vehículo es construido y registrado con el nombre Aston Martin y, en 1920, el negocio empieza a operar en la ciudad de Kensington.</p><br>
+                    <div class="flecha" id="flecha-abajo" onclick="flechaAbajo()">
+                        <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                    </div>
+                    <div class="mostrar" style="display: none;" id="mostrar">
+                        <h3 class="historia__container__aston"><b>1922-1928</b></h3><br>
+                        <h3 class="historia__container__aston"><b>Debut en la competición</b></h3>
+                        <p>El primer debut en competición se produjo en el Gran Premio de Francia de 1922 con dos vehículos en el podio. De esta manera empezaría a fraguarse la la historia de la firma en el automovilismo.  Los problemas financieros plagaron la compañía durante la década, obligada a cerrar en 1925, para ser rescatado por un grupo de inversores en 1926, formando “Aston Martin Motors”. De esta manera, el negocio empezó a prosperar con una amplia gama de vehículos y el aumento de la reputación en materia de ingeniería y diseño. Gracias a ello, Aston Martin entra en las 24 horas de Le Mans en el año 1928.</p><br>
+
+                        <h3 class="historia__container__aston"><b>1930-1939</b></h3><br>
+                        <h3 class="historia__container__aston"><b>Aumenta la producción</b></h3>
+                        <p>La firma experimenta en esta década un gran éxito cuando el Aston Martin Le Mans 1.5L arrasa en el podio con sus rivales en las 24 horas de Le Mans en 1933. Al mismo tiempo, la gama de vehículos de producción aumenta a lo largo de los años treinta llegando a 140 vehículos fabricados en el año 1937 (la cifra más alta antes de la guerra). En 1939 se presenta el Aston Martin Atom, un prototipo vanguardista con un revolucionario chasis tubular, carroceria de aluminio y suspensiones independientes.</p><br>
+
+                        <h3 class="historia__container__aston"><b>1949-1958</b></h3><br>
+                        <h3 class="historia__container__aston"><b>La era David Brown</b></h3>
+                        <p>En 1947, el industrial británico David Brown adquirió la compañía. Con nuevos aires y energías, la firma se amplió con la adquisición de Lagonda. Tras la compra, la producción se estableció en Hanworth Park. En estas instalaciones, el Aston Martin DB2, inició su producción en serie. Sucesivas victorias en las 24 horas de Le Mans del mismo año, aumentaron el reconocimiento de la compañía.
+                        En 1954, se movió la producción a Newport Pagnell. Estas instalaciones se convirtieron en el lugar de nacimiento de vehículos como el Aston Martin DB2/4. Dos años mas tarde, estas instalaciones también vieron el nacimiento de los Aston Martin DBR1 para competición, así como el Aston Martin DB MK III o el Aston Martin DB4. </p><br>
+
+                        <h3 class="historia__container__aston"><b>1959-1962</b></h3><br>
+                        <h3 class="historia__container__aston"><b>Victoria tras victoria</b></h3>
+                        <p>Aston Martin acabó la decada de los cincuenta con grandes éxitos en competición. Gracias al Aston Martin DBR1, la firma cosechó victorias en pruebas tan exigentes como las 24 horas Le Mans o los 1000Km de Nürburgring en el año 1959. Fuera de los circuitos, Aston Martin lanzó al mercado con gran éxito el Aston Martin DB4GT, una evolución mas deportiva del DB4 original. En 1969, la firma colabora con el carrocero italiano Zagato, lanzando al mercado una versión aún mas exclusiva: el Aston Martin DB4GT Zagato. Un momento crucial para la compañía fue 1963, con el éxito del Aston Martin DB4GT en el Gran Premio de Monza y el lanzamiento al mercado del añorado Aston Martin DB5.</p><br>
+
+                        <h3 class="historia__container__aston"><b>1965-1975</b></h3><br>
+                        <h3 class="historia__container__aston"><b>Una nueva década</b></h3>
+                        <p>Siguiendo el éxito del Aston Martin DB5, la firma lanzó al mercado en 1966, los nuevos Aston Martin DB6 y DB6 Volante. El continuo desarrollo en materia de ingeniería y mecánica, dio resultados con modelos como el Aston Martin DBS, DBS MK II o DBS V8. A lo largo de los setenta, la compañía atravesó una grave crisis económica y la posterior quiebra en 1975. Gracias al rescate en manos del consorcio formado por Peter Sprague, George Minden y Alan Curtis, la compañía levanto el vuelo de nuevo. El revolucionario Aston Martin Lagonda fue el primer vehículo lanzado al mercado después del rescate.</p><br>
+
+                        <h3 class="historia__container__aston"><b>1981-1986</b></h3><br>
+                        <h3 class="historia__container__aston"><b>Nuevo cambio de manos</b></h3>
+                        <p>Aston Martin cambió de manos a lo largo de 1980 con la compra de la firma por parte de Victor Gauntlett. En 1986, el Aston Martin Vantage V8 Zagato vio la luz gracias al refuerzo en materia de colaboración con el carrocero italiano. Un año mas tarde, Ford se hizo con el 75% de la compañía, abriendo una nueva etapa en la historia de Aston Martin.</p><br>
+
+
+                        <h3 class="historia__container__aston"><b>1988-2006</b></h3><br>
+                        <h3 class="historia__container__aston"><b>La era Ford</b></h3>
+                        <p>A lo largo de la decada de los ochenta y noventa, la firma reafirma su consolidación en el mercado gracias a icónicos modelos como el Aston Martin Virage, Vantage, o el Aston Martin DB7. En 2003, la firma inauguró su nueva linea de producción y cuartel general en Gaydon, Warwickshire. Gracias a ello, modelos como el Aston Martin DB9, DB9 Volante o Aston Martin Vanquish ven la luz en el mercado. A lo largo de 2004, la compañía abre una nueva planta para el desarrollo y construcción de motores V8 y V12 en Colonia, Alemania.</p><br>
+
+
+                        <h3 class="historia__container__aston"><b>1965-1975</b></h3><br>
+                        <h3 class="historia__container__aston"><b>Una nueva década</b></h3>
+                        <p>Siguiendo el éxito del Aston Martin DB5, la firma lanzó al mercado en 1966, los nuevos Aston Martin DB6 y DB6 Volante. El continuo desarrollo en materia de ingeniería y mecánica, dio resultados con modelos como el Aston Martin DBS, DBS MK II o DBS V8. A lo largo de los setenta, la compañía atravesó una grave crisis económica y la posterior quiebra en 1975. Gracias al rescate en manos del consorcio formado por Peter Sprague, George Minden y Alan Curtis, la compañía levanto el vuelo de nuevo. El revolucionario Aston Martin Lagonda fue el primer vehículo lanzado al mercado después del rescate.</p><br>
+
+                        <div class="flecha" id="flecha-arriba" onclick="flechaArriba()">
+                            <a href="#historia"></a>
+                            <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Modelos -->
+            <section id="modelos" class="modelos">
+                <h1 class="modelos__title modelos__title--aston">MODELOS</h1>
+                <div class="autos">
+                    <div class="autos__tipo">
+                        <h1>MODERNOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja1">
+                        <input type="checkbox" id="check-producto1">
+                        <div class="boton-next boton-next--aston">
+                            <label for="check-producto1"></label>
+                            <img src="images/iconos/next-button.png" alt="" >
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/astonmartin.png" alt="">
+                            <img src="images/modelos/aston-martin/astonmartin-db11-logo.jpg" alt="">
+                            <div class="auto-divisor"></div>
+                            <p>El Aston Martin DB11 es el modelo medio de Aston Martin, un Gran Turismo de altas prestaciones, heredero del mítico Aston Martin DB9 que tantas alegrías le dio al fabricante británico. Se comercializa su primera generación, la cual salió al mercado en 2016. Comparte chasis con el Aston Martin DBS Superleggera, una versión más deportiva y exclusiva que emplea gran parte de los elementos de carrocería y otros componentes base.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #99ff33">></span> Motor:	V12 a 60º AE31 Biturbo de 5.2 litros</li>
+                                <li><span style="color: #99ff33">></span> Potencia: 503 a 630 HP (510 a 639 CV)</li>
+                                <li><span style="color: #99ff33">></span> Par motor: 675 a 700 N·m</li>
+                                <li><span style="color: #99ff33">></span> Transmisión: Automática ZF de 8 marchas</li>
+                                <li><span style="color: #99ff33">></span> Velocidad máxima: 335 km/h (208 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--aston"><p>COMPRAR</p></a>
+                                <a class="button button--aston" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/aston-martin/db11.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja2">
+                        <input type="checkbox" id="check-producto2">
+                        <div class="boton-next boton-next--aston">
+                            <label for="check-producto2"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/aston-martin/vulcan.webp" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/astonmartin.png" alt="">
+                            <img src="images/modelos/aston-martin/astonmartin-vulcan-logo.png" alt="" style="height: 15%; filter: contrast(1.2);">
+                            <div class="auto-divisor"></div>
+                            <p>El Aston Martin Vulcan es algo más que un deportivo. Es un coche de carreras, pero no está pensado para la competición. Es un deportivo de tecnología puntera, 800 CV de potencia, un doce cilindros en uve de 7.0 litros y la exclusividad de una bestia de la que solo se construirán 24 unidades.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #99ff33">></span> Motor:	V12 AMR de 7 litros</li>
+                                <li><span style="color: #99ff33">></span> Potencia: +800 HP (+789 CV)</li>
+                                <li><span style="color: #99ff33">></span> Par motor: +780 N·m</li>
+                                <li><span style="color: #99ff33">></span> Transmisión: Secuencial de 6 velocidades Xtrac</li>
+                                <li><span style="color: #99ff33">></span> Velocidad máxima: +322 km/h (+200 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--aston"><p>COMPRAR</p></a>
+                                <a class="button button--aston" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja3">
+                        <input type="checkbox" id="check-producto3">
+                        <div class="boton-next boton-next--aston">
+                            <label for="check-producto3"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/astonmartin.png" alt="">
+                            <img src="images/modelos/aston-martin/astonmartin-dbx-logo.jpg" alt="">
+                            <div class="auto-divisor"></div>
+                            <p>El Aston Martin DBX es el primer SUV fabricado por Aston Martin. Se trata de un automóvil de corte deportivo, pero de planteamiento crossover que cuenta con una carrocería de 5 puertas con capacidad para 4 o 5 pasajeros en función de la configuración escogida. Hablamos por lo tanto del modelo más polivalente jamás fabricado por Aston Martin, un coche que ofrecerá grandes posibilidades en habitabilidad y espacio de carga.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #99ff33">></span> Motor:	V8 M177 Biturbo de 4 litros</li>
+                                <li><span style="color: #99ff33">></span> Potencia: 542 HP (550 CV)</li>
+                                <li><span style="color: #99ff33">></span> Par motor: 700 N·m</li>
+                                <li><span style="color: #99ff33">></span> Transmisión: Automática de 9 marchas</li>
+                                <li><span style="color: #99ff33">></span> Velocidad máxima: 291 km/h (181 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--aston"><p>COMPRAR</p></a>
+                                <a class="button button--aston" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/aston-martin/dbx.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja4">
+                        <input type="checkbox" id="check-producto4">
+                        <div class="boton-next boton-next--aston">
+                            <label for="check-producto4"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/aston-martin/dbs.webp" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/astonmartin.png" alt="">
+                            <img src="images/modelos/aston-martin/astonmartin-dbs-logo.jpg" alt="">
+                            <div class="auto-divisor"></div>
+                            <p>El Aston Martin DBS Superleggera es la versión más deportiva y exclusiva desarrollada sobre la base del Aston Martin DB11. A pesar de compartir con el DB11 chasis, elementos de su carrocería y otros componentes, el DBS Superleggera ofrecer una visión más deportiva y radical para distanciarse del carácter GT del Aston Martin DB11, lo que le permite ubicarse un peldaño por encima en prestaciones y enfoque.</h3>
+                            <ul>
+                                <li><span style="color: #99ff33">></span> Motor:	V12 AE31 de 5,2 litros</li>
+                                <li><span style="color: #99ff33">></span> Potencia: 715 HP (725 CV)</li>
+                                <li><span style="color: #99ff33">></span> Par motor: +900 N·m</li>
+                                <li><span style="color: #99ff33">></span> Transmisión: Automática ZF de ocho velocidades</li>
+                                <li><span style="color: #99ff33">></span> Velocidad máxima: 340 km/h (211 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--aston"><p>COMPRAR</p></a>
+                                <a class="button button--aston" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="autos  autos--clasicos">
+                    <div class="autos--clasicos__tipo">
+                        <h1>CLÁSICOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja5">
+                        <input type="checkbox" id="check-producto5">
+                        <div class="boton-next boton-next--aston">
+                            <label for="check-producto5"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/astonmartin-classic.png" alt="">
+                            <h2>Aston Martin V8 Vantage '77</h2>
+                            <div class="auto-divisor"></div>
+                            <p>El V8 es el heredero de la saga de los DB, agotada a fines de los ’60 tras varias evoluciones tanto mecánicas como de diseño. Había que renovarse, y Aston Martin contaba con las ideas de William Towns. De su lápiz fue saliendo un diseño compacto que integra los pasos de rueda en el cuerpo principal de la carrocería, logrando un conjunto más “musculoso” y con menos líneas curvas; un estilo que terminaría siendo símbolo de los ’70 para la mayoría de las marcas.</p>
+                            <h3>Especificaciones.</h3>
+                            <ul>
+                                <li><span style="color: #174502">></span> Motor:	V8 de 5.3 litros</li>
+                                <li><span style="color: #174502">></span> Potencia: 325 HP (320 CV)</li>
+                                <li><span style="color: #174502">></span> Par motor: 550 N·m</li>
+                                <li><span style="color: #174502">></span> Transmisión: Manual de 5 velocidades/li>
+                                <li><span style="color: #174502">></span> Velocidad máxima: 260 km/h (162 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--aston-clasico"><p>COMPRAR</p></a>
+                                <a class="button button--aston-clasico" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/aston-martin/vantage'77.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja6">
+                        <input type="checkbox" id="check-producto6">
+                        <div class="boton-next boton-next--aston">
+                            <label for="check-producto6"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/aston-martin/db4.webp" alt="">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/astonmartin-classic.png" alt="">
+                            <h2>Aston Martin DB4 GT Zagato</h2>
+                            <div class="auto-divisor"></div>
+                            <p>El Aston Martin Zagato DB4GT forma parte de uno de los pilares más valiosos de las grandes colecciones del mundo del automovilismo , nació en 1960 cuando el entonces propietario de la Aston Martín ,David Brown  encarga al diseñador Gianni Zagato el diseño. El Aston Martin Zagato DB4GT se presentó en el Salón de Earls Court de Londres en 1960, del que se construyeron 20 unidades entre 1960 y 1963.</p>
+                            <h3>Especificaciones.</h3>
+                            <ul>
+                                <li><span style="color: #174502">></span> Motor:	6 cilindros en linea de 3.7 litros</li>
+                                <li><span style="color: #174502">></span> Potencia: 323 HP (318 CV)</li>
+                                <li><span style="color: #174502">></span> Par motor: 325 N·m</li>
+                                <li><span style="color: #174502">></span> Transmisión: Manual de 4 velocidades/li>
+                                <li><span style="color: #174502">></span> Velocidad máxima: 246 km/h (153 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--aston-clasico"><p>COMPRAR</p></a>
+                                <a class="button button--aston-clasico" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #174502;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer__logo-footer">
+            <a href="index.html"></a>
+            <img src="images/logo1.png" alt="">
+        </div>
+        <div class="linea-divisoria-footer" id="contacto"></div>
+        <div class="footer-container">
+            <div class="footer-container__info">
+                <h2>Información Adicional</h2>
+                <ul>
+                    <img src="images/iconos/ubicacion.png" alt="">
+                    <li>724 East Kensington Road</li>
+                    <li>Los Angeles, California</li>
+                    <li>CA 90026</li>
+                    <li>EE.UU.</li>
+                </ul>
+                <div>
+                    <img src="images/iconos/telefono.png" alt="">
+                    <p>+1 213 345 6745</p>
+                </div>
+                <div>
+                    <img src="images/iconos/correo-electronico.png" alt="">
+                    <p>contacto@lafamilia.com</p>
+                </div>
+
+            </div>
+            <div class="footer-container__social">
+                <h2>Social</h2>
+                <ul>
+                    <img src="images/iconos/twitter.png" alt="">
+                    <li>Siguenos en Twitter</li>
+                    <img src="images/iconos/facebook.png" alt="">
+                    <li>Encuentranos en Facebook</li>
+                    <img src="images/iconos/youtube.png" alt="">
+                    <li>Ve nuestros últimos videos</li>
+                    <img src="images/iconos/instagram.png" alt="">
+                    <li>Ve nuestra galería de fotos</li>
+                    <img src="images/iconos/spotify.png" alt="">
+                    <li>Sigue nuestras listas en Spotify</li>
+
+                </ul>
+            </div>
+            <div class="contacto">
+                <h2>Contáctenos</h2>
+                <div>
+                    <form>
+                        <fieldset class="contacto__formulario contacto__formulario--personal">
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="nombre" id="box-nombre" required><br>
+                                <label for="name">Nombre</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="apellido" id="box-apellido" required><br>
+                                <label for="apellido">Apellido</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="tel" name="telefono" id="box-tel" required><br>
+                                <label for="telefono">Teléfono</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="email" name="email" id="box-email" required><br>
+                                <label for="email">Email</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="contacto__formulario contacto__formulario--asunto">
+                            <div class="contacto__formulario__select">
+                                <label for="producto">Producto por el que quiere consultar: </label>
+                                <select name="producto" id="producto" required>
+                                    <optgroup label="ASTON MARTIN">
+                                        <option value="db11">DB11</option>
+                                        <option value="vulcan">Vulcan</option>
+                                        <option value="dbx">DBX</option>
+                                        <option value="dbs">DBS</option>
+                                        <option value="vantage">V8 Vantage '77</option>
+                                        <option value="vantage">DB4 GT Zagato</option>
+                                    </optgroup>
+                                    <optgroup label="BUGATTI">
+                                        <option value="divo">Divo</option>
+                                        <option value="chiron">Chiron</option>
+                                        <option value="centodieci">Centodieci</option>
+                                        <option value="la-voiture-noire">La Voiture Noire</option>
+                                        <option value="type57">Type 57 SC Atlantic</option>
+                                        <option value="eb110">EB110</option>
+                                    </optgroup>
+                                    <optgroup label="FERRARI">
+                                        <option value="488-pista">488 Pista</option>
+                                        <option value="sf90-stradale">SF90 Stradale</option>
+                                        <option value="f8-tributo">F8 Tributo</option>
+                                        <option value="laferrari">LaFerrari</option>
+                                        <option value="250-gto">250 GTO</option>
+                                        <option value="f40">F40</option>
+                                    </optgroup>
+                                    <optgroup label="KOENIGSEGG">
+                                        <option value="regera">Regera</option>
+                                        <option value="jesko">Jesko</option>
+                                        <option value="agera-r">Agera R</option>
+                                        <option value="one">One:1</option>
+                                    </optgroup>
+                                    <optgroup label="LAMBORGHINI">
+                                        <option value="aventador-svj">Aventador SVJ</option>
+                                        <option value="sesto-elemento">Sesto Elemento</option>
+                                        <option value="huracan-evo">Huracan EVO</option>
+                                        <option value="veneno">Veneno</option>
+                                        <option value="countach">Countach LP 400</option>
+                                        <option value="miura">Miura P400 S</option>
+                                    </optgroup>
+                                    <optgroup label="MCLAREN">
+                                        <option value="p1-gtr">P1 GTR</option>
+                                        <option value="senna">Senna</option>
+                                        <option value="720s-spider">702s Spider</option>
+                                        <option value="artura">Artura</option>
+                                        <option value="f1">F1</option>
+                                        <option value="m6gt">M6GT</option>
+                                    </optgroup>
+                                    <optgroup label="PAGANI">
+                                        <option value="zonda-r">Zonda R</option>
+                                        <option value="zonda-f">Zonda F</option>
+                                        <option value="huayra">Huayra</option>
+                                        <option value="huayra-roadster">Huayra Roadster</option>
+                                    </optgroup>
+                                    <optgroup label="PORSCHE">
+                                        <option value="911-turbo-s">911 Turbo S</option>
+                                        <option value="718-spyder">718 Spyder</option>
+                                        <option value="gt3-rs">GT3 RS</option>
+                                        <option value="carrera-4-gts">Carrera 4 GTS</option>
+                                        <option value="911-80's">911 80's</option>
+                                        <option value="550-spyder">550 Spyder</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="contacto__formulario__box">
+                                <textarea name="comentario" id="comentario" cols="30" rows="3" required></textarea>
+                                <label for="comentario">Mensaje</label>
+                            </div>
+                        </fieldset>
+                        <div class="contacto__boton">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="pie pie--aston">
+            <div class="pie__socios">
+                <h2>Socios Oficiales</h2>
+                <div class="pie__socios__logo">
+                    <div class="box-socios box-socios--aston">
+                        <img src="images/viñetas/Nuevacarpeta/aston-martin.png" alt="" class="box-socios__aston">
+                        <a href="https://www.astonmartin.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/bugatti.png" alt="">
+                        <a href="https://www.bugatti.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/ferrari.png" alt="">
+                        <a href="https://www.ferrari.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/koenigsegg.png" alt="">
+                        <a href="https://www.koenigsegg.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/lamborghini.png" alt="">
+                        <a href="https://www.lamborghini.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/mclaren.png" alt="">
+                        <a href="https://www.mclaren.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/pagani.png" alt="">
+                        <a href="https://www.pagani.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/porsche.png" alt="">
+                        <a href="https://www.porsche.com/" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="linea-divisoria-footer"></div>
+            <p>© 1997-2021 - <span>La Familia.</span> Group - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+</body>
+
+</html>

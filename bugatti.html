@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="auto, autoshop, auto shop, sportcar, Aston Martin, Bugatti, Ferrari, Koenigsegg, Lamborghini, McLaren, Pagani, Porsche">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="shortcut icon" href="images/lafamilia.svg" type="image/x-icon">
+    <title>Bugatti - Productos | La Familia.</title>
+    <meta name="description" content="Conocé los modelos de la marca Bugatti que se encuentran a la venta, brindados exclusivamente por nuestro socio oficial. Podés encontrar superdeportivos modernos como también clásicos.">
+</head>
+<body>
+    <!-- Scroll Bar -->
+    <div id="progress-bar" style="background-color: #3dcbe9;"></div>
+    <div id="scroll-path"></div>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header__container">
+            <!-- Menú desplegable -->
+            <input type="checkbox" id="check">
+            <div class="header__container__barras-menu">
+                <label for="check"></label>
+                <div></div>
+            </div>
+            <div class="menu-desplegable" id="menu-desplegable">
+                <ul class="menu-desplegable__lista">
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item1"><a id="menu-link1" href="#historia">Historia</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item2"><a id="menu-link2" href="#modelos">Modelos</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item3">
+                        <a id="menu-link3" href="index.html#productos">Productos</a>
+                        <label for="check-sub">
+                                <img src="images/iconos/next-button.png">
+                        </label>
+                    </li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item4"><a id="menu-link4" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Submenú desplegable -->
+            <input type="checkbox" id="check-sub">
+            <div class="submenu-desplegable" id="">
+                <div class="submenu-desplegable__next-button">
+                    <label for="check-sub"><img src="images/iconos/close.png" alt=""></label>
+                </div>
+                <ul class="submenu-desplegable__lista">
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item1"><a href="aston-martin.html">Aston Martin</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item2"><a href="bugatti.html">Bugatti</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item3"><a href="ferrari.html">Ferrari</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item4"><a href="koenigsegg.html">Koenigsegg</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item5"><a href="lamborghini.html">Lamborghini</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item6"><a href="mclaren.html">McLaren</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item7"><a href="pagani.html">Pagani</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item8"><a href="porsche.html">Porsche</a></li>
+
+                </ul>
+            </div>
+            <!-- Menú de navegación -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--izq">
+                    <li class="navegacion__lista__item"><a href="#historia">Historia</a></li>
+                    <li class="navegacion__lista__item"><a href="#modelos">Modelos</a></li>
+                </ul>
+            </div>
+            <!-- Logo -->
+            <div class="header__container__logo-inicio">
+                <a href="index.html"></a>
+                <img id="index" src="images/logo2.png" alt="">
+            </div>
+            <!-- ---- -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--der">
+                    <li class="navegacion__lista__item navegacion__lista__item--productos" id="item-productos">
+                        <a href="index.html#productos">Productos</a>
+                        <img id='boton-productos' src="images/iconos/next-button.png" alt="">
+                        <ul class="productos-lista" id="lista-productos">
+                            <li class="productos-lista__item" id='producto1'><a href="aston-martin.html">Aston Martin</a></li>
+                            <li class="productos-lista__item" id='producto2'><a href="bugatti.html">Bugatti</a></li>
+                            <li class="productos-lista__item" id='producto3'><a href="ferrari.html">Ferrari</a></li>
+                            <li class="productos-lista__item" id='producto4'><a href="koenigsegg.html">Koenigsegg</a></li>
+                            <li class="productos-lista__item" id='producto5'><a href="lamborghini.html">Lamborghini</a></li>
+                            <li class="productos-lista__item" id='producto6'><a href="mclaren.html">McLaren</a></li>
+                            <li class="productos-lista__item" id='producto7'><a href="pagani.html">Pagani</a></li>
+                            <li class="productos-lista__item" id='producto8'><a href="porsche.html">Porsche</a></li>
+                        </ul>
+                    </li>
+                    <li class="navegacion__lista__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main id="main">
+        <!-- Video + Wave -->
+        <div class="video-container">
+            <div class="video-container__logo">
+                <img src="images/viñetas/Nuevacarpeta/bugatti-eb.png" alt="">
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #3dcbe9;"></path></svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            <div class="video-container__video"> 
+                <video src="videos/bugatti.mp4" autoplay muted loop preload="auto"></video>
+            </div>
+            <h1>Bugatti</h1>
+        </div>
+        <div class="main-container" id='historia'>
+            <div class="main-container__logo">
+                <img src="images/viñetas/Nuevacarpeta/bugatti.png" alt="">
+            </div>
+            <section class="historia">
+                <h1 class="historia__title">Historia</h1>
+                <div class="historia__container">
+                    <h3 class="historia__container__bugatti"><b>1909-1930</b></h3><br>
+                    <h3 class="historia__container__bugatti"><b>El inicio de un icono</b></h3>
+                    <p>Carlo Bugatti, padre de Ettore y Rembrandt Bugatti, nace el 16 de febrero 1856 en Milán. Hijo del arquitecto y escultor Giovanni Luigi Bugatti, estudia en la Academia de Brera en Milán y la Académie des Beaux-Arts de París. En 1880, comienza su carrera como arquitecto en la obra artística de Milan. En su trabajo destacan cerámicas, pinturas, platería y materiales textiles. Sin embargo,resalta por sus diseños en mobiliario. Influenciado por el Art Nouveau, Carlo Bugatti desarrolla su propio estilo. En 1904, a la edad de 48 años, Carlo Bugatti vende su estudio de Milán y se traslada a París, donde trabaja para los grandes almacenes 'Dufayel' y 'Le Bon Marché'. También produce cerámica conbinada con plata y bronce. Seis años más tarde, abandona París de nuevo para levantar un nuevo estudio en Pierrefonds cerca de Compiègne. De 1914 a 1918, se erige alcalde de la ciudad.
+                    Ettore Arco Isidoro Bugatti nace en Milán el 15 de de septiembre de 1881. Con 17 años comienza su aprendizaje en la fábrica Prinetti y Stucchi ensamblando bicicletas. Sólo un año más tarde, construye su primer vehículo utilizando dos motores De Dion. En 1902, Ettore se inicia en la producción de automóviles en la compañía de Eugène, De Dietrich. Hasta 1904, Ettore Bugatti desarrolla nuevos modelos de la firma De Dietrich y participa en varias carreras. En 1907, Ettore Bugatti se casa con Barbara Maria Guiseppina Mascherpa. Juntos tienen dos hijos y dos hijas. El mismo año, firma un contrato con la fábrica de motores Deutz en Colonia y comienza a construir su propio coche de carreras, que resulta un vehículo extremadamente ligero. Este vehículo sentó la base un par de años más tarde como el primer coche en llevar el nombre de Bugatti - el Bugatti Type 13-.
+                    En 1909, Bugatti termina prematuramente el contrato con Deutz. Con la indemnización por despido alquila una tintorería en desuso en Molsheim (Alsacia), donde funda su propia fábrica de automóviles, Automóviles Ettore Bugatti. El Peugeot 'Bébé' se desarrolla allí en 1911 y se produce bajo licencia de Peugeot. Bugatti también comienza la producción del Type 13. Cuando estalla la Primera Guerra Mundial, Ettore Bugatti se traslada con su familia en primer lugar a Milán y luego a París, donde produce diseños para motores de avión de ocho y dieciséis cilindros. Con el fin de la guerra, la familia se traslada de nuevo a Alsacia (ahora parte de Francia), y abre de nuevo la fábrica de automóviles. Ettore Bugatti pasa a producir automóviles deportivos ligeros y logra el éxito en varias carreras -por ejemplo, la victoria en Le Mans en el año 1920 o una victoria en Brescia en 1921-. Ese mismo año se presenta como prototipo el Type 28, con un gran número de patentes, como el motor ocho cilindros y tres litros. El chasis no solo sirvió como base para el Bugatti Royale, también sirvió como base para futuros vehículos de la firma.
+                    En 1922 se presenta el primer 'touring car' de Bugatti, el Type 30. Se ensamblan más de 600 unidades. Este vehículo tomaba la experiencia en competición pero, también se mostraba ideal para el uso diario. En 1925, según el recuento de Ettore, se salda con 412 victorias en sólo nueve meses para los coches de competición producidas por la marca Bugatti. El Type 35 es el primer modelo que se asocia inevitablemente con la marca Bugatti. Hasta la fecha, sigue siendo el coche de carreras más exitoso de todos los tiempos, con más de 2.000 victorias y podios durante aproximadamente diez años. El Type 35 cuenta con una carrocería en forma de lágrima con un impresionante coeficiente aerodinámico. También es un éxito comercial que sienta las bases de Molsheim. El Bugatti Type 35 era el único coche de la época que podría ser conducido tanto en carreteras públicas y trazados de carreras. 'El automóvil de lujo más grande del mundo, un vehículo para aristócratas y miembros de la realeza'. Eso es lo que Ettore Bugatti considera objetivo con el Type 41 Royale. Un prototipo de este modelo gana el Gran Premio de Alemania en Nürburgring en 1927. El motor del Royale con 12,7 litros de cilindrada supera todos los anteriores puntos de referencia establecidos por vehículos de lujo. Aunque Bugatti planea hacer 25 unidades del Royale, sólo se comercializan tres debido a la crisis económica. Sin embargo, como un hombre de negocios con visión, Ettore Bugatti emplea esos motores en un tren de alta velocidad, encargado por el gobierno francés. Por ello, logra otro éxito financiero para la compañía. En honor a su difunto hermano, se utiliza una escultura de un elefante diseñada por Rembrandt Bugatti en la cubierta del radiador para el Royale.</p><br>
+                    <div class="flecha" id="flecha-abajo" onclick="flechaAbajo()">
+                        <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                    </div>
+
+                    <div class="mostrar" style="display: none;" id="mostrar">
+                        <h3 class="historia__container__bugatti"><b>1930-1940</b></h3><br>
+                        <h3 class="historia__container__bugatti"><b>Estilo e innovación</b></h3>
+                        <p>El Bugatti Type 50 es uno de los coches más avanzados de la época. El doble árbol de levas y el uso de dos válvulas diagonales se consideran pioneros. Aunque este modelo no alcanza el éxito en los circuitos, ocupa un lugar especial en la historia de Bugatti, ya que es uno de los primeros modelos que llevan el sello estilístico de Jean, el hijo de Ettore Bugatti. El formidable bi-plaza Type 55 SuperSport es 'el coche que circula con motor de Grand Prix', que en 1931 reemplaza al Type 43. Para el Type 55, Bugatti utiliza el robusto chasis del Type 47, diseñado originalmente para un pesado motor de 16 cilindros. El resultado es uno de los mejores chasis de la firma Bugatti. Además, se le instala una transmisión de nuevo desarrollo, haciendo que el vehículo sea aún más ágil. Se comercializan un total de trece versiones roadster y nueve coupés. En 1932, se produce el único vehículo diseñado por Ettore Bugatti con un sistema de tracción integral. El Type 53 equipaba el bloque motor del Type 50 junto a un esquema de suspensión independiente en el eje delantero. A diferencia del Type 35, se ensamblan sólo unas pocas unidades del Type 59. Originalmente destinado a tener un motor de 2,8 litros, el coche equipa un motor de 3,3 litros que hizo su debut en el Gran Premio de España en San Sebastián. Sin embargo, aún con una estética sensacional, no podía disimular el hecho que, incluso antes de su primera carrera, este coche ya era técnicamente superado por la competencia alemana.
+                        En 1934, comienza la producción del Type 57, basándose en un diseño realizado por el hijo mayor de Ettore Bugatti. La fábrica compite ahora directamente con fabricantes de automóviles como Delage, Delahaye y Bentley. El Type 57 puede ser pedido a fábrica con varias opciones diferentes de carrocería. El Atalante se considera, sin duda alguna, la versión más bella. También conocido como "falso cabriolet", cuenta con una carrocería coupé de dos puertas, también disponible con un techo retráctil. El Atalante, con sólo 34 vehículos ensamblados, es considerado como una de las creaciones más importantes de Jean Bugatti. El nombre Atalante viene de la mitología griega. Atlanta era una cazadora joven y la mujer más rápida en Grecia. Este vehículo es el último coche de producción de Bugatti. Dos años más tarde, Ettore Bugatti delega la gestión de la fábrica de automóviles a su hijo.
+                        Jean Bugatti, que ya había establecido su reputación como genio de diseño de vehículos con el legendario Type 41 "Royale", el Type 55 SuperSport y el Type 50 Superprofilée, también es responsable de diseñar uno de los Bugatti más bellos: el Tipo 57SC Atlantic. El cuerpo del Atlantic originalmente iba a ser realizada en magnesio -motivo por el que la aleta quedaba clavada en el centro-. Esto no era más que una característica de diseño, pero tuvo su función vital a nivel estructural. En ese momento, era extremadamente difícil soldar el magnesio. Por eso, las dos mitades de la carrocería y las alas estaban unidos. Las cuatro carrocerías del Atlantic fueron finalmente elaboradas en aluminio, pero la disposición de las aletas se mantiene y sigue siendo un detalle llamativo a dia de hoy. El prototipo del Atlántic se expuso en los salones del automóvil de París y Londres en 1935.
+                        Jean Bugatti sigue al frente del legado de su padre, hasta llevar la responsabilidad total de la producción de automóviles en 1936. También hace cargo de Meo Constantini como jefe del equipo de carreras de la compañía. El 11 de agosto de 1939, Jean Bugatti sufre un accidente fatal durante una prueba de conducción en un Bugatti Type 57C, que había ganado las 24 Horas de Le Mans poco antes. Con 30 años de edad, sufre un accidente a más de 200 Km/h. colisionando contra un árbol en el intento de evitar a un ciclista. En 1940, debido a la ocupación alemana, se fuerza la venta de la factoria de Molsheim al empresario Hans Trippel.</p><br>
+
+                        <h3 class="historia__container__bugatti"><b>1940-1963</b></h3><br>
+                        <h3 class="historia__container__bugatti"><b>Duros años de posguerra</b></h3>
+                        <p>Después de la guerra, la factoría Bugatti vuelve a manos de la familia. Muchos son los intentos para volver a la producción pero, debido a problemas financieros, Bugatti no puede desarrollar una nueva gama de vehículos. La primera victoria en competición pasada la guerra sucede en 1945, en el Gran Premio de Bois de Boulogne (Paris). Ettore Bugatti junto a Jean-Pierre Wimille se hacen con la victoria en un Bugatti Type 59/50B. Unos años más tarde, Ettore Bugatti fallece en Paris en Agosto de 1947. En 1948, Pierre Marco se hace con el cargo de director de la firma. Por el momento, la compañía produce pequeñas series del Type 57 con ligeras modificaciones -pasando a llamarse Type 101-. En 1956 se paraliza la producción de vehículos. Un total de 7900 unidades aproximadamente salen de la factoría desde su fundación. En 1963, Hispano-Suiza compra la compañía.</p><br>
+
+                        <h3 class="historia__container__bugatti"><b>1987-1998</b></h3><br>
+                        <h3 class="historia__container__bugatti"><b>Una nueva vida para Bugatti</b></h3>
+                        <p>En 1987, el empresario italiano, Romano Artioli adquiere los derechos de la marca Bugatti y funda Bugatti Automobili S.p.A. en Campogalliano, Italia. Cuatro años después, Artioli produce un superdeportivo con la ayuda de algunos de los mayores talentos de la industria del automóvil. El coche se presenta al mundo el 15 de septiembre de 1991 sobre Place de la Défense en París. El Bugatti EB 110 se presenta como un digno representante de la tradición de la marca. Es el primer coche del mundo con un chasis de fibra de carbono, una caja de cambios de seis relaciones, un motor doce cilindros con cinco válvulas, cuatro turbocompresores y tracción permanente a las cuatro ruedas. En la última evolución -el Bugatti EB 110 SuperSport - alcanza una velocidad máxima de 351 km/h. Años más tarde, la compañía presenta bancarrota. Una empresa con base en Nuremberg -Dauer Racing- toma el control de la producción y sigue manteniendo a la venta el EB 100. Diez nuevas unidades son ensambladas y comercializadas.</p><br>
+
+                        <h3 class="historia__container__bugatti"><b>1998-2010</b></h3><br>
+                        <h3 class="historia__container__bugatti"><b>Volkswagen adquiere Bugatti</b></h3>
+                        <p>En Mayo de 1998, el grupo Volkswagen compra los derechos de la marca Bugatti y presenta el EB 118. Este vehículo, un coupé de cuatro plazas con un motor de 18 cilindros, es diseñado por Giorgetto Giugiario en el estudio 'Italdesign'. Este concepto sirve de base para futuros modelos. Después del EB 118, son tres conceptos los que presenta Bugatti en distintos eventos del motor. El Bugatti EB 218 se presenta en Ginebra como una berlina de cuatro puertas. Le sigue el EB 18/3 en el Salón de Frankfurt. Unas semanas más tarde, Bugatti presenta en el Salón del Automovil de Tokyo de 1999, el EB 18/4, que sirve como base para el futuro desarrollo del Bugatti Veyron.
+                        En el año 2000, se presenta el Bugatti Veyron EB 16/4, una variación del 18/4 presentada el año anterior. El Bugatti Veyron 16/4 cuenta con un motor de 16 cilindros en W y ocho litros de cilindrada, capaz de desarrollar una potencia máxima de 630 CV. Debido al interés y la alta aceptación del concepto, se presenta la versión de producción en 2001. Esta versión cuenta con una potencia máxima aumentada hasta los 1.001 CV, ocho litros de cilindrada, cuatro turbocompresores, y un par máximo de 1.250 Nm. El W16 de 8,0 litros, equivale a dos motores V8 atornillados entre sí. Cada cilindro posee cuatro válvulas (sumando un total de 64), pero la configuración de cada banco VR8 permite dos árboles de levas para accionar los cilindros. De esta manera, se necesitan sólo cuatro árboles de levas para todo el conjunto. La transmisión es una caja de doble embrague con siete relaciones de transmisión, levas de cambio elaboradas en magnesio, y un salto entre marchas de menos de 150 milisegundos. El Bugatti Veyron puede circular ya sea en modo semi-automático o totalmente automático. Además, cuenta con tracción permanente a las cuatro ruedas mediante un sistema de tracción Haldex. Semejantes especificaciones necesitan ser puestas en contacto con el aslfato. Por ello, el Bugatti Veyron utiliza unos compuestos Michelin PAX. Son unos neumáticos 'run-flat' especiales, diseñados específicamente para alcanzar la velocidad máxima del vehículo. Estos compuestos tienen un coste de 25.000$ por juego. El peso en vacío del conjunto está en torno a los 1.880 kilogramos. Esta cifra le da al vehículo una relación peso-potencia, de acuerdo con cifras de Volkswagen, de 530 CV por tonelada.
+                        El 19 de Abril de 2005, oficiales alemanes de control y homologación registran una velocidad máxima con el Bugatti Veyron de 408,47 km/h. Esta velocidad se obtiene durante las sesiones de prueba en la pista privada de Ehra-Lessien, propiedad del Grupo Volkswagen. La velocidad máxima estándar del Veyron se sitúa en 343 Km/h. Cuando el coche alcanza los 220 Km/h, el sistema hidráulico hace descender el coche hasta que lo situa con una distancia libre al suelo de unos 9 cm. Al mismo tiempo, el alerón queda desplegado. Circulando de este modo, el conjunto aerodinámico ofrece 3.425 newtons de carga aerodinámica, manteniendo el coche en continuo contacto con el asfalto. El modo de velocidad máxima es un procedimiento que debe hacerse mientras el vehículo está en parado. El conductor debe cambiar a una llave especial que introduce a la izquierda del asiento. Una vez introducida, se inician una lista de comprobaciones para determinar si coche y conductor están preparados para alcanzar los 407 Km/h. Si es así, el alerón trasero se retrae, los difusores de aire delanteros permanecen en posición cerrada y la distancia al suelo se reduce a 6,5 cm.
+                        Los frenos del Bugatti Veyron cuentan con discos perforados, realizados en fibra de carbono con ventilación reforzada. Los discos de carburo de silicio, fabricados por SGL Carbon, tienen una resistencia mucho mayor al debilitamiento en comparación con los discos de fundición convencionales. Las ligeras pinzas de freno monobloque en aleación de aluminio son elaboradas por AP Racing; poseen ocho pistones de titanio en el eje delantero y seis pistones en el trasero. Bugatti afirma que la deceleración máxima del vehículo es de 1,3 g. con neumáticos de carretera. A velocidades superiores a los 200 Km/h, el alerón trasero también actúa como freno gracias a su ajuste en ángulo a 55°. Con un tiempo de respuesta de tan solo 0,4 segundos una vez aplicados los frenos, suma al conjunto de frenado una fuerza de 0,68 g. en deceleración. Bugatti afirma que el Veyron es capaz de realizar una parada de emergencia desde 400 km/h en menos de 10 segundos, con una distancia recorrida en este tiempo equivalente a medio kilómetro.
+                        En otoño de 2005, se inicia la producción del Bugatti Veyron. En ese momento, es el ejercicio de ingeniería más complejo que se ve en la industria del motor. En 2008, los ingenieros de Bugatti, combinan un superdeportivo de 1.001 CV con una carrocería 'open-top' dando como resultado el Bugatti Veyron Grand Sport. Este vehiculo se presenta en el concurso de elegancia de Peeble Beach. En una subasta benéfica, el primer chasis alcanza un valor de 3,2 millones de dolares. Marcando el centenario de la compañía, se presentan cuatro modelos especiales conmemorativos en el concurso de elegancia de Villa d'Este. Los cuatro modelos poseen detalles que recuerdan al Bugatti Type 35 y aquellos años de éxito de la compañía en competicion. Estos exclusivos modelos se presentan en cuatro colores haciendo honor a los paises que tenian presencia en competicion por aquella época: azul representando a Francia, rojo representando a Italia, verde representando al Reino Unido, y blanco representando a Alemania.
+                        En 2010, Bugatti rompe de nuevo el record de velocidad para vehículos de producción con el Veyron 16.4 Super Sport. Bajo el atento control de los oficiales alemanes de control y homologación, el Veyron Super Sport alcanza una velocidad máxima de 431,072 Km/h, cifra que lo coloca en el Record Guinness como el vehículo de producción más rápido del mundo. La variante Super Sport del Veyron es la evolución más salvaje de la gama Veyron. Cuenta con una potencia máxima de 1.200 CV y un par motor máximo de 1.500 Nm. Gracias a estas cifras, es capaz de realizar un 0-100 Km/h en tan solo 2,5 segundos.</p><br>
+
+                        <h3 class="historia__container__bugatti"><b>2016-Actualidad</b></h3><br>
+                        <h3 class="historia__container__bugatti"><b>El monstruo de Molsheim</b></h3>
+                        <p>El Bugatti Chiron hace su debut en el Salón de Ginebra y, sin duda, es una de las mayores estrellas de la muestra. El sucesor del Bugatti Veyron cuenta con 1.500 CV de potencia y un par motor máximo de 1.600 Nm constante desde 2.000 a 6.000 revoluciones por minuto. Además, el fabricante anuncia unos altos niveles de eficacia, seguridad y comodidad. El Bugatti Chiron es más alto y ancho que su precedesor, lo que permite ofrecer más espacio, sobre todo para las piernas y una ergonomía interior mejorada. Además, el espacio libre para la cabeza se ha incrementado 12 mm. Su diseño exterior está inspirado en el legendario Bugatti Type 57SC Atlantic. Los neumáticos Michelin del nuevo Bugatti Chiron han sido probados en instalaciones aeroespaciales. Las dimensiones son de 285/30 R20 en la parte delantera y 355/25 R21 en la trasera. Estas ruedas se someten a un par máximo de 5.000 Nm y cada caucho está expuesto a una fuerza centrífuga de 3.800 g, es decir, 3.800 veces la fuerza de la gravedad. Toda esta fuerza es fruto del nuevo motor W16. Según informa Bugatti, el motor del Veyron ha sido completamente rediseñado. Por ello, este bloque de 8,0 litros con cuatro turbcompresores es capaz de ofrecer un 25% más de potencia que el modelo anterior. Es decir, 1.500 CV. El Bugatti Chiron utiliza un sistema de turbcompresores de dos etapas: por debajo de las 3.800 vueltas solo funcionan dos y, a partir de esta cifra, se suman los otros dos. Tambíen llama la atención los 60.000 litros de aire por minuto que son capaces de introducir en los cilindros los turbocompresores o los 800 litros de agura por minuto que mueve la bomba de agua. La velocidad máxima del Bugatti Chiron es de 420 km/h y está autolimitada.
+                        El Bugatti Chiron sigue siendo un vehículo de tracción integral y envía toda la potencia a los ejes gracias a una caja de cambios de doble embrague con siete relaciones capaz de admitir los 1.600 Nm de par motor. El Bugatti Chiron utiliza un sistema de frenos que toma toda su tecnología de la Fórmula 1, usa unos frenos de de carbono con una base de carburo de silicio (CSIC). Esta material hace que el disco de freno sea más ligero y que tenga mayor resistencia a la corrosión. Respecto al Bugatti Veyron, los discos tienen 20 mm más de diámetro y son 2 milímetros más gruosas. Las pinzas están fabricadas en titanio y en el eje delantero tienen pinzas de ocho pistones y el eje trasero son de seis. Otro de las grandes atractivos del Bugatti Chiron es el nuevo chasis adaptativo con cinco programas de conducción: Lift, EB Auto, Autobahn, Handling y Top Speed. De este modo, se puede aprovechar al 100% el rendimiento del vehiculo. El sistema es capaz de ajustar la dureza de los amortiguadores, la dirección asistida, la tracción a las cuatro ruedas, el diferencial trasero o el control de estabilidad. El modo Lift o elevación se utiliza cuando el coche circula por una zona de badenes. Cuando el coche supera los 50 Km/h entra automáticamente en el modo EB Auto y al superar los 180 Km/h pasa a la configuración Autobahn.</p><br>
+
+                        <div class="flecha" id="flecha-arriba" onclick="flechaArriba()">
+                            <a href="#historia"></a>
+                            <img src="images/iconos/flecha-abajo.png" alt="seguir leyendo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Modelos -->
+            <section id="modelos" class="modelos">
+                <h1 class="modelos__title modelos__title--bugatti">MODELOS</h1>
+                <div class="autos">
+                    <div class="autos__tipo">
+                        <h1>MODERNOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja1">
+                        <input type="checkbox" id="check-producto1">
+                        <div class="boton-next boton-next--bugatti">
+                            <label for="check-producto1"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/bugatti.png" alt="">
+                            <img src="images/modelos/bugatti/bugatti-divo-nombre.jpg" alt="" style="height: 5%; margin: 10px auto">
+                            <div class="auto-divisor"></div>
+                            <p>El Bugatti Divo es un hiperdeportivo del que Bugatti sólo fabricará una tirada muy exclusiva limitada a 40 unidades a un precio de más de 5 millones de euros. El Bugatti Divo se construye sobre la base del Bugatti Chiron, pero disfruta de una carrocería diferenciada para conseguir un diseño muy radical. Cuenta con el mismo motor 8.0 W16 Quad-Turbo con 1.500 CV del Bugatti Chiron, pero busca ser más radical y eficaz en curva.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #3dcbe9">></span> Motor:	W16 a 90° tetraturbo de 8 litros</li>
+                                <li><span style="color: #3dcbe9">></span> Potencia: 1479 HP (1500 CV)</li>
+                                <li><span style="color: #3dcbe9">></span> Par motor: 1600 N·m</li>
+                                <li><span style="color: #3dcbe9">></span> Transmisión: De doble embrage de 7 velocidades</li>
+                                <li><span style="color: #3dcbe9">></span> Velocidad máxima: 380 km/h (236 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--bugatti"><p>COMPRAR</p></a>
+                                <a class="button button--bugatti" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/bugatti/divo.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja2">
+                        <input type="checkbox" id="check-producto2">
+                        <div class="boton-next boton-next--bugatti">
+                            <label for="check-producto2"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/bugatti/chiron.webp" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/bugatti.png" alt="">
+                            <img src="images/modelos/bugatti/bugatti-chiron-nombre.jpg" alt="">
+                            <div class="auto-divisor"></div>
+                            <p>El Bugatti Chiron es un hiperdeportivo de Bugatti, que reemplazó al Bugatti Veyron en 2016. El Bugatti Chiron se caracteriza por ser el vehículo más rápido del mundo, siendo capaz de sobrepasar los 490 kilómetros por hora. Es un vehículo revolucionario, más avanzado en todos sus aspectos que su antecesor, pero sin emplear tecnologías híbridas o una construcción .</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #3dcbe9">></span> Motor:	W16 a 90° tetraturbo de 8 litros</li>
+                                <li><span style="color: #3dcbe9">></span> Potencia: 1479 HP (1500 CV)</li>
+                                <li><span style="color: #3dcbe9">></span> Par motor: 1600 N·m</li>
+                                <li><span style="color: #3dcbe9">></span> Transmisión: De doble embrage de 7 velocidades</li>
+                                <li><span style="color: #3dcbe9">></span> Velocidad máxima: 380 km/h (236 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--bugatti"><p>COMPRAR</p></a>
+                                <a class="button button--bugatti" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja3">
+                        <input type="checkbox" id="check-producto3">
+                        <div class="boton-next boton-next--bugatti">
+                            <label for="check-producto3"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/bugatti.png" alt="">
+                            <img src="images/modelos/bugatti/bugatti-centodieci-nombre.svg" alt="" style="height: 7%; margin-bottom: 10px;">
+                            <div class="auto-divisor"></div>
+                            <p>El Bugatti Centodieci emplea la base técnica del Bugatti Chiron y se produjeron en una tirada muy limitada, de sólo 10 unidades, fabricadas en un plazo de dos años en la factoría de Bugatti en Molsheim, Francia; y que tienen un precio que ronda los 10 millones de euros. Su nombre, Centodieci, pretende ser una reinterpretación moderna del Bugatti EB110, y celebrar así el 110 cumpleaños de la marca francesa.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #3dcbe9">></span> Motor:	W16 a 90° tetraturbo de 8 litros</li>
+                                <li><span style="color: #3dcbe9">></span> Potencia: 1479 HP (1500 CV)</li>
+                                <li><span style="color: #3dcbe9">></span> Par motor: 1600 N·m</li>
+                                <li><span style="color: #3dcbe9">></span> Transmisión: De doble embrage de 7 velocidades</li>
+                                <li><span style="color: #3dcbe9">></span> Velocidad máxima: 380 km/h (236 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--bugatti"><p>COMPRAR</p></a>
+                                <a class="button button--bugatti" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/bugatti/centodieci.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja4">
+                        <input type="checkbox" id="check-producto4">
+                        <div class="boton-next boton-next--bugatti">
+                            <label for="check-producto4"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/bugatti/la-voiture-noire.webp" alt="">
+                        </div>
+                        <div class="modelo-container__info">
+                            <img class='logo-modelo' src="images/viñetas/bugatti.png" alt="">
+                            <img src="images/modelos/bugatti/bugatti-la-voiture-noire-nombre.jpg" alt="">
+                            <div class="auto-divisor"></div>
+                            <p>La Voiture Noire representa un homenaje al Type 57 SC Atlantic, diseñado por Jean Bugatti (hijo de Ettore Bugatti), y del que solo se produjeron cuatro unidades entre 1936 y 1938, de las que tres fueron vendidas a particulares. Fue diseñado por la mano del director de diseño de Bugatti, Étienne Salomé, quien, inspirado en la obra maestra de la Jaek Bugatti, revisó estéticamente el Bugatti Chiron sin cambiar su plataforma mecánica.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #3dcbe9">></span> Motor:	W16 a 90° tetraturbo de 8 litros</li>
+                                <li><span style="color: #3dcbe9">></span> Potencia: 1479 HP (1500 CV)</li>
+                                <li><span style="color: #3dcbe9">></span> Par motor: 1600 N·m</li>
+                                <li><span style="color: #3dcbe9">></span> Transmisión: De doble embrage de 7 velocidades</li>
+                                <li><span style="color: #3dcbe9">></span> Velocidad máxima: 380 km/h (236 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--bugatti"><p>COMPRAR</p></a>
+                                <a class="button button--bugatti" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="autos  autos--clasicos">
+                    <div class="autos--clasicos__tipo">
+                        <h1>CLÁSICOS</h1>
+                    </div>
+                    <div class="modelo-container modelo-container--caja5">
+                        <input type="checkbox" id="check-producto5">
+                        <div class="boton-next boton-next--bugatti">
+                            <label for="check-producto5"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/bugatti-classic.png" alt="">
+                            <h2>Bugatti Type 57 SC Atlantic</h2>
+                            <div class="auto-divisor"></div>
+                            <p>Elegante, deportivo, lujoso y raro. Son tan solo algunas de las palabras con las que se puede describir al Type 57 SC Atlantic Coupé, uno de los autos más legendarios y emblemáticos de Bugatti
+                            Si tenemos en cuenta el diseño espectacular y el año en el que fue lanzado al mercado, es un hecho que este automóvil se adelantó a su época. De hecho, aunque han pasado más de 80 años de su aparición, es considerado uno de los autos más bellos.</p>
+                            <h3>Especificaciones</h3>
+                            <ul>
+                                <li><span style="color: #0f353c">></span> Motor:	8 cilindros en linea de 3.3 litros</li>
+                                <li><span style="color: #0f353c">></span> Potencia: 203 HP (200 CV)</li>
+                                <li><span style="color: #0f353c">></span> Par motor: 295 N·m</li>
+                                <li><span style="color: #0f353c">></span> Transmisión: Manual de 4 velocidades/li>
+                                <li><span style="color: #0f353c">></span> Velocidad máxima: 200 km/h (124 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--bugatti-clasico"><p>COMPRAR</p></a>
+                                <a class="button button--bugatti-clasico" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/bugatti/type57.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="modelo-container modelo-container--caja6">
+                        <input type="checkbox" id="check-producto6">
+                        <div class="boton-next boton-next--bugatti">
+                            <label for="check-producto6"></label>
+                            <img src="images/iconos/next-button.png" alt="">
+                        </div>
+                        <div class="modelo-container__imagen-auto">
+                            <img src="images/modelos/bugatti/eb110.webp" alt="">
+                        </div>
+                        <div class="modelo-container__info modelo-container__info--clasicos">
+                            <img class='logo-modelo' src="images/viñetas/bugatti-classic.png" alt="">
+                            <h2>Bugatti EB110</h2>
+                            <div class="auto-divisor"></div>
+                            <p>El Bugatti EB110 fue el producto resultante tras la compra de la compañía por un empresario italiano, Romano Artioli, en 1987. Su objetivo era renacer la marca y para ello desarrollaría un nuevo superdeportivo a la altura de lo mejor de la época. En la factoría Campogalliano, cerca de Módena (Italia), Artioli reúne a los padres del Lamborghini Miura, Paolo Stanzani y Marcello Gandini, y comienza a trabajar en el proyecto. </p>
+                            <h3>Especificaciones.</h3>
+                            <ul>
+                                <li><span style="color: #0f353c">></span> Motor:	V12 a 60° de 3.5 litros</li>
+                                <li><span style="color: #0f353c">></span> Potencia: 568 HP (560 CV)</li>
+                                <li><span style="color: #0f353c">></span> Par motor: 620 N·m</li>
+                                <li><span style="color: #0f353c">></span> Transmisión: Manual de 6 velocidades/li>
+                                <li><span style="color: #0f353c">></span> Velocidad máxima: 338 km/h (210 mph)</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="button button--bugatti-clasico"><p>COMPRAR</p></a>
+                                <a class="button button--bugatti-clasico" href="#contacto"><p>CONSULTAR</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #3dcbe9;"></path></svg></div>
+                <div class="wave-fin" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: black;"></path></svg></div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer__logo-footer">
+            <a href="index.html"></a>
+            <img src="images/logo1.png" alt="">
+        </div>
+        <div class="linea-divisoria-footer" id="contacto"></div>
+        <div class="footer-container">
+            <div class="footer-container__info">
+                <h2>Información Adicional</h2>
+                <ul>
+                    <img src="images/iconos/ubicacion.png" alt="">
+                    <li>724 East Kensington Road</li>
+                    <li>Los Angeles, California</li>
+                    <li>CA 90026</li>
+                    <li>EE.UU.</li>
+                </ul>
+                <div>
+                    <img src="images/iconos/telefono.png" alt="">
+                    <p>+1 213 345 6745</p>
+                </div>
+                <div>
+                    <img src="images/iconos/correo-electronico.png" alt="">
+                    <p>contacto@lafamilia.com</p>
+                </div>
+
+            </div>
+            <div class="footer-container__social">
+                <h2>Social</h2>
+                <ul>
+                    <img src="images/iconos/twitter.png" alt="">
+                    <li>Siguenos en Twitter</li>
+                    <img src="images/iconos/facebook.png" alt="">
+                    <li>Encuentranos en Facebook</li>
+                    <img src="images/iconos/youtube.png" alt="">
+                    <li>Ve nuestros últimos videos</li>
+                    <img src="images/iconos/instagram.png" alt="">
+                    <li>Ve nuestra galería de fotos</li>
+                    <img src="images/iconos/spotify.png" alt="">
+                    <li>Sigue nuestras listas en Spotify</li>
+
+                </ul>
+            </div>
+            <div class="contacto">
+                <h2>Contáctenos</h2>
+                <div>
+                    <form>
+                        <fieldset class="contacto__formulario contacto__formulario--personal">
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="nombre" id="box-nombre" required><br>
+                                <label for="name">Nombre</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="apellido" id="box-apellido" required><br>
+                                <label for="apellido">Apellido</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="tel" name="telefono" id="box-tel" required><br>
+                                <label for="telefono">Teléfono</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="email" name="email" id="box-email" required><br>
+                                <label for="email">Email</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="contacto__formulario contacto__formulario--asunto">
+                            <div class="contacto__formulario__select">
+                                <label for="producto">Producto por el que quiere consultar: </label>
+                                <select name="producto" id="producto" required>
+                                    <optgroup label="ASTON MARTIN">
+                                        <option value="db11">DB11</option>
+                                        <option value="vulcan">Vulcan</option>
+                                        <option value="dbx">DBX</option>
+                                        <option value="dbs">DBS</option>
+                                        <option value="vantage">V8 Vantage '77</option>
+                                        <option value="vantage">DB4 GT Zagato</option>
+                                    </optgroup>
+                                    <optgroup label="BUGATTI">
+                                        <option value="divo">Divo</option>
+                                        <option value="chiron">Chiron</option>
+                                        <option value="centodieci">Centodieci</option>
+                                        <option value="la-voiture-noire">La Voiture Noire</option>
+                                        <option value="type57">Type 57 SC Atlantic</option>
+                                        <option value="eb110">EB110</option>
+                                    </optgroup>
+                                    <optgroup label="FERRARI">
+                                        <option value="488-pista">488 Pista</option>
+                                        <option value="sf90-stradale">SF90 Stradale</option>
+                                        <option value="f8-tributo">F8 Tributo</option>
+                                        <option value="laferrari">LaFerrari</option>
+                                        <option value="250-gto">250 GTO</option>
+                                        <option value="f40">F40</option>
+                                    </optgroup>
+                                    <optgroup label="KOENIGSEGG">
+                                        <option value="regera">Regera</option>
+                                        <option value="jesko">Jesko</option>
+                                        <option value="agera-r">Agera R</option>
+                                        <option value="one">One:1</option>
+                                    </optgroup>
+                                    <optgroup label="LAMBORGHINI">
+                                        <option value="aventador-svj">Aventador SVJ</option>
+                                        <option value="sesto-elemento">Sesto Elemento</option>
+                                        <option value="huracan-evo">Huracan EVO</option>
+                                        <option value="veneno">Veneno</option>
+                                        <option value="countach">Countach LP 400</option>
+                                        <option value="miura">Miura P400 S</option>
+                                    </optgroup>
+                                    <optgroup label="MCLAREN">
+                                        <option value="p1-gtr">P1 GTR</option>
+                                        <option value="senna">Senna</option>
+                                        <option value="720s-spider">702s Spider</option>
+                                        <option value="artura">Artura</option>
+                                        <option value="f1">F1</option>
+                                        <option value="m6gt">M6GT</option>
+                                    </optgroup>
+                                    <optgroup label="PAGANI">
+                                        <option value="zonda-r">Zonda R</option>
+                                        <option value="zonda-f">Zonda F</option>
+                                        <option value="huayra">Huayra</option>
+                                        <option value="huayra-roadster">Huayra Roadster</option>
+                                    </optgroup>
+                                    <optgroup label="PORSCHE">
+                                        <option value="911-turbo-s">911 Turbo S</option>
+                                        <option value="718-spyder">718 Spyder</option>
+                                        <option value="gt3-rs">GT3 RS</option>
+                                        <option value="carrera-4-gts">Carrera 4 GTS</option>
+                                        <option value="911-80's">911 80's</option>
+                                        <option value="550-spyder">550 Spyder</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="contacto__formulario__box">
+                                <textarea name="comentario" id="comentario" cols="30" rows="3" required></textarea>
+                                <label for="comentario">Mensaje</label>
+                            </div>
+                        </fieldset>
+                        <div class="contacto__boton">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="pie pie--bugatti">
+            <div class="pie__socios">
+                <h2>Socios Oficiales</h2>
+                <div class="pie__socios__logo">
+                    <div class="box-socios box-socios--aston">
+                        <img src="images/viñetas/Nuevacarpeta/aston-martin.png" alt="" class="box-socios__aston">
+                        <a href="https://www.astonmartin.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/bugatti.png" alt="">
+                        <a href="https://www.bugatti.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/ferrari.png" alt="">
+                        <a href="https://www.ferrari.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/koenigsegg.png" alt="">
+                        <a href="https://www.koenigsegg.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/lamborghini.png" alt="">
+                        <a href="https://www.lamborghini.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/mclaren.png" alt="">
+                        <a href="https://www.mclaren.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/pagani.png" alt="">
+                        <a href="https://www.pagani.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/porsche.png" alt="">
+                        <a href="https://www.porsche.com/" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="linea-divisoria-footer"></div>
+            <p>© 1997-2021 - <span>La Familia.</span> Group - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+</body>
+</html>

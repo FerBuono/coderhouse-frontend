@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="auto, autoshop, auto shop, sportcar, Aston Martin, Bugatti, Ferrari, Koenigsegg, Lamborghini, McLaren, Pagani, Porsche">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="images/lafamilia.svg" type="image/x-icon">
+    <title>La Familia. - Web Oficial</title>
+    <meta name="description" content="Somos una concesionaria de autos deportivos, con socios oficiales de gran reconocimiento y exclusividad como lo son Aston Martin, Bugatti, Ferrari, Koenigsegg, Lamborghini, McLaren, Pagani y Porsche. La Familia conoce y entiende el estilo de vida de sus clientes y crea experiencias únicas y relevantes para ellos.">
+</head>
+
+<body>
+    <!-- Scroll Bar -->
+    <div id="progress-bar"></div>
+    <div id="scroll-path"></div>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header__container">
+            <!-- Menú desplegable -->
+            <input type="checkbox" id="check">
+            <div class="header__container__barras-menu">
+                <label for="check"></label>
+                <div></div>
+            </div>
+            <div class="menu-desplegable" id="menu-desplegable">
+                <ul class="menu-desplegable__lista">
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item1"><a id="menu-link1" href="#empresa">Empresa</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item2">
+                        <a id="menu-link2" href="#productos">Productos</a>
+                        <label for="check-sub">
+                                <img src="images/iconos/next-button.png" alt="botón para desplegar el menú de productos">
+                        </label>
+                    </li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item3"><a id="menu-link3" href="#equipo">Equipo</a></li>
+                    <li class="menu-desplegable__lista__item menu-desplegable__lista__item--item4"><a id="menu-link4" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Submenú desplegable -->
+            <input type="checkbox" id="check-sub">
+            <div class="submenu-desplegable" id="">
+                <div class="submenu-desplegable__next-button">
+                    <label for="check-sub"><img src="images/iconos/close.png" alt="botón para cerrar el menú de productos"></label>
+                </div>
+                <ul class="submenu-desplegable__lista">
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item1"><a href="aston-martin.html">Aston Martin</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item2"><a href="bugatti.html">Bugatti</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item3"><a href="ferrari.html">Ferrari</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item4"><a href="koenigsegg.html">Koenigsegg</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item5"><a href="lamborghini.html">Lamborghini</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item6"><a href="mclaren.html">McLaren</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item7"><a href="pagani.html">Pagani</a></li>
+                    <li class="submenu-desplegable__lista__item submenu-desplegable__lista__item--item8"><a href="porsche.html">Porsche</a></li>
+
+                </ul>
+            </div>
+            <!-- Menú de navegación -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--izq">
+                    <li class="navegacion__lista__item"><a href="#empresa">Empresa</a></li>
+                    <li class="navegacion__lista__item navegacion__lista__item--productos" id="item-productos">
+                        <a href="#productos">Productos</a>
+                        <img id='boton-productos' src="images/iconos/next-button.png" alt="botón para mostrar los productos">
+                        <ul class="productos-lista" id="lista-productos">
+                            <li class="productos-lista__item" id='producto1'><a href="aston-martin.html">Aston Martin</a></li>
+                            <li class="productos-lista__item" id='producto2'><a href="bugatti.html">Bugatti</a></li>
+                            <li class="productos-lista__item" id='producto3'><a href="ferrari.html">Ferrari</a></li>
+                            <li class="productos-lista__item" id='producto4'><a href="koenigsegg.html">Koenigsegg</a></li>
+                            <li class="productos-lista__item" id='producto5'><a href="lamborghini.html">Lamborghini</a></li>
+                            <li class="productos-lista__item" id='producto6'><a href="mclaren.html">McLaren</a></li>
+                            <li class="productos-lista__item" id='producto7'><a href="pagani.html">Pagani</a></li>
+                            <li class="productos-lista__item" id='producto8'><a href="porsche.html">Porsche</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Logo -->
+            <div class="header__container__logo-inicio">
+                <a href="index.html"></a>
+                <img id="index" src="images/logo3.png" alt="logo de la empresa">
+            </div>
+            <!-- ---- -->
+            <div class="navegacion">
+                <ul class="navegacion__lista navegacion__lista--der">
+                    <li class="navegacion__lista__item"><a href="#equipo">La familia</a></li>
+                    <li class="navegacion__lista__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main id="main">
+        <!-- Slider + Wave -->
+        <div id="inicio" class="slider-container">
+            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #211616;"></path>
+                </svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #d4d4c6;"></path>
+                </svg></div>
+            <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                    style="height: 100%; width: 100%;">
+                    <path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #161821;"></path>
+                </svg></div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <div>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    </div>
+                    <div>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    </div>
+                    <div>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                    </div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/zonda.webp" class="d-block w-100" alt="pagani zonda">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/911.webp" class="d-block w-100" alt="porsche 911">
+                    </div>
+                  <div class="carousel-item">
+                    <img src="images/aventadorsvj.webp" class="d-block w-100" alt="lamborghini aventador svj">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/chiron.webp" class="d-block w-100" alt="bugatti chiron">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/laferrari.webp" class="d-block w-100" alt="ferrari laferrari">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/mclarenp1.webp" class="d-block w-100" alt="mclarenp1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/regera.webp" class="d-block w-100" alt="koenigsegg regera">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/db11.webp" class="d-block w-100" alt="aston martin db11">
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- Empresa -->
+        <section id="empresa" class="empresa">
+            <h2 class="empresa__title">Empresa</h2>
+            <div class="empresa__informacion">
+                <div class="informacion informacion--sup">
+                    <div class="informacion__contenido informacion__contenido--nosotros">
+                        <h3>NOSOTROS</h3>
+                        <p>Somos una empresa dedicada a la elegancia, el diseño y la última tecnología. Nuestra
+                            motivación es entregar productos y servicios exclusivos y de alta calidad a nuestros
+                            clientes. <span>La Familia</span> conoce y entiende el estilo de vida de sus clientes y crea
+                            experiencias únicas y relevantes para ellos.</p>
+                    </div>
+                    <div class="informacion__contenido informacion__contenido--productos">
+                        <h3>NUESTROS PRODUCTOS</h3>
+                        <p>Con sede en Los Angeles, California, <span>La Familia</span> tiene a la venta una amplia gama
+                            de superautos y deportivos clásicos, de marcas como Aston Martin, Ferrari, Lamborghini,
+                            Pagani y muchos más.</p>
+                    </div>
+                </div>
+                <!-- Servicios -->
+                <div id="servicios" class="informacion informacion--inf">
+                    <div class="informacion__contenido informacion__contenido--servicios">
+                        <h3>NUESTROS SERVICIOS</h3>
+                        <p>En <span>La Familia</span> contamos con una especializada red de servicios a disposición de
+                            nuestros clientes, nuestro compromiso es ofrecer soluciones personalizadas, integrales y
+                            flexibles de acuerdo a sus necesidades.</p>
+                    </div>
+                    <div class="grilla-servicios">
+                        <div class="grilla-servicios__contenido">
+                            <img src="images/iconos/checked.png" alt="ícono check">
+                            <div>
+                                <h3>VENTAS</h3>
+                                <p>Venta directa de las marcas a las cuales representamos</p>
+                            </div>
+                        </div>
+                        <div class="grilla-servicios__contenido">
+                            <img src="images/iconos/customer-support.png" alt="icono herramientas">
+                            <div>
+                                <h3>SERVICIO TÉCNICO</h3>
+                                <p>Contamos con los equipos, la experiencia y las instalaciones para ofrecer el mejor
+                                    servicio de post venta.</p>
+                            </div>
+                        </div>
+                        <div class="grilla-servicios__contenido">
+                            <img src="images/iconos/settings.png" alt="icono engranaje">
+                            <div>
+                                <h3>REPUESTOS ORIGINALES</h3>
+                                <p>Ponemos a su disposición los repuestos originales, ya que somos importadores
+                                    autorizados.</p>
+                            </div>
+                        </div>
+                        <div class="grilla-servicios__contenido">
+                            <img src="images/iconos/steering-wheel.png" alt="icono volante">
+                            <div>
+                                <h3>DRIVING EXPERIENCE</h3>
+                                <p>Experiencias personalizadas de manejo con conductores expertos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Productos -->
+        <section id="productos" class="productos">
+            <h2 class="productos__title">Productos</h2>
+            <div class="grilla-productos">
+                <a href="aston-martin.html">
+                    <div class="grilla-productos__item grilla-productos__item--item1">
+                        <img class="grilla-productos__item__logo" src="images/viñetas/Nuevacarpeta/aston-martin.png" alt="logo aston martin">
+                        <img class="grilla-productos__item__imagen" src="images/db11.webp" alt="imagen del aston martin db11">
+                        <img class="grilla-productos__item__nombre" src="images/viñetas/Nuevacarpeta/astonmartin-nombre.png" alt="logo nombre aston martin">
+                    </div>
+                </a>
+                <a href="bugatti.html">
+                    <div class="grilla-productos__item grilla-productos__item--item2">
+                        <img class="grilla-productos__item__logo" src="images/viñetas/Nuevacarpeta/bugatti.png" alt="logo bugatti">
+                        <img class="grilla-productos__item__imagen" src="images/chiron.webp" alt="imagen del bugatti chiron">
+                        <img class="grilla-productos__item__nombre" src="images/viñetas/Nuevacarpeta/bugatti-nombre.png" alt="logo nombre bugatti">
+
+                    </div>
+                </a>
+                <a href="ferrari.html">
+                    <div class="grilla-productos__item grilla-productos__item--item3">
+                        <img class="grilla-productos__item__logo" src="images/viñetas/Nuevacarpeta/ferrari.png" alt="logo ferrari">
+                        <img class="grilla-productos__item__imagen" src="images/laferrari.webp" alt="imagen del ferrari laferrari">
+                        <img class="grilla-productos__item__nombre" src="images/viñetas/Nuevacarpeta/ferrari-nombre.png" alt="logo nombre ferrari">
+                    </div>
+                </a>
+                <a href="koenigsegg.html">
+                    <div class="grilla-productos__item grilla-productos__item--item4">
+                        <img class="grilla-productos__item__logo" src="images/viñetas/Nuevacarpeta/koenigsegg.png" alt="logo koenigsegg">
+                        <img class="grilla-productos__item__imagen" src="images/regera.webp" alt="imagen del koenigsegg regera">
+                        <img class="grilla-productos__item__nombre" src="images/viñetas/Nuevacarpeta/koenigsegg-nombre.png" alt="logo nombre koenigsegg">
+                    </div>
+                </a>
+                <a href="lamborghini.html">
+                    <div class="grilla-productos__item grilla-productos__item--item5">
+                        <img class="grilla-productos__item__logo" src="images/viñetas/Nuevacarpeta/lamborghini.png" alt="logo lamborghini">
+                        <img class="grilla-productos__item__imagen" src="images/aventadorsvj.webp" alt="imagen del lamborghini aventador svj">
+                        <img class="grilla-productos__item__nombre" src="images/viñetas/Nuevacarpeta/lamborghini-nombre.png" alt="logo nombre lamborghini">
+                    </div>
+                </a>
+                <a href="mclaren.html">
+                    <div class="grilla-productos__item grilla-productos__item--item6">
+                        <img class="grilla-productos__item__logo" src="images/viñetas/Nuevacarpeta/mclaren.png" alt="logo mclaren">
+                        <img class="grilla-productos__item__imagen" src="images/mclarenp1.webp" alt="imagen del mclaren p1">
+                        <img class="grilla-productos__item__nombre" src="images/viñetas/Nuevacarpeta/mclaren-nombre.png" alt="logo nombre mclaren">
+                    </div>
+                </a>
+                <a href="pagani.html">
+                    <div class="grilla-productos__item grilla-productos__item--item7">
+                        <img class="grilla-productos__item__logo" src="images/viñetas/Nuevacarpeta/pagani.png" alt="logo pagani">
+                        <img class="grilla-productos__item__imagen" src="images/zonda.webp" alt="imagen del pagani zonda f">
+                        <img class="grilla-productos__item__nombre" src="images/viñetas/Nuevacarpeta/pagani-nombre.png" alt="logo nombre pagani">
+                    </div>
+                </a>
+                <a href="porsche.html">
+                    <div class="grilla-productos__item grilla-productos__item--item8">
+                        <img class="grilla-productos__item__logo" src="images/viñetas/Nuevacarpeta/porsche.png" alt="logo porsche">
+                        <img class="grilla-productos__item__imagen" src="images/911.webp" alt="imagen del porsche 911">
+                        <img class="grilla-productos__item__nombre" src="images/viñetas/Nuevacarpeta/porsche-nombre.png" alt="logo nombre porsche">
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- Equipo -->
+        <section id="equipo" class="equipo">
+            <h2 class="equipo__title">La Familia</h2>
+            <div class="equipo__container">
+                <div class="bio bio--bio1">
+                    <div class="bio__foto">
+                    </div>
+                    <div class="bio__informacion">
+                        <h3>Dominic Toretto</h3>
+                        <p>Co-fundador y CEO de La Familia.</p>
+                        <div class="redes">
+                            <ul class="redes__lista">
+                                <li class="redes__lista__item"><img src="images/iconos/twitter.png" alt="logo twitter"></li>
+                                <li class="redes__lista__item"><img src="images/iconos/facebook.png" alt="logo facebook"></li>
+                                <li class="redes__lista__item"><img src="images/iconos/instagram.png" alt="logo instagram"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bio bio--bio2">
+                    <div class="bio__foto">
+                    </div>
+                    <div class="bio__informacion">
+                        <h3>Letty Ortiz</h3>
+                        <p>Co-fundadora y COO de La Familia.</p>
+                        <div class="redes">
+                            <ul class="redes__lista">
+                                <li class="redes__lista__item"><img src="images/iconos/twitter.png" alt="logo twitter"></li>
+                                <li class="redes__lista__item"><img src="images/iconos/facebook.png" alt="logo facebook"></li>
+                                <li class="redes__lista__item"><img src="images/iconos/instagram.png" alt="logo instagram"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bio bio--bio3">
+                    <div class="bio__foto">
+                    </div>
+                    <div class="bio__informacion">
+                        <h3>Brian O´Conner</h3>
+                        <p>Co-fundador y CIO de La Familia.</p>
+                        <div class="redes">
+                            <ul class="redes__lista">
+                                <li class="redes__lista__item"><img src="images/iconos/twitter.png" alt="logo twitter"></li>
+                                <li class="redes__lista__item"><img src="images/iconos/facebook.png" alt="logo facebook"></li>
+                                <li class="redes__lista__item"><img src="images/iconos/instagram.png" alt="logo instagram"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bio bio--bio4">
+                    <div class="bio__foto">
+                    </div>
+                    <div class="bio__informacion">
+                        <h3>Mia Toretto</h3>
+                        <p>Co-fundadora y CFO de La Familia.</p>
+                        <div class="redes">
+                            <ul class="redes__lista">
+                                <li class="redes__lista__item"><img src="images/iconos/twitter.png" alt="logo twitter"></li>
+                                <li class="redes__lista__item"><img src="images/iconos/facebook.png" alt="logo facebook"></li>
+                                <li class="redes__lista__item"><img src="images/iconos/instagram.png" alt="logo instagram"></li>
+                            </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-fin" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M-16.08,80.42 C151.52,135.69 351.85,-14.30 520.03,111.02 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #211616;"></path>
+                </svg></div>
+            <div class="wave-fin" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M-61.23,79.44 C149.99,150.00 347.90,-16.28 531.88,142.59 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #d4d4c6;"></path>
+                </svg></div>
+            <div class="wave-fin" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
+                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M-0.84,111.02 C149.99,150.00 347.90,44.89 545.99,170.22 L500.00,150.00 L0.00,150.00 Z"
+                        style="stroke: none; fill: #161821;"></path>
+                </svg></div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer__logo-footer">
+            <a href="index.html"></a>
+            <img src="images/logo1.png" alt="logo empresa">
+        </div>
+        <div class="linea-divisoria-footer" id="contacto"></div>
+        <div class="footer-container">
+            <div class="footer-container__info">
+                <h2>Información Adicional</h2>
+                <ul>
+                    <img src="images/iconos/ubicacion.png" alt="icono ubicacion">
+                    <li>724 East Kensington Road</li>
+                    <li>Los Angeles, California</li>
+                    <li>CA 90026</li>
+                    <li>EE.UU.</li>
+                </ul>
+                <div>
+                    <img src="images/iconos/telefono.png" alt="icono telefono">
+                    <p>+1 213 345 6745</p>
+                </div>
+                <div>
+                    <img src="images/iconos/correo-electronico.png" alt="icono correo electrónico">
+                    <p>contacto@lafamilia.com</p>
+                </div>
+
+            </div>
+            <div class="footer-container__social">
+                <h2>Social</h2>
+                <ul>
+                    <img src="images/iconos/twitter.png" alt="logo twitter">
+                    <li>Siguenos en Twitter</li>
+                    <img src="images/iconos/facebook.png" alt="logo facebook">
+                    <li>Encuentranos en Facebook</li>
+                    <img src="images/iconos/youtube.png" alt="logo youtube">
+                    <li>Ve nuestros últimos videos</li>
+                    <img src="images/iconos/instagram.png" alt="logo instagram">
+                    <li>Ve nuestra galería de fotos</li>
+                    <img src="images/iconos/spotify.png" alt="logo spotify">
+                    <li>Sigue nuestras listas en Spotify</li>
+
+                </ul>
+            </div>
+            <div class="contacto">
+                <h2>Contáctenos</h2>
+                <div>
+                    <form>
+                        <fieldset class="contacto__formulario contacto__formulario--personal">
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="nombre" id="box-nombre" required><br>
+                                <label for="name">Nombre</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="text" name="apellido" id="box-apellido" required><br>
+                                <label for="apellido">Apellido</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="tel" name="telefono" id="box-tel" required><br>
+                                <label for="telefono">Teléfono</label>
+                            </div>
+                            <div class="contacto__formulario__box">
+                                <input type="email" name="email" id="box-email" required><br>
+                                <label for="email">Email</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="contacto__formulario contacto__formulario--asunto">
+                            <div class="contacto__formulario__select">
+                                <label for="producto">Producto por el que quiere consultar: </label>
+                                <select name="producto" id="producto" required>
+                                    <optgroup label="ASTON MARTIN">
+                                        <option value="db11">DB11</option>
+                                        <option value="vulcan">Vulcan</option>
+                                        <option value="dbx">DBX</option>
+                                        <option value="dbs">DBS</option>
+                                        <option value="vantage">V8 Vantage '77</option>
+                                        <option value="vantage">DB4 GT Zagato</option>
+                                    </optgroup>
+                                    <optgroup label="BUGATTI">
+                                        <option value="divo">Divo</option>
+                                        <option value="chiron">Chiron</option>
+                                        <option value="centodieci">Centodieci</option>
+                                        <option value="la-voiture-noire">La Voiture Noire</option>
+                                        <option value="type57">Type 57 SC Atlantic</option>
+                                        <option value="eb110">EB110</option>
+                                    </optgroup>
+                                    <optgroup label="FERRARI">
+                                        <option value="488-pista">488 Pista</option>
+                                        <option value="sf90-stradale">SF90 Stradale</option>
+                                        <option value="f8-tributo">F8 Tributo</option>
+                                        <option value="laferrari">LaFerrari</option>
+                                        <option value="250-gto">250 GTO</option>
+                                        <option value="f40">F40</option>
+                                    </optgroup>
+                                    <optgroup label="KOENIGSEGG">
+                                        <option value="regera">Regera</option>
+                                        <option value="jesko">Jesko</option>
+                                        <option value="agera-r">Agera R</option>
+                                        <option value="one">One:1</option>
+                                    </optgroup>
+                                    <optgroup label="LAMBORGHINI">
+                                        <option value="aventador-svj">Aventador SVJ</option>
+                                        <option value="sesto-elemento">Sesto Elemento</option>
+                                        <option value="huracan-evo">Huracan EVO</option>
+                                        <option value="veneno">Veneno</option>
+                                        <option value="countach">Countach LP 400</option>
+                                        <option value="miura">Miura P400 S</option>
+                                    </optgroup>
+                                    <optgroup label="MCLAREN">
+                                        <option value="p1-gtr">P1 GTR</option>
+                                        <option value="senna">Senna</option>
+                                        <option value="720s-spider">702s Spider</option>
+                                        <option value="artura">Artura</option>
+                                        <option value="f1">F1</option>
+                                        <option value="m6gt">M6GT</option>
+                                    </optgroup>
+                                    <optgroup label="PAGANI">
+                                        <option value="zonda-r">Zonda R</option>
+                                        <option value="zonda-f">Zonda F</option>
+                                        <option value="huayra">Huayra</option>
+                                        <option value="huayra-roadster">Huayra Roadster</option>
+                                    </optgroup>
+                                    <optgroup label="PORSCHE">
+                                        <option value="911-turbo-s">911 Turbo S</option>
+                                        <option value="718-spyder">718 Spyder</option>
+                                        <option value="gt3-rs">GT3 RS</option>
+                                        <option value="carrera-4-gts">Carrera 4 GTS</option>
+                                        <option value="911-80's">911 80's</option>
+                                        <option value="550-spyder">550 Spyder</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="contacto__formulario__box">
+                                <textarea name="comentario" id="comentario" cols="30" rows="3" required></textarea>
+                                <label for="comentario">Mensaje</label>
+                            </div>
+                        </fieldset>
+                        <div class="contacto__boton">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pie">
+            <div class="pie__socios">
+                <h2>Socios Oficiales</h2>
+                <div class="pie__socios__logo">
+                    <div class="box-socios box-socios--aston">
+                        <img src="images/viñetas/Nuevacarpeta/aston-martin.png" alt="logo aston martin" class="box-socios__aston">
+                        <a href="https://www.astonmartin.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/bugatti.png" alt="logo bugatti">
+                        <a href="https://www.bugatti.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/ferrari.png" alt="logo ferrari">
+                        <a href="https://www.ferrari.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/koenigsegg.png" alt="logo koenigsegg">
+                        <a href="https://www.koenigsegg.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/lamborghini.png" alt="logo lamborghini">
+                        <a href="https://www.lamborghini.com" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/mclaren.png" alt="logo mclaren">
+                        <a href="https://www.mclaren.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/pagani.png" alt="logo pagani">
+                        <a href="https://www.pagani.com/" target="_blank"></a>
+                    </div>
+                    <div class="box-socios">
+                        <img src="images/viñetas/Nuevacarpeta/porsche.png" alt="logo porsche">
+                        <a href="https://www.porsche.com/" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="linea-divisoria-footer"></div>
+            <p>© 1997-2021 - <span>La Familia.</span> Group - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
+</body>
+
+</html>

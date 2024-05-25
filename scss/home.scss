@@ -1,0 +1,746 @@
+// GLOBALS
+@import "./globals/variables";
+@import "./globals/mixins";
+@import "./globals/globals";
+
+// PARTIALS
+@import "./partials/header";
+@import "./partials/footer";
+
+/*////////////////////// MAIN //////////////////////*/
+
+
+/*/////////// SLIDER ///////////*/
+
+
+
+.slider-container {
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide{
+    position: relative;
+    height: 95%;
+}
+
+.carousel-indicators{
+    width: 25%;
+    display: none;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    bottom: 50px;
+    z-index: 101;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.carousel-indicators > div {
+    margin: 0 10px;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.carousel-indicators [data-bs-target]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-top: none;
+    border-bottom: none;
+}
+
+.carousel-indicators button{
+    height: 10px;
+    margin: 0;
+}
+
+.carousel-inner{
+    position: relative;
+    height: 100%;
+}
+
+.carousel-inner .carousel-item{
+    height: 100%;
+}
+
+.carousel-inner .carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item{
+    transition: transform .8s ease-in-out;
+}
+
+.wave {
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    z-index: 100;
+}
+
+@media screen and (min-width: 480px) {
+    .slider-container{
+        height: 100vh;
+    }
+}
+
+
+@media screen and (min-width:1100px) {
+    .carousel-indicators{
+        display: flex;
+    }
+
+    
+}
+
+
+
+
+
+/*/////////// EMPRESA Y SERVICIOS ///////////*/
+
+
+
+.empresa {
+    max-width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    &__title {
+        @include title;
+    }
+
+    &__informacion {
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &:hover {
+
+        .empresa__title {
+            text-shadow: 0 0 2px white;
+            text-decoration: line-through;
+        }
+    }
+}
+
+.informacion {
+    width: 100%;
+
+    &--sup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 2em;
+        color: $color-uno;
+        background-color: $color-dos;
+        margin: .5rem auto;
+        box-shadow: inset 0 0 5px black;
+
+        &--nosotros {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        &--productos {
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+        }
+
+        &--servicios {
+            align-items: center;
+            width: auto;
+            background-color: $color-tres;
+            border: 1px solid $color-dos;
+            color: $color-dos;
+        }
+
+        span {
+            font-family: 'Fugaz One', sans-serif;
+        }
+
+        &:hover {
+            box-shadow: 0 0 10px black;
+        }
+    }
+}
+
+.grilla-servicios {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem .5rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-tres;
+        box-shadow: 0 0 10px black;
+    }
+
+    &__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: $color-dos;
+        color: $color-uno;
+        padding: 10px;
+        position: relative;
+        box-shadow: inset 0 0 3px black;
+
+        img {
+            width: 50%;
+            object-fit: contain;
+        }
+    }
+
+}
+
+@media screen and (min-width: 480px) {
+    
+    .empresa__title {
+        font-size:35px;
+        letter-spacing: 20px;
+    }
+
+    .grilla-servicios {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 650px){
+  
+    .grilla-servicios__contenido img {
+        width: 100px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    
+    .informacion {
+
+        &--sup {
+            flex-direction: row;
+        }
+
+        &__contenido {
+
+            &--nosotros {
+                width: 50%;
+                border-radius: 10px 0 0 0;
+                margin-right: 7.5px;
+            }
+
+            &--productos {
+                width: 50%;
+                border-radius: 0 10px 0 0;
+                margin-left: 7.5px;
+            }
+        }
+    }
+
+    .grilla-servicios{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+
+        &__contenido img{
+            width: none;
+            object-fit: contain;
+        }
+    }
+}
+
+
+
+
+/*/////////// PRODUCTOS ///////////*/
+
+
+
+
+.productos {
+    max-width: 100%;
+    margin: 0 10px 50px 10px;
+    border: 2px solid $color-tres;
+    border-radius: 50px;
+    background-color: black;
+    color: $color-dos;
+    font-family: 'Fugaz One';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-content: center;
+    padding: 20px 10px 50px 10px;
+    box-shadow: 0 0 15px black;
+    transition: border .2s linear;
+    overflow: hidden;
+
+    &__title {
+        @include title;
+    }
+
+    &:hover {
+        border: 2px solid white;
+        box-shadow: 0 0 10px 1px $color-dos;
+
+        .productos__title {
+            text-shadow: 0 0 2px white;
+            text-decoration: line-through;
+        }
+    }
+
+}
+
+.grilla-productos {
+    height: 100%;
+    display: grid;
+    padding: 0 5px;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, minmax(10px, 1fr));
+
+    &__item {
+        position: relative;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        transition: transform .2s ease;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/viñetas/fibrablanca.jpg);
+            background-size: contain;
+            background-repeat:repeat;
+            border-radius: 10px;
+            filter: brightness(.1) opacity(0.8);
+            box-shadow: inset 0 0 10px black;
+        }
+
+        &__logo {
+            height: 80%;
+            max-width: 200px;
+            display: block;
+            position: relative;
+            object-fit: contain;
+            transition: all .2s linear;
+            filter: sepia(.3);
+        }
+
+        &__imagen {
+            position: absolute;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            filter: brightness(.6);
+            box-shadow: 0 0 100px black;
+            left: -100%;
+            transition: transform .3s ease;
+        }
+
+        &__nombre {
+            position: absolute;
+            width: 100%;
+            height: 40px;
+            padding: 5px;
+            filter: contrast(200%);
+            filter: opacity(.5);
+            top: -100%;
+            background-color: $color-dos;
+            border-radius: 10px;
+            object-fit: contain;
+            overflow: hidden;
+            transition: top .3s ease;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            position: relative;
+            z-index: 110;
+            box-shadow: 0 0 20px black;
+
+            .grilla-productos__item__logo {
+                display: none;
+            }
+         
+            .grilla-productos__item__imagen {
+                width: 100%;
+                height: 100%;
+                filter: brightness(.6);
+                box-shadow: 0 0 100px black;
+                transform: translateX(100%);
+            }
+            
+            .grilla-productos__item__nombre {
+                width: 100%;
+                padding: 5px;
+                height: 40px;
+                filter: contrast(200%);
+                filter: opacity(.5);
+                top: 0;
+            }
+
+
+            img {
+                height: 120px;
+                width: auto;
+                filter: none;
+            }
+        }
+    } 
+}
+
+
+
+
+
+
+@media screen and (min-width: 480px) {
+ 
+    .productos__title{
+        font-size:35px;
+        letter-spacing: 20px;
+    }
+}
+
+@media screen and (min-width:900px) {
+
+    .grilla-productos {
+        height: 500px;
+        grid-template-columns: repeat(4, minmax(min-content, 1fr));
+        grid-template-rows: 250px 250px;
+
+        &__item {
+
+            &__logo {
+                max-width: none;
+                height: auto;
+            }
+
+            &::before {
+                background-size: contain;
+                background-repeat: repeat;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    @keyframes nombre {
+        from {
+            top: -40px;
+        }
+    
+        to {
+            top: 0;
+        }
+    }
+}
+
+
+
+
+
+/*/////////// EQUIPO ///////////*/
+
+
+
+.equipo {
+    position: relative;
+    padding: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 90%; */
+
+    &__title {
+        @include title;
+
+        color: $color-uno;
+        background-color: $color-dos;
+        box-shadow: inset 0 0 5px black;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__container {
+        position: relative;
+        overflow: hidden;
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+    
+    &:hover {
+        .equipo__title {
+            box-shadow: 0 0 5px white;
+            text-decoration: line-through;
+            text-shadow: 0 0 2px $color-uno;
+        }
+    }
+}
+
+.bio {
+    border-radius: 100px 100px 50px 50px;
+    background-color: $color-dos;
+    color: $color-uno;
+    box-shadow: inset 0 0 5px black;
+    margin: 1rem;
+
+    &--bio1 {
+
+        .bio__foto {
+            background-image: url(../images/equipo/toretto.jpg);
+            background-position: center -5px;
+        }
+    }
+
+    &--bio2 {
+
+        .bio__foto {
+            background-image: url(../images/equipo/letty.jpg);
+            background-position: center -5px;
+        }
+    }
+
+    &--bio3 {
+
+        .bio__foto {
+            background-image: url(../images/equipo/brian.jpg);
+            background-position: center;
+        }
+    }
+
+    &--bio4 {
+
+        .bio__foto {
+            background-image: url(../images/equipo/mia.jpg);
+            background-position: center;
+        }
+    }
+
+    &__foto {
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 10px 1px black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0 0 .5rem 0;
+        height: 200px;
+        border-radius: 100px;
+        transform: scale(1.05);
+        transition: transform .2s ease;
+    }
+    
+    &__informacion {
+        text-align: center;
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: .5rem;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+
+        h3 {
+            position: relative;
+            letter-spacing: 3px;
+            font-family: 'Fugaz One', sans-serif;
+            transform: translateY(-20px) ;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $color-uno;
+                transform: scale(0);
+                transform-origin: left;
+                transform: scale(1);
+                transition: transform .3s ease;
+            }
+        }
+
+        h3, p {
+            transition: transform .2s ease;
+        }
+
+        p {
+            transform: translateY(-20px) ;
+        }
+    }
+}
+
+.redes {
+    position: absolute;
+    height: 25px;
+    margin: 0 auto;
+    width: 100%;
+    transition: transform .2s ease, filter .1s ease;
+    bottom: -30px;
+    left: 0;
+    transform: translateY(-45px);
+    filter: opacity(1);
+
+    &__lista {
+        position: relative;
+        padding-left: 0;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        &__item {
+            position: relative;
+            height: 100%;
+            width: 25px;
+            margin: 0 10px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            img{
+                position: absolute;
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+                transition: filter .2s ease;
+
+                &:hover {
+                    filter: invert(.5);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+ 
+    .equipo__title{
+        font-size:35px;
+        letter-spacing: 20px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    
+    .bio__foto {
+        transform: scale(1);
+    }
+
+    .bio__informacion {
+
+        h3 {
+            transform: translateY(0)
+        }
+
+        h3::after {
+            transform: scale(0);
+        } 
+
+        p {
+            transform: translateY(0) ;
+        }
+    }
+
+    .redes {
+        transform: translateY(0);
+        filter: opacity(0);
+    }
+
+    .bio:hover {
+
+        .bio__foto {
+            transform: scale(1.05);
+        }
+
+        .bio__informacion { 
+            
+            h3 {
+                transform: translateY(-20px) ;
+            }
+
+            h3::after {
+                transform: scale(1);
+            } 
+
+            p{
+                transform: translateY(-20px) ;
+            }
+        }
+
+        .redes {
+            transform: translateY(-45px);
+            filter: opacity(1);
+        }
+    }
+    
+}
+
+.wave-fin {
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+    transform: rotate(180deg);
+}
